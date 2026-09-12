@@ -1,0 +1,245 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "viewports": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Et Sarrafı",
+      "lang": "tr",
+      "h1Count": 1,
+      "images": [
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        },
+        {
+          "alt": "Siyah sunum taşı üzerinde biberiye ve sebzelerle fotoğraflanmış dana bonfile.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-bonfile.webp&w=384&q=75"
+        },
+        {
+          "alt": "Biberiye ve baharatlarla sunulan dana antrikot.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-antrikot.webp&w=384&q=75"
+        },
+        {
+          "alt": "Ahşap sunum tahtasında kuzu küşleme parçaları.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fkuzu-kusleme.webp&w=384&q=75"
+        },
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        }
+      ],
+      "missingTargets": [],
+      "smallTargets": [],
+      "overflows": [],
+      "robots": "noindex, nofollow",
+      "forms": 0
+    },
+    {
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Et Sarrafı",
+      "lang": "tr",
+      "h1Count": 1,
+      "images": [
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        },
+        {
+          "alt": "Siyah sunum taşı üzerinde biberiye ve sebzelerle fotoğraflanmış dana bonfile.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-bonfile.webp&w=750&q=75"
+        },
+        {
+          "alt": "Biberiye ve baharatlarla sunulan dana antrikot.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-antrikot.webp&w=384&q=75"
+        },
+        {
+          "alt": "Ahşap sunum tahtasında kuzu küşleme parçaları.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fkuzu-kusleme.webp&w=384&q=75"
+        },
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        }
+      ],
+      "missingTargets": [],
+      "smallTargets": [],
+      "overflows": [],
+      "robots": "noindex, nofollow",
+      "forms": 0
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Et Sarrafı",
+      "lang": "tr",
+      "h1Count": 1,
+      "images": [
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        },
+        {
+          "alt": "Siyah sunum taşı üzerinde biberiye ve sebzelerle fotoğraflanmış dana bonfile.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-bonfile.webp&w=640&q=75"
+        },
+        {
+          "alt": "Biberiye ve baharatlarla sunulan dana antrikot.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-antrikot.webp&w=640&q=75"
+        },
+        {
+          "alt": "Ahşap sunum tahtasında kuzu küşleme parçaları.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fkuzu-kusleme.webp&w=640&q=75"
+        },
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        }
+      ],
+      "missingTargets": [],
+      "smallTargets": [],
+      "overflows": [],
+      "robots": "noindex, nofollow",
+      "forms": 0
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Et Sarrafı",
+      "lang": "tr",
+      "h1Count": 1,
+      "images": [
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        },
+        {
+          "alt": "Siyah sunum taşı üzerinde biberiye ve sebzelerle fotoğraflanmış dana bonfile.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-bonfile.webp&w=384&q=75"
+        },
+        {
+          "alt": "Biberiye ve baharatlarla sunulan dana antrikot.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fdana-antrikot.webp&w=384&q=75"
+        },
+        {
+          "alt": "Ahşap sunum tahtasında kuzu küşleme parçaları.",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fkuzu-kusleme.webp&w=384&q=75"
+        },
+        {
+          "alt": "Et Sarrafı",
+          "loaded": true,
+          "url": "http://localhost:3000/_next/image?url=%2Fmedia%2Fet-sarrafi-logo.webp&w=128&q=75"
+        }
+      ],
+      "missingTargets": [],
+      "smallTargets": [],
+      "overflows": [],
+      "robots": "noindex, nofollow",
+      "forms": 0
+    }
+  ],
+  "errors": [
+    {
+      "type": "warning",
+      "args": [
+        {
+          "type": "string",
+          "value": "Image with src \"/media/dana-antrikot.webp\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"
+        }
+      ],
+      "executionContextId": 2,
+      "timestamp": 1788864003225.664,
+      "stackTrace": {
+        "callFrames": [
+          {
+            "functionName": "warn",
+            "scriptId": "10",
+            "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+            "lineNumber": 776,
+            "columnNumber": 27
+          },
+          {
+            "functionName": "warnOnce",
+            "scriptId": "10",
+            "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+            "lineNumber": 3917,
+            "columnNumber": 20
+          },
+          {
+            "functionName": "",
+            "scriptId": "15",
+            "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_08kvvqm._.js",
+            "lineNumber": 4497,
+            "columnNumber": 24
+          }
+        ]
+      }
+    },
+    {
+      "type": "warning",
+      "args": [
+        {
+          "type": "string",
+          "value": "Image with src \"/media/kuzu-kusleme.webp\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"
+        }
+      ],
+      "executionContextId": 2,
+      "timestamp": 1788864003792.392,
+      "stackTrace": {
+        "callFrames": [
+          {
+            "functionName": "warn",
+            "scriptId": "10",
+            "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+            "lineNumber": 776,
+            "columnNumber": 27
+          },
+          {
+            "functionName": "warnOnce",
+            "scriptId": "10",
+            "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+            "lineNumber": 3917,
+            "columnNumber": 20
+          },
+          {
+            "functionName": "",
+            "scriptId": "15",
+            "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_08kvvqm._.js",
+            "lineNumber": 4497,
+            "columnNumber": 24
+          }
+        ]
+      }
+    }
+  ],
+  "menu": [],
+  "reducedMotion": {
+    "preference": true,
+    "scroll": "auto",
+    "heroDuration": "1e-05s",
+    "runningAnimations": 2
+  },
+  "noJavaScript": null,
+  "failedRequests": [],
+  "externalRequests": []
+}

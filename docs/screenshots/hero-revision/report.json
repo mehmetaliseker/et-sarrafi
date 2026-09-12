@@ -1,0 +1,965 @@
+{
+  "layouts": [
+    {
+      "width": 390,
+      "height": 844,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "headerClass": "site-header header-home header-top",
+      "headerBackground": "rgba(0, 0, 0, 0)",
+      "headerColor": "rgb(255, 255, 255)",
+      "cue": {
+        "x": 173,
+        "y": 770,
+        "width": 44,
+        "height": 52
+      },
+      "rotator": {
+        "x": 20,
+        "y": 496.234375,
+        "width": 350,
+        "height": 44
+      },
+      "overflow": false,
+      "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+      "h1": "Kaynağından başlayan özen."
+    },
+    {
+      "width": 1425,
+      "height": 900,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1425,
+        "height": 900
+      },
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "width": 1425,
+        "height": 900
+      },
+      "headerClass": "site-header header-home header-top",
+      "headerBackground": "rgba(0, 0, 0, 0)",
+      "headerColor": "rgb(255, 255, 255)",
+      "cue": {
+        "x": 690.5,
+        "y": 826,
+        "width": 44,
+        "height": 52
+      },
+      "rotator": {
+        "x": 83.1875,
+        "y": 561.4375,
+        "width": 690,
+        "height": 44
+      },
+      "overflow": false,
+      "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+      "h1": "Kaynağından başlayan özen."
+    },
+    {
+      "width": 1905,
+      "height": 1080,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1905,
+        "height": 1080
+      },
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "width": 1905,
+        "height": 1080
+      },
+      "headerClass": "site-header header-home header-top",
+      "headerBackground": "rgba(0, 0, 0, 0)",
+      "headerColor": "rgb(255, 255, 255)",
+      "cue": {
+        "x": 930.5,
+        "y": 1006,
+        "width": 44,
+        "height": 52
+      },
+      "rotator": {
+        "x": 121.59375,
+        "y": 651.4375,
+        "width": 690,
+        "height": 44
+      },
+      "overflow": false,
+      "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+      "h1": "Kaynağından başlayan özen."
+    },
+    {
+      "width": 829,
+      "height": 390,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 829,
+        "height": 390
+      },
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "width": 829,
+        "height": 390
+      },
+      "headerClass": "site-header header-home header-top",
+      "headerBackground": "rgba(0, 0, 0, 0)",
+      "headerColor": "rgb(255, 255, 255)",
+      "cue": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "rotator": {
+        "x": 335.3125,
+        "y": 199.171875,
+        "width": 408,
+        "height": 45.21875
+      },
+      "overflow": false,
+      "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+      "h1": "Kaynağından başlayan özen."
+    }
+  ],
+  "interactions": [
+    {
+      "name": "full viewport 390",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 173,
+          "y": 770,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 20,
+          "y": 496.234375,
+          "width": 350,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "transparent header 390",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 173,
+          "y": 770,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 20,
+          "y": 496.234375,
+          "width": 350,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "centered cue 390",
+      "passed": true,
+      "detail": {
+        "x": 173,
+        "y": 770,
+        "width": 44,
+        "height": 52
+      }
+    },
+    {
+      "name": "Onest and Turkish 390",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 173,
+          "y": 770,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 20,
+          "y": 496.234375,
+          "width": 350,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "no overflow 390",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 173,
+          "y": 770,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 20,
+          "y": 496.234375,
+          "width": 350,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "rotator stable 390",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 20,
+          "y": 496.234375,
+          "width": 350,
+          "height": 44
+        },
+        "after": {
+          "x": 20,
+          "y": 496.234375,
+          "width": 350,
+          "height": 44,
+          "current": "Profesyonel mutfaklara tedarik"
+        }
+      }
+    },
+    {
+      "name": "scrolled header 390",
+      "passed": true,
+      "detail": {
+        "className": "site-header header-home header-scrolled",
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(32, 35, 36)",
+        "photoY": 0
+      }
+    },
+    {
+      "name": "header resets 390",
+      "passed": true
+    },
+    {
+      "name": "full viewport 1440",
+      "passed": true,
+      "detail": {
+        "width": 1425,
+        "height": 900,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 690.5,
+          "y": 826,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 83.1875,
+          "y": 561.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "transparent header 1440",
+      "passed": true,
+      "detail": {
+        "width": 1425,
+        "height": 900,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 690.5,
+          "y": 826,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 83.1875,
+          "y": 561.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "centered cue 1440",
+      "passed": true,
+      "detail": {
+        "x": 690.5,
+        "y": 826,
+        "width": 44,
+        "height": 52
+      }
+    },
+    {
+      "name": "Onest and Turkish 1440",
+      "passed": true,
+      "detail": {
+        "width": 1425,
+        "height": 900,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 690.5,
+          "y": 826,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 83.1875,
+          "y": 561.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "no overflow 1440",
+      "passed": true,
+      "detail": {
+        "width": 1425,
+        "height": 900,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 900
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 690.5,
+          "y": 826,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 83.1875,
+          "y": 561.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "rotator stable 1440",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 83.1875,
+          "y": 561.4375,
+          "width": 690,
+          "height": 44
+        },
+        "after": {
+          "x": 83.1875,
+          "y": 561.4375,
+          "width": 690,
+          "height": 44,
+          "current": "Profesyonel mutfaklara tedarik"
+        }
+      }
+    },
+    {
+      "name": "scrolled header 1440",
+      "passed": true,
+      "detail": {
+        "className": "site-header header-home header-scrolled",
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(32, 35, 36)",
+        "photoY": 0
+      }
+    },
+    {
+      "name": "header resets 1440",
+      "passed": true
+    },
+    {
+      "name": "full viewport 1920",
+      "passed": true,
+      "detail": {
+        "width": 1905,
+        "height": 1080,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 930.5,
+          "y": 1006,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 121.59375,
+          "y": 651.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "transparent header 1920",
+      "passed": true,
+      "detail": {
+        "width": 1905,
+        "height": 1080,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 930.5,
+          "y": 1006,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 121.59375,
+          "y": 651.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "centered cue 1920",
+      "passed": true,
+      "detail": {
+        "x": 930.5,
+        "y": 1006,
+        "width": 44,
+        "height": 52
+      }
+    },
+    {
+      "name": "Onest and Turkish 1920",
+      "passed": true,
+      "detail": {
+        "width": 1905,
+        "height": 1080,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 930.5,
+          "y": 1006,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 121.59375,
+          "y": 651.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "no overflow 1920",
+      "passed": true,
+      "detail": {
+        "width": 1905,
+        "height": 1080,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 1905,
+          "height": 1080
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 930.5,
+          "y": 1006,
+          "width": 44,
+          "height": 52
+        },
+        "rotator": {
+          "x": 121.59375,
+          "y": 651.4375,
+          "width": 690,
+          "height": 44
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "rotator stable 1920",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 121.59375,
+          "y": 651.4375,
+          "width": 690,
+          "height": 44
+        },
+        "after": {
+          "x": 121.59375,
+          "y": 651.4375,
+          "width": 690,
+          "height": 44,
+          "current": "Profesyonel mutfaklara tedarik"
+        }
+      }
+    },
+    {
+      "name": "scrolled header 1920",
+      "passed": true,
+      "detail": {
+        "className": "site-header header-home header-scrolled",
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(32, 35, 36)",
+        "photoY": 0
+      }
+    },
+    {
+      "name": "header resets 1920",
+      "passed": true
+    },
+    {
+      "name": "full viewport 844",
+      "passed": true,
+      "detail": {
+        "width": 829,
+        "height": 390,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "rotator": {
+          "x": 335.3125,
+          "y": 199.171875,
+          "width": 408,
+          "height": 45.21875
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "transparent header 844",
+      "passed": true,
+      "detail": {
+        "width": 829,
+        "height": 390,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "rotator": {
+          "x": 335.3125,
+          "y": 199.171875,
+          "width": 408,
+          "height": 45.21875
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "centered cue 844",
+      "passed": true,
+      "detail": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "name": "Onest and Turkish 844",
+      "passed": true,
+      "detail": {
+        "width": 829,
+        "height": 390,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "rotator": {
+          "x": 335.3125,
+          "y": 199.171875,
+          "width": 408,
+          "height": 45.21875
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "no overflow 844",
+      "passed": true,
+      "detail": {
+        "width": 829,
+        "height": 390,
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "width": 829,
+          "height": 390
+        },
+        "headerClass": "site-header header-home header-top",
+        "headerBackground": "rgba(0, 0, 0, 0)",
+        "headerColor": "rgb(255, 255, 255)",
+        "cue": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "rotator": {
+          "x": 335.3125,
+          "y": 199.171875,
+          "width": 408,
+          "height": 45.21875
+        },
+        "overflow": false,
+        "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+        "h1": "Kaynağından başlayan özen."
+      }
+    },
+    {
+      "name": "rotator stable 844",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 335.3125,
+          "y": 199.171875,
+          "width": 408,
+          "height": 45.21875
+        },
+        "after": {
+          "x": 335.3125,
+          "y": 199.171875,
+          "width": 408,
+          "height": 45.21875,
+          "current": "Profesyonel mutfaklara tedarik"
+        }
+      }
+    },
+    {
+      "name": "scrolled header 844",
+      "passed": true,
+      "detail": {
+        "className": "site-header header-home header-scrolled",
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(32, 35, 36)",
+        "photoY": 0
+      }
+    },
+    {
+      "name": "header resets 844",
+      "passed": true
+    },
+    {
+      "name": "square filled catalog images",
+      "passed": true,
+      "detail": {
+        "cards": [
+          {
+            "width": 427,
+            "height": 427,
+            "padding": "0px",
+            "fit": "contain"
+          },
+          {
+            "width": 427,
+            "height": 427,
+            "padding": "0px",
+            "fit": "contain"
+          },
+          {
+            "width": 427,
+            "height": 427,
+            "padding": "0px",
+            "fit": null
+          }
+        ],
+        "arrows": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "contact arrows removed",
+      "passed": true
+    },
+    {
+      "name": "numbered section labels removed",
+      "passed": true
+    },
+    {
+      "name": "no console errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "errors": []
+}

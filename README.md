@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Et Sarrafı — kurumsal tanıtım sitesi
 
-## Getting Started
+Next.js 16.3.4 App Router, TypeScript strict, Tailwind CSS 4, npm. Mevcut altyapı ve kilit dosyası korundu; yeni bağımlılık eklenmedi.
 
-First, run the development server:
+## Yerel önizleme
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Geliştirme: `npm run dev` → http://localhost:3000
+
+Production (PowerShell):
+
+```powershell
+npm run build
+$env:PORT = '3002'
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Production adresi: http://localhost:3002. Değişiklikten sonra production sunucusunu durdurup build alın ve yeniden başlatın.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Rotalar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`/`, `/hakkimizda`, `/urunler`, `/tesislerimiz`, `/hizmet-alanlarimiz`, `/kalite`, `/iletisim`; katalogdaki 16 ürünün `/urunler/[slug]` detayları ve gerçek HTTP 404.
 
-## Learn More
+Katalog kategori ve arama seçimleri URL üzerinden paylaşılabilir; geri/ileri gezinmede korunur. İçerikler Server Component, etkileşimli alanlar küçük Client Component'lardır. JavaScript kapalıyken ürün kartları ve sayfa metinleri görünür, footer bağlantıları kullanılabilir.
 
-To learn more about Next.js, take a look at the following resources:
+## Düzenleme noktaları
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Dosya | Sorumluluk |
+| --- | --- |
+| `src/config/site.ts` | Şirket, iletişim, canonical alan adı ve indeksleme |
+| `src/config/navigation.ts` | Navigasyon ve sitemap rota listesi |
+| `src/data/media.ts` | Nullable görseller/ikon, mobil kaynak, odak, oran, cover/contain |
+| `src/data/products.ts` | Kategoriler, 16 ürün ve ürün bazında metin kaynağı |
+| `src/data/services.ts` | Hizmet başlıkları ve metinleri |
+| `src/data/pages.ts`, `home.ts`, `facilities.ts`, `trust.ts` | Sayfa içerikleri |
+| `src/app/globals.css` | Viewport'u kullanan ortak grid/gutter, ayrı okuma genişliği, merkezi renk ve radius değerleri |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Hero görseli dört kenarı dolduran sabit dekoratif katmandadır; hero metni ve bağlantıları doğal akıştadır. Ana sayfa navbarı açılışta fotoğraf üzerinde şeffaf, 84 px eşiğinden sonra beyazdır. Beyaz içerik/alt bilgi opaktır. Mobilde `svh`/`lvh` ve safe area kullanılır. Reduced motion tercihinde görsel katman doğal akışa, metin döngüsü ve kaydırma göstergesi statik duruma geçer.
 
-## Deploy on Vercel
+Tipografi, yerel [`Onest-Variable.ttf`](src/app/fonts/Onest-Variable.ttf) dosyasını `next/font/local` ile kullanır. Fontun SIL OFL metni [`src/app/fonts/OFL.txt`](src/app/fonts/OFL.txt) içinde tutulur.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Kontroller
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```powershell
+npm run lint
+npm run typecheck
+npm run build
+npm run check
+git diff --check
+node scripts/validate-site.mjs http://localhost:3002
+node scripts/revision-check.mjs
+node scripts/skeleton-check.mjs
+node scripts/hero-revision-check.mjs
+node scripts/motion-interaction-check.mjs
+node scripts/typography-pages-check.mjs
+```
+
+Tarayıcı komutları port 9224'te mevcut Edge CDP oturumu gerektirir; paket kurmaz. Son raporlar `docs/screenshots/final/report.json` ve `docs/screenshots/revision/report.json` dosyalarındadır. `scripts/browser-check.mjs` önceki sürümün kontrolüdür.
+
+## Teslim belgeleri
+
+- [Görsel/ikon teslim rehberi](docs/ASSET_GUIDE.md)
+- [İçerik teyidi](docs/CONTENT_REVIEW.md)
+- [Doğrulama raporu](docs/VALIDATION.md)
+
+Public klasöründeki dana bonfile, dana antrikot ve kuzu kuşleme fotoğrafları kullanılmaktadır. Kurumsal, tesis ve diğer ürün fotoğrafları henüz yok; bunların alanları sabit açık gri yüzeydir. Eski logo/favicon gösterilmez. Yeni fotoğraflarla son kadraj kontrolü ayrıca yapılmalıdır.
+
+Canonical ve sitemap doğrulanan kaynak alan adını ve gerçek rotaları kullanır. Yerel önizlemenin mevcut noindex/robots engeli korunur. Deploy, hosting değişikliği, commit ve push yapılmadı.

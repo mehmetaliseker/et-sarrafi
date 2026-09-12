@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Covered hero cannot receive pointer hits",
+    "passed": true
+  },
+  {
+    "name": "Focusing previous hero link reveals it",
+    "passed": true
+  },
+  {
+    "name": "Viewport height change preserves fixed layer",
+    "passed": true
+  },
+  {
+    "name": "200 percent menu text stays in a scrollable dialog",
+    "passed": true
+  },
+  {
+    "name": "Last menu link accessible with enlarged text",
+    "passed": true
+  },
+  {
+    "name": "Desktop resize closes menu and unlocks scroll",
+    "passed": true
+  },
+  {
+    "name": "Category can be selected with keyboard",
+    "passed": true
+  },
+  {
+    "name": "Search accepts actual browser typing",
+    "passed": true
+  },
+  {
+    "name": "Landscape opening fits hero actions",
+    "passed": true
+  }
+]

@@ -1,0 +1,2328 @@
+{
+  "checkedOn": "2026-09-12T11:08:38.601Z",
+  "base": "http://localhost:3002",
+  "layouts": [
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": [
+        "Kaynağındanbaşlayan özen."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "canonical": "https://www.etsarrafi.com/",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": true,
+      "links": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler?kategori=kucukbas",
+        "/urunler?kategori=karkas-et",
+        "/urunler?kategori=sakatat",
+        "/urunler?kategori=islenmis-etler",
+        "/urunler?kategori=mamul-urunler",
+        "/hizmet-alanlarimiz#horeca",
+        "/hizmet-alanlarimiz#karkas",
+        "/hizmet-alanlarimiz#sicak-satis"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Hakkımızda | Et Sarrafı",
+      "h1": [
+        "Bir meslekten doğan\nkurumsal birikim."
+      ],
+      "description": "Et Sarrafı, Celepler ailesinin hayvancılık ve kasaplık birikiminden doğan bir kırmızı et markasıdır.",
+      "canonical": "https://www.etsarrafi.com/hakkimizda",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/hakkimizda#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#isleme"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": [
+        "Ürünlerimiz."
+      ],
+      "description": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "canonical": "https://www.etsarrafi.com/urunler",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos",
+        "/urunler/kuzu-kusleme",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas",
+        "/urunler/kuzu-karkas",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger",
+        "/urunler/dil"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Tesislerimiz | Et Sarrafı",
+      "h1": [
+        "Üretimin\nyer aldığı topraklar."
+      ],
+      "description": "Bergama, Foça ve Yeniköy’deki çiftliklerde yetiştirme ve besi faaliyetleri yürütülür.",
+      "canonical": "https://www.etsarrafi.com/tesislerimiz",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/tesislerimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy",
+        "/tesislerimiz#isleme"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Hizmet Alanlarımız | Et Sarrafı",
+      "h1": [
+        "İş ortaklarımız için\net tedariki."
+      ],
+      "description": "Horeca, karkas tedariki ve sıcak satış faaliyetlerimizi tanıyın. Ürün ihtiyaçlarınız için doğrudan iletişim kurun.",
+      "canonical": "https://www.etsarrafi.com/hizmet-alanlarimiz",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/hizmet-alanlarimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Kalite Yaklaşımımız | Et Sarrafı",
+      "h1": [
+        "Üretime bütüncül\nbir yaklaşım."
+      ],
+      "description": "Yetiştirme, işleme ve tedarik faaliyetlerinde kalite politikamızın temel başlıkları.",
+      "canonical": "https://www.etsarrafi.com/kalite",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/kalite#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "İletişim | Et Sarrafı",
+      "h1": [
+        "İletişim bilgileri."
+      ],
+      "description": "Ürünlerimiz ve faaliyetlerimiz hakkında bilgi almak için aşağıdaki iletişim kanallarını kullanabilirsiniz.",
+      "canonical": "https://www.etsarrafi.com/iletisim",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/iletisim#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dana bonfile | Et Sarrafı",
+      "h1": [
+        "Dana bonfile"
+      ],
+      "description": "Dana bonfile, dananın sırtının arka bölümünde yer alan bir kas parçasıdır. Büyükbaş et ürünleri arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-bonfile",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-bonfile#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dana antrikot | Et Sarrafı",
+      "h1": [
+        "Dana antrikot"
+      ],
+      "description": "Dana antrikot, büyükbaş ürün grubumuzdaki dana eti kesimlerinden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-antrikot",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-antrikot#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos"
+      ]
+    },
+    {
+      "route": "/urunler/dana-nuar",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dana nuar | Et Sarrafı",
+      "h1": [
+        "Dana nuar"
+      ],
+      "description": "Dana nuar, büyükbaş et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-nuar",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-nuar#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-dos"
+      ]
+    },
+    {
+      "route": "/urunler/dana-dos",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dana döş | Et Sarrafı",
+      "h1": [
+        "Dana döş"
+      ],
+      "description": "Dana döş, büyükbaş ürün grubumuzda bulunan et kesimlerinden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-dos",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-dos#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Kuzu küşleme | Et Sarrafı",
+      "h1": [
+        "Kuzu küşleme"
+      ],
+      "description": "Kuzu küşleme, kuzunun böbreklerinin üzerinde, içe bakan bölümden elde edilen et parçasıdır. Küçükbaş et ürünleri arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-kusleme",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-kusleme#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=kucukbas",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kafes",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Kuzu kafes | Et Sarrafı",
+      "h1": [
+        "Kuzu kafes"
+      ],
+      "description": "Kuzu kafes, küçükbaş ürün grubumuzdaki kuzu eti kesimlerinden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-kafes",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-kafes#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=kucukbas",
+        "/urunler/kuzu-kusleme",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot"
+      ]
+    },
+    {
+      "route": "/urunler/dana-karkas",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dana karkas | Et Sarrafı",
+      "h1": [
+        "Dana karkas"
+      ],
+      "description": "Dana karkas, büyükbaş karkas et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/sigir-karkas",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Sığır karkas | Et Sarrafı",
+      "h1": [
+        "Sığır karkas"
+      ],
+      "description": "Sığır karkas, büyükbaş karkas ürün grubumuzun bir parçasıdır.",
+      "canonical": "https://www.etsarrafi.com/urunler/sigir-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/sigir-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/duve-karkas",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Düve karkas | Et Sarrafı",
+      "h1": [
+        "Düve karkas"
+      ],
+      "description": "Düve karkas, büyükbaş karkas et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/duve-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/duve-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/koyun-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/koyun-karkas",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Koyun karkas | Et Sarrafı",
+      "h1": [
+        "Koyun karkas"
+      ],
+      "description": "Koyun karkas, küçükbaş karkas ürün grubumuzun bir parçasıdır.",
+      "canonical": "https://www.etsarrafi.com/urunler/koyun-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/koyun-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-karkas",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Kuzu karkas | Et Sarrafı",
+      "h1": [
+        "Kuzu karkas"
+      ],
+      "description": "Kuzu karkas, küçükbaş karkas et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/dana-ciger",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dana ciğer | Et Sarrafı",
+      "h1": [
+        "Dana ciğer"
+      ],
+      "description": "Dana ciğer, büyükbaş hayvanlardan elde edilen sakatat çeşitlerimizdendir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-ciger",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-ciger#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger"
+      ]
+    },
+    {
+      "route": "/urunler/dana-iskembe",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dana işkembe | Et Sarrafı",
+      "h1": [
+        "Dana işkembe"
+      ],
+      "description": "Dana işkembe, büyükbaş sakatat ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-iskembe",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-iskembe#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-bobrek",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Kuzu böbrek | Et Sarrafı",
+      "h1": [
+        "Kuzu böbrek"
+      ],
+      "description": "Kuzu böbrek, küçükbaş sakatat ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-bobrek",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-bobrek#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-ciger"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-ciger",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Kuzu ciğer | Et Sarrafı",
+      "h1": [
+        "Kuzu ciğer"
+      ],
+      "description": "Kuzu ciğer, küçükbaş hayvanlardan elde edilen sakatat çeşitlerimizdendir.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-ciger",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-ciger#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek"
+      ]
+    },
+    {
+      "route": "/urunler/dil",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "title": "Dil | Et Sarrafı",
+      "h1": [
+        "Dil"
+      ],
+      "description": "Dil, sakatat ürün grubumuzda yer alan ürünlerden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dil",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dil#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek"
+      ]
+    },
+    {
+      "route": "/olmayan-sayfa",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "title": "Sayfa Bulunamadı | Et Sarrafı",
+      "h1": [
+        "Sayfa bulunamadı."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/olmayan-sayfa#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/urunler/olmayan-urun",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "title": "Sayfa Bulunamadı | Et Sarrafı",
+      "h1": [
+        "Sayfa bulunamadı."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/olmayan-urun#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": [
+        "Kaynağındanbaşlayan özen."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "canonical": "https://www.etsarrafi.com/",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": true,
+      "links": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler?kategori=kucukbas",
+        "/urunler?kategori=karkas-et",
+        "/urunler?kategori=sakatat",
+        "/urunler?kategori=islenmis-etler",
+        "/urunler?kategori=mamul-urunler",
+        "/hizmet-alanlarimiz#horeca",
+        "/hizmet-alanlarimiz#karkas",
+        "/hizmet-alanlarimiz#sicak-satis"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Hakkımızda | Et Sarrafı",
+      "h1": [
+        "Bir meslekten doğan\nkurumsal birikim."
+      ],
+      "description": "Et Sarrafı, Celepler ailesinin hayvancılık ve kasaplık birikiminden doğan bir kırmızı et markasıdır.",
+      "canonical": "https://www.etsarrafi.com/hakkimizda",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/hakkimizda#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#isleme"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": [
+        "Ürünlerimiz."
+      ],
+      "description": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "canonical": "https://www.etsarrafi.com/urunler",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos",
+        "/urunler/kuzu-kusleme",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas",
+        "/urunler/kuzu-karkas",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger",
+        "/urunler/dil"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Tesislerimiz | Et Sarrafı",
+      "h1": [
+        "Üretimin\nyer aldığı topraklar."
+      ],
+      "description": "Bergama, Foça ve Yeniköy’deki çiftliklerde yetiştirme ve besi faaliyetleri yürütülür.",
+      "canonical": "https://www.etsarrafi.com/tesislerimiz",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/tesislerimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy",
+        "/tesislerimiz#isleme"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Hizmet Alanlarımız | Et Sarrafı",
+      "h1": [
+        "İş ortaklarımız için\net tedariki."
+      ],
+      "description": "Horeca, karkas tedariki ve sıcak satış faaliyetlerimizi tanıyın. Ürün ihtiyaçlarınız için doğrudan iletişim kurun.",
+      "canonical": "https://www.etsarrafi.com/hizmet-alanlarimiz",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/hizmet-alanlarimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Kalite Yaklaşımımız | Et Sarrafı",
+      "h1": [
+        "Üretime bütüncül\nbir yaklaşım."
+      ],
+      "description": "Yetiştirme, işleme ve tedarik faaliyetlerinde kalite politikamızın temel başlıkları.",
+      "canonical": "https://www.etsarrafi.com/kalite",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/kalite#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "İletişim | Et Sarrafı",
+      "h1": [
+        "İletişim bilgileri."
+      ],
+      "description": "Ürünlerimiz ve faaliyetlerimiz hakkında bilgi almak için aşağıdaki iletişim kanallarını kullanabilirsiniz.",
+      "canonical": "https://www.etsarrafi.com/iletisim",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/iletisim#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dana bonfile | Et Sarrafı",
+      "h1": [
+        "Dana bonfile"
+      ],
+      "description": "Dana bonfile, dananın sırtının arka bölümünde yer alan bir kas parçasıdır. Büyükbaş et ürünleri arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-bonfile",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-bonfile#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dana antrikot | Et Sarrafı",
+      "h1": [
+        "Dana antrikot"
+      ],
+      "description": "Dana antrikot, büyükbaş ürün grubumuzdaki dana eti kesimlerinden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-antrikot",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-antrikot#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos"
+      ]
+    },
+    {
+      "route": "/urunler/dana-nuar",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dana nuar | Et Sarrafı",
+      "h1": [
+        "Dana nuar"
+      ],
+      "description": "Dana nuar, büyükbaş et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-nuar",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-nuar#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-dos"
+      ]
+    },
+    {
+      "route": "/urunler/dana-dos",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dana döş | Et Sarrafı",
+      "h1": [
+        "Dana döş"
+      ],
+      "description": "Dana döş, büyükbaş ürün grubumuzda bulunan et kesimlerinden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-dos",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-dos#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Kuzu küşleme | Et Sarrafı",
+      "h1": [
+        "Kuzu küşleme"
+      ],
+      "description": "Kuzu küşleme, kuzunun böbreklerinin üzerinde, içe bakan bölümden elde edilen et parçasıdır. Küçükbaş et ürünleri arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-kusleme",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-kusleme#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=kucukbas",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kafes",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Kuzu kafes | Et Sarrafı",
+      "h1": [
+        "Kuzu kafes"
+      ],
+      "description": "Kuzu kafes, küçükbaş ürün grubumuzdaki kuzu eti kesimlerinden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-kafes",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-kafes#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=kucukbas",
+        "/urunler/kuzu-kusleme",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot"
+      ]
+    },
+    {
+      "route": "/urunler/dana-karkas",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dana karkas | Et Sarrafı",
+      "h1": [
+        "Dana karkas"
+      ],
+      "description": "Dana karkas, büyükbaş karkas et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/sigir-karkas",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Sığır karkas | Et Sarrafı",
+      "h1": [
+        "Sığır karkas"
+      ],
+      "description": "Sığır karkas, büyükbaş karkas ürün grubumuzun bir parçasıdır.",
+      "canonical": "https://www.etsarrafi.com/urunler/sigir-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/sigir-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/duve-karkas",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Düve karkas | Et Sarrafı",
+      "h1": [
+        "Düve karkas"
+      ],
+      "description": "Düve karkas, büyükbaş karkas et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/duve-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/duve-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/koyun-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/koyun-karkas",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Koyun karkas | Et Sarrafı",
+      "h1": [
+        "Koyun karkas"
+      ],
+      "description": "Koyun karkas, küçükbaş karkas ürün grubumuzun bir parçasıdır.",
+      "canonical": "https://www.etsarrafi.com/urunler/koyun-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/koyun-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-karkas",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Kuzu karkas | Et Sarrafı",
+      "h1": [
+        "Kuzu karkas"
+      ],
+      "description": "Kuzu karkas, küçükbaş karkas et ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-karkas",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-karkas#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=karkas-et",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas"
+      ]
+    },
+    {
+      "route": "/urunler/dana-ciger",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dana ciğer | Et Sarrafı",
+      "h1": [
+        "Dana ciğer"
+      ],
+      "description": "Dana ciğer, büyükbaş hayvanlardan elde edilen sakatat çeşitlerimizdendir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-ciger",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-ciger#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger"
+      ]
+    },
+    {
+      "route": "/urunler/dana-iskembe",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dana işkembe | Et Sarrafı",
+      "h1": [
+        "Dana işkembe"
+      ],
+      "description": "Dana işkembe, büyükbaş sakatat ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/dana-iskembe",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dana-iskembe#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-bobrek",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Kuzu böbrek | Et Sarrafı",
+      "h1": [
+        "Kuzu böbrek"
+      ],
+      "description": "Kuzu böbrek, küçükbaş sakatat ürünlerimiz arasında yer alır.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-bobrek",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-bobrek#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-ciger"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-ciger",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Kuzu ciğer | Et Sarrafı",
+      "h1": [
+        "Kuzu ciğer"
+      ],
+      "description": "Kuzu ciğer, küçükbaş hayvanlardan elde edilen sakatat çeşitlerimizdendir.",
+      "canonical": "https://www.etsarrafi.com/urunler/kuzu-ciger",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/kuzu-ciger#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek"
+      ]
+    },
+    {
+      "route": "/urunler/dil",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Dil | Et Sarrafı",
+      "h1": [
+        "Dil"
+      ],
+      "description": "Dil, sakatat ürün grubumuzda yer alan ürünlerden biridir.",
+      "canonical": "https://www.etsarrafi.com/urunler/dil",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/dil#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=sakatat",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek"
+      ]
+    },
+    {
+      "route": "/olmayan-sayfa",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Sayfa Bulunamadı | Et Sarrafı",
+      "h1": [
+        "Sayfa bulunamadı."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/olmayan-sayfa#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/urunler/olmayan-urun",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "title": "Sayfa Bulunamadı | Et Sarrafı",
+      "h1": [
+        "Sayfa bulunamadı."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler/olmayan-urun#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "height": 740,
+      "scrollWidth": 320,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": [
+        "Kaynağındanbaşlayan özen."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "canonical": "https://www.etsarrafi.com/",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": true,
+      "links": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler?kategori=kucukbas",
+        "/urunler?kategori=karkas-et",
+        "/urunler?kategori=sakatat",
+        "/urunler?kategori=islenmis-etler",
+        "/urunler?kategori=mamul-urunler",
+        "/hizmet-alanlarimiz#horeca",
+        "/hizmet-alanlarimiz#karkas",
+        "/hizmet-alanlarimiz#sicak-satis"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 320,
+      "height": 740,
+      "scrollWidth": 320,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": [
+        "Ürünlerimiz."
+      ],
+      "description": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "canonical": "https://www.etsarrafi.com/urunler",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos",
+        "/urunler/kuzu-kusleme",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas",
+        "/urunler/kuzu-karkas",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger",
+        "/urunler/dil"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 753,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": [
+        "Kaynağındanbaşlayan özen."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "canonical": "https://www.etsarrafi.com/",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": true,
+      "links": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler?kategori=kucukbas",
+        "/urunler?kategori=karkas-et",
+        "/urunler?kategori=sakatat",
+        "/urunler?kategori=islenmis-etler",
+        "/urunler?kategori=mamul-urunler",
+        "/hizmet-alanlarimiz#horeca",
+        "/hizmet-alanlarimiz#karkas",
+        "/hizmet-alanlarimiz#sicak-satis"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 753,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": [
+        "Ürünlerimiz."
+      ],
+      "description": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "canonical": "https://www.etsarrafi.com/urunler",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos",
+        "/urunler/kuzu-kusleme",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas",
+        "/urunler/kuzu-karkas",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger",
+        "/urunler/dil"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1905,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": [
+        "Kaynağındanbaşlayan özen."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "canonical": "https://www.etsarrafi.com/",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": true,
+      "links": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler?kategori=kucukbas",
+        "/urunler?kategori=karkas-et",
+        "/urunler?kategori=sakatat",
+        "/urunler?kategori=islenmis-etler",
+        "/urunler?kategori=mamul-urunler",
+        "/hizmet-alanlarimiz#horeca",
+        "/hizmet-alanlarimiz#karkas",
+        "/hizmet-alanlarimiz#sicak-satis"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1905,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": [
+        "Ürünlerimiz."
+      ],
+      "description": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "canonical": "https://www.etsarrafi.com/urunler",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos",
+        "/urunler/kuzu-kusleme",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas",
+        "/urunler/kuzu-karkas",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger",
+        "/urunler/dil"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 829,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": [
+        "Kaynağındanbaşlayan özen."
+      ],
+      "description": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "canonical": "https://www.etsarrafi.com/",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": true,
+      "links": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler?kategori=buyukbas",
+        "/urunler?kategori=kucukbas",
+        "/urunler?kategori=karkas-et",
+        "/urunler?kategori=sakatat",
+        "/urunler?kategori=islenmis-etler",
+        "/urunler?kategori=mamul-urunler",
+        "/hizmet-alanlarimiz#horeca",
+        "/hizmet-alanlarimiz#karkas",
+        "/hizmet-alanlarimiz#sicak-satis"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 829,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": [
+        "Ürünlerimiz."
+      ],
+      "description": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "canonical": "https://www.etsarrafi.com/urunler",
+      "overflow": [],
+      "smallTargets": [],
+      "brokenImages": [],
+      "technicalText": false,
+      "forms": 0,
+      "hero": false,
+      "links": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/hizmet-alanlarimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler/dana-bonfile",
+        "/urunler/dana-antrikot",
+        "/urunler/dana-nuar",
+        "/urunler/dana-dos",
+        "/urunler/kuzu-kusleme",
+        "/urunler/kuzu-kafes",
+        "/urunler/dana-karkas",
+        "/urunler/sigir-karkas",
+        "/urunler/duve-karkas",
+        "/urunler/koyun-karkas",
+        "/urunler/kuzu-karkas",
+        "/urunler/dana-ciger",
+        "/urunler/dana-iskembe",
+        "/urunler/kuzu-bobrek",
+        "/urunler/kuzu-ciger",
+        "/urunler/dil"
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "name": "menu dimensions 320",
+      "passed": true,
+      "details": {
+        "open": true,
+        "locked": true,
+        "width": 320,
+        "height": 586,
+        "viewport": 740,
+        "scrollHeight": 586
+      }
+    },
+    {
+      "name": "menu reverse focus trap 320",
+      "passed": true
+    },
+    {
+      "name": "menu forward focus trap 320",
+      "passed": true
+    },
+    {
+      "name": "menu Escape/scroll/focus 320",
+      "passed": true
+    },
+    {
+      "name": "menu navigation 320",
+      "passed": true
+    },
+    {
+      "name": "menu dimensions 390",
+      "passed": true,
+      "details": {
+        "open": true,
+        "locked": true,
+        "width": 390,
+        "height": 586,
+        "viewport": 844,
+        "scrollHeight": 586
+      }
+    },
+    {
+      "name": "menu reverse focus trap 390",
+      "passed": true
+    },
+    {
+      "name": "menu forward focus trap 390",
+      "passed": true
+    },
+    {
+      "name": "menu Escape/scroll/focus 390",
+      "passed": true
+    },
+    {
+      "name": "menu navigation 390",
+      "passed": true
+    },
+    {
+      "name": "menu dimensions 768",
+      "passed": true,
+      "details": {
+        "open": true,
+        "locked": true,
+        "width": 768,
+        "height": 586,
+        "viewport": 1024,
+        "scrollHeight": 586
+      }
+    },
+    {
+      "name": "menu reverse focus trap 768",
+      "passed": true
+    },
+    {
+      "name": "menu forward focus trap 768",
+      "passed": true
+    },
+    {
+      "name": "menu Escape/scroll/focus 768",
+      "passed": true
+    },
+    {
+      "name": "menu navigation 768",
+      "passed": true
+    },
+    {
+      "name": "menu dimensions 844",
+      "passed": true,
+      "details": {
+        "open": true,
+        "locked": true,
+        "width": 844,
+        "height": 390,
+        "viewport": 390,
+        "scrollHeight": 586
+      }
+    },
+    {
+      "name": "menu reverse focus trap 844",
+      "passed": true
+    },
+    {
+      "name": "menu forward focus trap 844",
+      "passed": true
+    },
+    {
+      "name": "menu Escape/scroll/focus 844",
+      "passed": true
+    },
+    {
+      "name": "menu navigation 844",
+      "passed": true
+    },
+    {
+      "name": "category filter",
+      "passed": true
+    },
+    {
+      "name": "filter back",
+      "passed": true
+    },
+    {
+      "name": "filter forward",
+      "passed": true
+    },
+    {
+      "name": "Turkish search",
+      "passed": true
+    },
+    {
+      "name": "zero results",
+      "passed": true
+    },
+    {
+      "name": "clear filters",
+      "passed": true
+    },
+    {
+      "name": "undocumented category contact",
+      "passed": true
+    },
+    {
+      "name": "shared search URL",
+      "passed": true
+    },
+    {
+      "name": "product/related navigation",
+      "passed": true
+    },
+    {
+      "name": "product back retains query",
+      "passed": true
+    },
+    {
+      "name": "reduced motion",
+      "passed": true
+    },
+    {
+      "name": "skip link keyboard",
+      "passed": true
+    },
+    {
+      "name": "skip link destination",
+      "passed": true
+    },
+    {
+      "name": "catalog available without JS",
+      "passed": true
+    },
+    {
+      "name": "hero readable without JS",
+      "passed": true
+    },
+    {
+      "name": "HTTP 404 /olmayan-sayfa",
+      "passed": true,
+      "details": 404
+    },
+    {
+      "name": "HTTP 404 /urunler/olmayan-urun",
+      "passed": true,
+      "details": 404
+    },
+    {
+      "name": "sitemap all routes",
+      "passed": true
+    },
+    {
+      "name": "preview robots",
+      "passed": true
+    }
+  ],
+  "hero": [
+    {
+      "width": 320,
+      "height": 740,
+      "state": "opening",
+      "y": 0,
+      "photoY": 88,
+      "photoHeight": 640,
+      "surfaceY": 740,
+      "hitHero": true,
+      "headerY": 0,
+      "initialEnd": 740
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "state": "half",
+      "y": 370,
+      "photoY": 88,
+      "photoHeight": 640,
+      "surfaceY": 370,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 370
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "state": "covered",
+      "y": 740,
+      "photoY": 88,
+      "photoHeight": 640,
+      "surfaceY": 0,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "opening",
+      "y": 0,
+      "photoY": 88,
+      "photoHeight": 744,
+      "surfaceY": 844,
+      "hitHero": true,
+      "headerY": 0,
+      "initialEnd": 844
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "half",
+      "y": 422,
+      "photoY": 88,
+      "photoHeight": 744,
+      "surfaceY": 422,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 422
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "covered",
+      "y": 844,
+      "photoY": 88,
+      "photoHeight": 744,
+      "surfaceY": 0,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "opening",
+      "y": 0,
+      "photoY": 88,
+      "photoHeight": 924,
+      "surfaceY": 1024,
+      "hitHero": true,
+      "headerY": 0,
+      "initialEnd": 1024
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "half",
+      "y": 512,
+      "photoY": 88,
+      "photoHeight": 924,
+      "surfaceY": 512,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 512
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "covered",
+      "y": 1024,
+      "photoY": 88,
+      "photoHeight": 924,
+      "surfaceY": 0,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "state": "opening",
+      "y": 0,
+      "photoY": 100,
+      "photoHeight": 788,
+      "surfaceY": 900,
+      "hitHero": true,
+      "headerY": 0,
+      "initialEnd": 900
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "state": "half",
+      "y": 450,
+      "photoY": 100,
+      "photoHeight": 788,
+      "surfaceY": 450,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 450
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "state": "covered",
+      "y": 900,
+      "photoY": 100,
+      "photoHeight": 788,
+      "surfaceY": 0,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "state": "opening",
+      "y": 0,
+      "photoY": 100,
+      "photoHeight": 968,
+      "surfaceY": 1080,
+      "hitHero": true,
+      "headerY": 0,
+      "initialEnd": 1080
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "state": "half",
+      "y": 540,
+      "photoY": 100,
+      "photoHeight": 968,
+      "surfaceY": 540,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 540
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "state": "covered",
+      "y": 1080,
+      "photoY": 100,
+      "photoHeight": 968,
+      "surfaceY": 0,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 0
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "opening",
+      "y": 0,
+      "photoY": 88,
+      "photoHeight": 290,
+      "surfaceY": 390,
+      "hitHero": true,
+      "headerY": 0,
+      "initialEnd": 390
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "half",
+      "y": 195,
+      "photoY": 88,
+      "photoHeight": 290,
+      "surfaceY": 195,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 195
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "covered",
+      "y": 390,
+      "photoY": 88,
+      "photoHeight": 290,
+      "surfaceY": 0,
+      "hitHero": false,
+      "headerY": 0,
+      "initialEnd": 0
+    }
+  ],
+  "errors": [],
+  "failures": []
+}

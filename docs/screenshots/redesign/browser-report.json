@@ -1,0 +1,1602 @@
+{
+  "baseUrl": "http://127.0.0.1:3000",
+  "checkedOn": "2026-09-08T15:15:26.125Z",
+  "layouts": [
+    {
+      "route": "/",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": "Kaynağından\nbaşlayan özen.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kurumsal | Et Sarrafı",
+      "ogDescription": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Hakkımızda | Et Sarrafı",
+      "h1": "Bir meslekten doğan\nkurumsal birikim.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Hakkımızda | Et Sarrafı",
+      "ogDescription": "Et Sarrafı, Celepler ailesinin hayvancılık ve kasaplık birikiminden doğan bir kırmızı et markasıdır.",
+      "active": [
+        "/hakkimizda"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/hakkimizda#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": "Ürünlerimiz.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Ürünlerimiz | Et Sarrafı",
+      "ogDescription": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/urunler/dana-bonfile",
+        "/urunler/kuzu-kusleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Tesislerimiz | Et Sarrafı",
+      "h1": "Faaliyetin\nüretim alanları.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Tesislerimiz | Et Sarrafı",
+      "ogDescription": "Bergama, Foça ve Yeniköy’deki çiftliklerde yetiştirme ve besi faaliyetleri yürütülür.",
+      "active": [
+        "/tesislerimiz"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/tesislerimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/kalite",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Kalite Yaklaşımımız | Et Sarrafı",
+      "h1": "Üretime bütüncül\nbir yaklaşım.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kalite Yaklaşımımız | Et Sarrafı",
+      "ogDescription": "Yetiştirme, işleme ve tedarik faaliyetlerinde kalite politikamızın temel başlıkları.",
+      "active": [
+        "/kalite"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/kalite#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/iletisim",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "İletişim | Et Sarrafı",
+      "h1": "İletişim bilgileri.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "İletişim | Et Sarrafı",
+      "ogDescription": "Ürünlerimiz ve faaliyetlerimiz hakkında bilgi almak için aşağıdaki iletişim kanallarını kullanabilirsiniz.",
+      "active": [
+        "/iletisim"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/iletisim#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com",
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Dana bonfile | Et Sarrafı",
+      "h1": "Dana bonfile",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Dana bonfile | Et Sarrafı",
+      "ogDescription": "Dana bonfile, dananın sırtının arka bölümünde yer alan bir kas parçasıdır. Büyükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/dana-bonfile#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "title": "Kuzu küşleme | Et Sarrafı",
+      "h1": "Kuzu küşleme",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kuzu küşleme | Et Sarrafı",
+      "ogDescription": "Kuzu küşleme, kuzunun böbreklerinin üzerinde, içe bakan bölümden elde edilen et parçasıdır. Küçükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/kuzu-kusleme#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#kucukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/olmayan-sayfa",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "title": "Et Sarrafı | Kurumsal",
+      "h1": "Sayfa bulunamadı.",
+      "h1Count": 1,
+      "robots": "noindex",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/olmayan-sayfa#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": "Kaynağından\nbaşlayan özen.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kurumsal | Et Sarrafı",
+      "ogDescription": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Hakkımızda | Et Sarrafı",
+      "h1": "Bir meslekten doğan\nkurumsal birikim.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Hakkımızda | Et Sarrafı",
+      "ogDescription": "Et Sarrafı, Celepler ailesinin hayvancılık ve kasaplık birikiminden doğan bir kırmızı et markasıdır.",
+      "active": [
+        "/hakkimizda"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/hakkimizda#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": "Ürünlerimiz.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Ürünlerimiz | Et Sarrafı",
+      "ogDescription": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/urunler/dana-bonfile",
+        "/urunler/kuzu-kusleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Tesislerimiz | Et Sarrafı",
+      "h1": "Faaliyetin\nüretim alanları.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Tesislerimiz | Et Sarrafı",
+      "ogDescription": "Bergama, Foça ve Yeniköy’deki çiftliklerde yetiştirme ve besi faaliyetleri yürütülür.",
+      "active": [
+        "/tesislerimiz"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/tesislerimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/kalite",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Kalite Yaklaşımımız | Et Sarrafı",
+      "h1": "Üretime bütüncül\nbir yaklaşım.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kalite Yaklaşımımız | Et Sarrafı",
+      "ogDescription": "Yetiştirme, işleme ve tedarik faaliyetlerinde kalite politikamızın temel başlıkları.",
+      "active": [
+        "/kalite"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/kalite#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/iletisim",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "İletişim | Et Sarrafı",
+      "h1": "İletişim bilgileri.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "İletişim | Et Sarrafı",
+      "ogDescription": "Ürünlerimiz ve faaliyetlerimiz hakkında bilgi almak için aşağıdaki iletişim kanallarını kullanabilirsiniz.",
+      "active": [
+        "/iletisim"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/iletisim#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com",
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Dana bonfile | Et Sarrafı",
+      "h1": "Dana bonfile",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Dana bonfile | Et Sarrafı",
+      "ogDescription": "Dana bonfile, dananın sırtının arka bölümünde yer alan bir kas parçasıdır. Büyükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/dana-bonfile#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Kuzu küşleme | Et Sarrafı",
+      "h1": "Kuzu küşleme",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kuzu küşleme | Et Sarrafı",
+      "ogDescription": "Kuzu küşleme, kuzunun böbreklerinin üzerinde, içe bakan bölümden elde edilen et parçasıdır. Küçükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/kuzu-kusleme#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#kucukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/olmayan-sayfa",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Et Sarrafı | Kurumsal",
+      "h1": "Sayfa bulunamadı.",
+      "h1Count": 1,
+      "robots": "noindex",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/olmayan-sayfa#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": "Kaynağından\nbaşlayan özen.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kurumsal | Et Sarrafı",
+      "ogDescription": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Hakkımızda | Et Sarrafı",
+      "h1": "Bir meslekten doğan\nkurumsal birikim.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Hakkımızda | Et Sarrafı",
+      "ogDescription": "Et Sarrafı, Celepler ailesinin hayvancılık ve kasaplık birikiminden doğan bir kırmızı et markasıdır.",
+      "active": [
+        "/hakkimizda"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/hakkimizda#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": "Ürünlerimiz.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Ürünlerimiz | Et Sarrafı",
+      "ogDescription": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/urunler/dana-bonfile",
+        "/urunler/kuzu-kusleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Tesislerimiz | Et Sarrafı",
+      "h1": "Faaliyetin\nüretim alanları.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Tesislerimiz | Et Sarrafı",
+      "ogDescription": "Bergama, Foça ve Yeniköy’deki çiftliklerde yetiştirme ve besi faaliyetleri yürütülür.",
+      "active": [
+        "/tesislerimiz"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/tesislerimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/kalite",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Kalite Yaklaşımımız | Et Sarrafı",
+      "h1": "Üretime bütüncül\nbir yaklaşım.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kalite Yaklaşımımız | Et Sarrafı",
+      "ogDescription": "Yetiştirme, işleme ve tedarik faaliyetlerinde kalite politikamızın temel başlıkları.",
+      "active": [
+        "/kalite"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/kalite#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/iletisim",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "İletişim | Et Sarrafı",
+      "h1": "İletişim bilgileri.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "İletişim | Et Sarrafı",
+      "ogDescription": "Ürünlerimiz ve faaliyetlerimiz hakkında bilgi almak için aşağıdaki iletişim kanallarını kullanabilirsiniz.",
+      "active": [
+        "/iletisim"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/iletisim#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com",
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Dana bonfile | Et Sarrafı",
+      "h1": "Dana bonfile",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Dana bonfile | Et Sarrafı",
+      "ogDescription": "Dana bonfile, dananın sırtının arka bölümünde yer alan bir kas parçasıdır. Büyükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/dana-bonfile#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Kuzu küşleme | Et Sarrafı",
+      "h1": "Kuzu küşleme",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kuzu küşleme | Et Sarrafı",
+      "ogDescription": "Kuzu küşleme, kuzunun böbreklerinin üzerinde, içe bakan bölümden elde edilen et parçasıdır. Küçükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/kuzu-kusleme#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#kucukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/olmayan-sayfa",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Et Sarrafı | Kurumsal",
+      "h1": "Sayfa bulunamadı.",
+      "h1Count": 1,
+      "robots": "noindex",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/olmayan-sayfa#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Et Sarrafı | Kırmızı Et Üretimi ve Tedariki",
+      "h1": "Kaynağından\nbaşlayan özen.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kurumsal | Et Sarrafı",
+      "ogDescription": "Et Sarrafı’nın büyükbaş ve küçükbaş et ürünlerini, Bergama, Foça ve Yeniköy çiftliklerini ve çalışma yaklaşımını tanıyın. İletişim bilgilerine ulaşın.",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Hakkımızda | Et Sarrafı",
+      "h1": "Bir meslekten doğan\nkurumsal birikim.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Hakkımızda | Et Sarrafı",
+      "ogDescription": "Et Sarrafı, Celepler ailesinin hayvancılık ve kasaplık birikiminden doğan bir kırmızı et markasıdır.",
+      "active": [
+        "/hakkimizda"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/hakkimizda#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Ürünlerimiz | Et Sarrafı",
+      "h1": "Ürünlerimiz.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Ürünlerimiz | Et Sarrafı",
+      "ogDescription": "Büyükbaş ve küçükbaş et kesimleri, karkas ürünler ve diğer ürün aileleri hakkında bilgi edinin.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas",
+        "/urunler#kucukbas",
+        "/urunler#karkas-et",
+        "/urunler#sakatat",
+        "/urunler#islenmis-etler",
+        "/urunler#mamul-urunler",
+        "/urunler/dana-bonfile",
+        "/urunler/kuzu-kusleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Tesislerimiz | Et Sarrafı",
+      "h1": "Faaliyetin\nüretim alanları.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Tesislerimiz | Et Sarrafı",
+      "ogDescription": "Bergama, Foça ve Yeniköy’deki çiftliklerde yetiştirme ve besi faaliyetleri yürütülür.",
+      "active": [
+        "/tesislerimiz"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/tesislerimiz#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/tesislerimiz#bergama",
+        "/tesislerimiz#foca",
+        "/tesislerimiz#yenikoy",
+        "/tesislerimiz#isleme"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/kalite",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Kalite Yaklaşımımız | Et Sarrafı",
+      "h1": "Üretime bütüncül\nbir yaklaşım.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kalite Yaklaşımımız | Et Sarrafı",
+      "ogDescription": "Yetiştirme, işleme ve tedarik faaliyetlerinde kalite politikamızın temel başlıkları.",
+      "active": [
+        "/kalite"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/kalite#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/iletisim",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "İletişim | Et Sarrafı",
+      "h1": "İletişim bilgileri.",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "İletişim | Et Sarrafı",
+      "ogDescription": "Ürünlerimiz ve faaliyetlerimiz hakkında bilgi almak için aşağıdaki iletişim kanallarını kullanabilirsiniz.",
+      "active": [
+        "/iletisim"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/iletisim#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com",
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Dana bonfile | Et Sarrafı",
+      "h1": "Dana bonfile",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Dana bonfile | Et Sarrafı",
+      "ogDescription": "Dana bonfile, dananın sırtının arka bölümünde yer alan bir kas parçasıdır. Büyükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/dana-bonfile#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#buyukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Kuzu küşleme | Et Sarrafı",
+      "h1": "Kuzu küşleme",
+      "h1Count": 1,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Kuzu küşleme | Et Sarrafı",
+      "ogDescription": "Kuzu küşleme, kuzunun böbreklerinin üzerinde, içe bakan bölümden elde edilen et parçasıdır. Küçükbaş et ürünleri arasında yer alır.",
+      "active": [
+        "/urunler"
+      ],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/urunler/kuzu-kusleme#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim",
+        "/urunler#kucukbas"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    },
+    {
+      "route": "/olmayan-sayfa",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Et Sarrafı | Kurumsal",
+      "h1": "Sayfa bulunamadı.",
+      "h1Count": 1,
+      "robots": "noindex",
+      "active": [],
+      "missingHashes": [],
+      "emptyLinks": [],
+      "smallTargets": [],
+      "overflows": [],
+      "images": [],
+      "forms": 0,
+      "hiddenContent": [],
+      "prohibitedText": false,
+      "internalLinks": [
+        "/olmayan-sayfa#ana-icerik",
+        "/",
+        "/hakkimizda",
+        "/urunler",
+        "/tesislerimiz",
+        "/kalite",
+        "/iletisim"
+      ],
+      "contactLinks": [
+        "tel:+905395179686",
+        "mailto:siparis@etsarrafi.com"
+      ],
+      "legacyAssets": []
+    }
+  ],
+  "links": [
+    {
+      "href": "/#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/hakkimizda",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/tesislerimiz",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/kalite",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/iletisim",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler#buyukbas",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler#kucukbas",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler#karkas-et",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler#sakatat",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler#islenmis-etler",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler#mamul-urunler",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/tesislerimiz#bergama",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/tesislerimiz#foca",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/tesislerimiz#yenikoy",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/hakkimizda#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/tesislerimiz#isleme",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler/dana-bonfile",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler/kuzu-kusleme",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/tesislerimiz#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/kalite#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/iletisim#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler/dana-bonfile#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/urunler/kuzu-kusleme#ana-icerik",
+      "status": 200,
+      "valid": true
+    },
+    {
+      "href": "/olmayan-sayfa#ana-icerik",
+      "status": 404,
+      "valid": true
+    }
+  ],
+  "menu": [
+    {
+      "height": 844,
+      "opened": {
+        "expanded": "true",
+        "focusInside": true,
+        "locked": true,
+        "fits": true
+      },
+      "backwards": true,
+      "forwards": true,
+      "restored": true,
+      "lastReachable": true,
+      "navigationCloses": true
+    },
+    {
+      "height": 360,
+      "opened": {
+        "expanded": "true",
+        "focusInside": true,
+        "locked": true,
+        "fits": true
+      },
+      "backwards": true,
+      "forwards": true,
+      "restored": true,
+      "lastReachable": true,
+      "navigationCloses": true
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "reducedMotion": {
+    "scrollBehavior": "auto",
+    "transition": "1e-05s"
+  },
+  "noJavaScript": [
+    {
+      "route": "/",
+      "h1Visible": true,
+      "footerLinks": 5
+    },
+    {
+      "route": "/hakkimizda",
+      "h1Visible": true,
+      "footerLinks": 5
+    },
+    {
+      "route": "/urunler",
+      "h1Visible": true,
+      "footerLinks": 5
+    },
+    {
+      "route": "/tesislerimiz",
+      "h1Visible": true,
+      "footerLinks": 5
+    },
+    {
+      "route": "/kalite",
+      "h1Visible": true,
+      "footerLinks": 5
+    },
+    {
+      "route": "/iletisim",
+      "h1Visible": true,
+      "footerLinks": 5
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "h1Visible": true,
+      "footerLinks": 5
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "h1Visible": true,
+      "footerLinks": 5
+    }
+  ],
+  "failures": [],
+  "skipLink": {
+    "skipFocused": true,
+    "skipWorks": true
+  }
+}

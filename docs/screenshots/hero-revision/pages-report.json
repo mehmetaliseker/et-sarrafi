@@ -1,0 +1,142 @@
+[
+  {
+    "route": "/hakkimizda",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/urunler",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/urunler/dana-bonfile",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/tesislerimiz",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/hizmet-alanlarimiz",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/kalite",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/iletisim",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/hakkimizda",
+    "width": 1425,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/urunler",
+    "width": 1425,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/urunler/dana-bonfile",
+    "width": 1425,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/tesislerimiz",
+    "width": 1425,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/hizmet-alanlarimiz",
+    "width": 1425,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/kalite",
+    "width": 1425,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  },
+  {
+    "route": "/iletisim",
+    "width": 1425,
+    "overflow": false,
+    "h1": 1,
+    "font": "onest, \"onest Fallback\", Arial, Arial, sans-serif",
+    "numbered": false,
+    "broken": 0,
+    "header": "site-header header-inner-page"
+  }
+]

@@ -1,0 +1,1011 @@
+{
+  "widths": [
+    {
+      "route": "/",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px",
+        "16px"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px",
+        "16px"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px",
+        "16px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px",
+        "16px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px",
+        "16px"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px",
+        "16px"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px",
+        "16px"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": [
+        "16px"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 320,
+      "containerWidth": 320,
+      "contentWidth": 288,
+      "left": 16,
+      "scrollWidth": 320,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 320,
+      "footerWidth": 320,
+      "rad": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": [
+        "18px"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 390,
+      "containerWidth": 390,
+      "contentWidth": 350,
+      "left": 20,
+      "scrollWidth": 390,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 390,
+      "footerWidth": 390,
+      "rad": []
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 768,
+      "containerWidth": 753,
+      "contentWidth": 697,
+      "left": 28,
+      "scrollWidth": 753,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 753,
+      "footerWidth": 753,
+      "rad": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 1440,
+      "containerWidth": 1425,
+      "contentWidth": 1345,
+      "left": 40,
+      "scrollWidth": 1425,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1425,
+      "footerWidth": 1425,
+      "rad": []
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 1920,
+      "containerWidth": 1905,
+      "contentWidth": 1777,
+      "left": 64,
+      "scrollWidth": 1905,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 1905,
+      "footerWidth": 1905,
+      "rad": []
+    },
+    {
+      "route": "/",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hakkimizda",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/urunler",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "18px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-bonfile",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/dana-antrikot",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 2,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/urunler/kuzu-kusleme",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 3,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px",
+        "18px"
+      ]
+    },
+    {
+      "route": "/tesislerimiz",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px",
+        "24px"
+      ]
+    },
+    {
+      "route": "/hizmet-alanlarimiz",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/kalite",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": [
+        "24px"
+      ]
+    },
+    {
+      "route": "/iletisim",
+      "width": 844,
+      "containerWidth": 829,
+      "contentWidth": 773,
+      "left": 28,
+      "scrollWidth": 829,
+      "broken": [],
+      "skeletons": 0,
+      "photos": 0,
+      "headerWidth": 829,
+      "footerWidth": 829,
+      "rad": []
+    }
+  ],
+  "images": [],
+  "states": [
+    {
+      "opening": 100,
+      "half": {
+        "photo": 100,
+        "surface": 450,
+        "header": 0
+      },
+      "covered": {
+        "surface": 0,
+        "hit": false
+      }
+    }
+  ],
+  "errors": [],
+  "failures": []
+}
