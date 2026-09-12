@@ -1,0 +1,13 @@
+{
+  "hover": {
+    "decoration": "none",
+    "border": "rgba(255, 255, 255, 0.92)",
+    "shadow": "rgba(255, 255, 255, 0.14) 0px 0px 16px 0px"
+  },
+  "focus": {
+    "outline": "solid",
+    "outlineWidth": "2px",
+    "outlineColor": "rgb(255, 255, 255)"
+  },
+  "passed": true
+}

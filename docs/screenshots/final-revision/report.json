@@ -1,0 +1,394 @@
+{
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "gutter": "24px",
+      "header": {
+        "left": 24,
+        "right": 117.484375,
+        "top": 16,
+        "width": 93.484375,
+        "height": 44
+      },
+      "navEnd": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "height": 0
+      },
+      "hero": {
+        "left": 24,
+        "right": 366,
+        "top": 242.765625,
+        "width": 342,
+        "height": 374.46875
+      },
+      "story": {
+        "left": 24,
+        "right": 366,
+        "top": 1141.296875,
+        "width": 342,
+        "height": 305.40625
+      },
+      "footer": {
+        "left": 24,
+        "right": 366,
+        "top": 5856.046875,
+        "width": 342,
+        "height": 391.390625
+      },
+      "scale": "matrix(1.06, 0, 0, 1.06, 0, 0)",
+      "controls": 0,
+      "rotator": {
+        "left": 24,
+        "right": 366,
+        "top": 495.234375,
+        "width": 342,
+        "height": 44
+      },
+      "actions": [
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        },
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        }
+      ],
+      "middleScale": "matrix(1.03, 0, 0, 1.03, 0, 0)",
+      "finalScale": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "width": 753,
+      "height": 900,
+      "overflow": false,
+      "gutter": "36px",
+      "header": {
+        "left": 36,
+        "right": 129.484375,
+        "top": 16,
+        "width": 93.484375,
+        "height": 44
+      },
+      "navEnd": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "height": 0
+      },
+      "hero": {
+        "left": 36,
+        "right": 717,
+        "top": 278.28125,
+        "width": 681,
+        "height": 359.4375
+      },
+      "story": {
+        "left": 36,
+        "right": 717,
+        "top": 1279.5625,
+        "width": 681,
+        "height": 196.859375
+      },
+      "footer": {
+        "left": 36,
+        "right": 717,
+        "top": 5486.515625,
+        "width": 681,
+        "height": 146.78125
+      },
+      "scale": "matrix(1.08, 0, 0, 1.08, 0, 0)",
+      "controls": 0,
+      "rotator": {
+        "left": 36,
+        "right": 466,
+        "top": 515.71875,
+        "width": 430,
+        "height": 44
+      },
+      "actions": [
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        },
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        }
+      ],
+      "middleScale": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+      "finalScale": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "width": 1425,
+      "height": 900,
+      "overflow": false,
+      "gutter": "clamp(56px, 5.5vw, 112px)",
+      "header": {
+        "left": 79.1875,
+        "right": 172.671875,
+        "top": 22,
+        "width": 93.484375,
+        "height": 44
+      },
+      "navEnd": {
+        "left": 1255.96875,
+        "right": 1345.8125,
+        "top": 21.75,
+        "width": 89.84375,
+        "height": 44.5
+      },
+      "hero": {
+        "left": 79.1875,
+        "right": 769.1875,
+        "top": 245.5625,
+        "width": 690,
+        "height": 436.875
+      },
+      "story": {
+        "left": 79.1875,
+        "right": 1345.8125,
+        "top": 1237.328125,
+        "width": 1266.625,
+        "height": 281.34375
+      },
+      "footer": {
+        "left": 79.1875,
+        "right": 1345.8125,
+        "top": 5808.40625,
+        "width": 1266.625,
+        "height": 132
+      },
+      "scale": "matrix(1.08, 0, 0, 1.08, 0, 0)",
+      "controls": 0,
+      "rotator": {
+        "left": 79.1875,
+        "right": 509.1875,
+        "top": 560.4375,
+        "width": 430,
+        "height": 44
+      },
+      "actions": [
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        },
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        }
+      ],
+      "middleScale": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+      "finalScale": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "width": 1905,
+      "height": 1080,
+      "overflow": false,
+      "gutter": "clamp(56px, 5.5vw, 112px)",
+      "header": {
+        "left": 105.59375,
+        "right": 199.078125,
+        "top": 22,
+        "width": 93.484375,
+        "height": 44
+      },
+      "navEnd": {
+        "left": 1709.5625,
+        "right": 1799.40625,
+        "top": 21.75,
+        "width": 89.84375,
+        "height": 44.5
+      },
+      "hero": {
+        "left": 105.59375,
+        "right": 795.59375,
+        "top": 335.5625,
+        "width": 690,
+        "height": 436.875
+      },
+      "story": {
+        "left": 105.59375,
+        "right": 1799.40625,
+        "top": 1496.9375,
+        "width": 1693.8125,
+        "height": 302.125
+      },
+      "footer": {
+        "left": 105.59375,
+        "right": 1799.40625,
+        "top": 6927.796875,
+        "width": 1693.8125,
+        "height": 132
+      },
+      "scale": "matrix(1.08, 0, 0, 1.08, 0, 0)",
+      "controls": 0,
+      "rotator": {
+        "left": 105.59375,
+        "right": 535.59375,
+        "top": 650.4375,
+        "width": 430,
+        "height": 44
+      },
+      "actions": [
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        },
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        }
+      ],
+      "middleScale": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+      "finalScale": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "width": 829,
+      "height": 390,
+      "overflow": false,
+      "gutter": "36px",
+      "header": {
+        "left": 36,
+        "right": 129.484375,
+        "top": 16,
+        "width": 93.484375,
+        "height": 44
+      },
+      "navEnd": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "height": 0
+      },
+      "hero": {
+        "left": 36,
+        "right": 726,
+        "top": 132.296875,
+        "width": 690,
+        "height": 183.390625
+      },
+      "story": {
+        "left": 36,
+        "right": 793,
+        "top": 514.5625,
+        "width": 757,
+        "height": 196.859375
+      },
+      "footer": {
+        "left": 36,
+        "right": 793,
+        "top": 3233.90625,
+        "width": 757,
+        "height": 146.78125
+      },
+      "scale": "matrix(1.08, 0, 0, 1.08, 0, 0)",
+      "controls": 0,
+      "rotator": {
+        "left": 403.0625,
+        "right": 726,
+        "top": 211.6875,
+        "width": 322.9375,
+        "height": 44
+      },
+      "actions": [
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        },
+        {
+          "height": 52,
+          "border": "1px",
+          "radius": "11px",
+          "decoration": "none"
+        }
+      ],
+      "middleScale": "matrix(1.0398, 0, 0, 1.0398, 0, 0)",
+      "finalScale": "matrix(1, 0, 0, 1, 0, 0)"
+    }
+  ],
+  "tabs": [
+    {
+      "width": 390,
+      "overflow": false,
+      "selected": "Et İşleme Tesisi",
+      "tabLeft": 24,
+      "panelLeft": 24,
+      "gutter": "24px",
+      "labels": [
+        "Et İşleme Tesisi",
+        "Bergama",
+        "Foça",
+        "Yeniköy"
+      ]
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "selected": "Et İşleme Tesisi",
+      "tabLeft": 36,
+      "panelLeft": 36,
+      "gutter": "36px",
+      "labels": [
+        "Et İşleme Tesisi",
+        "Bergama",
+        "Foça",
+        "Yeniköy"
+      ]
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "selected": "Et İşleme Tesisi",
+      "tabLeft": 79.1875,
+      "panelLeft": 79.1875,
+      "gutter": "clamp(56px, 5.5vw, 112px)",
+      "labels": [
+        "Et İşleme Tesisi",
+        "Bergama",
+        "Foça",
+        "Yeniköy"
+      ]
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "selected": "Et İşleme Tesisi",
+      "tabLeft": 105.59375,
+      "panelLeft": 105.59375,
+      "gutter": "clamp(56px, 5.5vw, 112px)",
+      "labels": [
+        "Et İşleme Tesisi",
+        "Bergama",
+        "Foça",
+        "Yeniköy"
+      ]
+    }
+  ],
+  "failures": [],
+  "errors": []
+}

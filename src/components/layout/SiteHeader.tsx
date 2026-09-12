@@ -30,5 +30,5 @@ export function SiteHeader() {
   }, [isHome]);
 
   const stateClass = isHome ? (isScrolled ? "header-home header-scrolled" : "header-home header-top") : "header-inner-page";
-  return <header className={`site-header ${stateClass}`}><Container className="header-inner"><Brand /><SiteNavigation /></Container></header>;
+  return <header className={`site-header ${stateClass}${isHome && isScrolled ? " backdrop-blur-md" : ""}`}><Container className="header-inner"><Brand /><SiteNavigation /></Container></header>;
 }

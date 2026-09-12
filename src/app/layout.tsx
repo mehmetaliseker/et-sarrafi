@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { siteConfig } from "@/config/site";
 import { brandAssets } from "@/data/media";
 import { serializeJsonLd } from "@/lib/json-ld";
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           İçeriğe geç
         </a>
         <div className="flex min-h-dvh flex-col">
+          <ScrollToTop />
           <SiteHeader />
           <main className="flex-1" id="ana-icerik" tabIndex={-1}>
             {children}
