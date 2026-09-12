@@ -13,13 +13,13 @@ try {
     const opening = await b.evaluate(`(() => {
       const rect = s => { const r=document.querySelector(s).getBoundingClientRect(); return {left:r.left,right:r.right,top:r.top,width:r.width,height:r.height}; };
       return {width:document.documentElement.clientWidth, overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth,
-        gutter:getComputedStyle(document.documentElement).getPropertyValue('--page-gutter').trim(), header:rect('.header-inner .brand'), navEnd:rect('.desktop-nav li:last-child a'), hero:rect('.hero-copy'), story:rect('#home-story-section .site-container > *'), footer:rect('.footer-main'),
-        scale:getComputedStyle(document.querySelector('.hero-image .photo')).transform, controls:document.querySelectorAll('.hero-rotator button').length,
-        rotator:rect('.hero-rotator-window'), actions:[...document.querySelectorAll('.hero-actions .link-button')].map(x=>({height:x.getBoundingClientRect().height,border:getComputedStyle(x).borderTopWidth,radius:getComputedStyle(x).borderRadius,decoration:getComputedStyle(x).textDecorationLine}))};
+        gutter:getComputedStyle(document.documentElement).getPropertyValue('--page-gutter').trim(), header:rect('.header-inner .brand'), navEnd:rect('.desktop-nav li:last-child a'), hero:rect('.hero-copy'), story:rect('#home-products-section .home-split-copy'), footer:rect('.footer-main'),
+        scale:getComputedStyle(document.querySelector('.hero-image .photo')).transform, rotatingText:document.querySelectorAll('.hero-rotator').length,
+        actions:[...document.querySelectorAll('.hero-actions .link-button')].map(x=>({height:x.getBoundingClientRect().height,border:getComputedStyle(x).borderTopWidth,radius:getComputedStyle(x).borderRadius,decoration:getComputedStyle(x).textDecorationLine}))};
     })()`);
     check(`overflow ${width}`, !opening.overflow, opening);
     check(`aligned ${width}`, [opening.hero.left, opening.story.left, opening.footer.left].every(x => Math.abs(x-opening.header.left)<1.01) && (width < 1024 || Math.abs(opening.navEnd.right-(opening.width-opening.header.left))<1.01), opening);
-    check(`rotator controls removed ${width}`, opening.controls === 0, opening);
+    check(`rotating hero text removed ${width}`, opening.rotatingText === 0, opening);
     check(`button family ${width}`, opening.actions.length === 2 && Math.abs(opening.actions[0].height-opening.actions[1].height)<1 && opening.actions.every(x=>x.border==='1px'&&x.decoration==='none'), opening.actions);
     await b.shot(`docs/screenshots/final-revision/home-${width}-opening.png`);
     await b.evaluate(`scrollTo({top:innerHeight*.25,behavior:'instant'})`); await delay(100);

@@ -1,7 +1,7 @@
 import { LinkButton } from "@/components/ui/LinkButton";
 import { Media } from "@/components/ui/Media";
 import { Arrow } from "@/components/ui/Arrow";
-import { HeroRotatingText, HeroScrollCue, HeroZoom } from "@/components/sections/HeroMotion";
+import { HeroScrollCue, HeroZoom } from "@/components/sections/HeroMotion";
 import { homeContent } from "@/data/home";
 import { media } from "@/data/media";
 export function Hero() {
@@ -13,7 +13,6 @@ export function Hero() {
       <p className="eyebrow">{content.eyebrow}</p>
       <h1 id="hero-title">{content.title} {content.secondLine}</h1>
       <p className="hero-description">{content.description}</p>
-      <HeroRotatingText />
       <div className="hero-actions"><LinkButton href="/urunler">Ürünleri İncele<Arrow /></LinkButton><LinkButton variant="secondary" href="/iletisim">İletişime Geç</LinkButton></div>
     </div><HeroScrollCue /></div>
   </section>;

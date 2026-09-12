@@ -2,12 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const phrases = [
-  "Büyükbaş ve küçükbaş et ürünleri",
-  "Profesyonel mutfaklara tedarik",
-  "Et işleme ve sevkiyat",
-] as const;
-
 function useHeroActivity() {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(true);
@@ -33,21 +27,6 @@ function useHeroActivity() {
   }, []);
 
   return { ref, active: isVisible && isPageVisible && !reducedMotion, reducedMotion };
-}
-
-export function HeroRotatingText() {
-  const { ref, active } = useHeroActivity();
-  const [index, setIndex] = useState(0);
-  useEffect(() => {
-    if (!active) return;
-    const timer = window.setInterval(() => setIndex(current => (current + 1) % phrases.length), 4600);
-    return () => window.clearInterval(timer);
-  }, [active]);
-
-  return <div className="hero-rotator" ref={ref}>
-    <span className="sr-only">{phrases[0]}</span>
-    <span aria-hidden="true" className="hero-rotator-window">{phrases.map((phrase, phraseIndex) => <span className={phraseIndex === index ? "is-current" : ""} key={phrase}>{phrase}</span>)}</span>
-  </div>;
 }
 
 export function HeroZoom() {
@@ -80,9 +59,9 @@ export function HeroZoom() {
 export function HeroScrollCue() {
   const { ref, active, reducedMotion } = useHeroActivity();
   return <div ref={ref} className={`hero-scroll-wrap${active ? " is-active" : ""}`}>
-    <a aria-label="İçeriğe geç" className="hero-scroll-cue" href="#home-story-section" onClick={event => {
+    <a aria-label="İçeriğe geç" className="hero-scroll-cue" href="#home-products-section" onClick={event => {
       event.preventDefault();
-      document.querySelector("#home-story-section")?.scrollIntoView({ behavior: reducedMotion ? "instant" : "smooth" });
+      document.querySelector("#home-products-section")?.scrollIntoView({ behavior: reducedMotion ? "instant" : "smooth" });
     }}><span aria-hidden="true" /></a>
   </div>;
 }

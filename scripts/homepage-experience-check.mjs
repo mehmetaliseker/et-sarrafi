@@ -3,7 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const b = await browser();
 const base = 'http://localhost:3000';
-const report = { viewports: [], motion: {}, navigation: {}, hover: {}, failures: [], errors: [] };
+const report = { viewports: [], motion: {}, immersive: {}, navigation: {}, hover: {}, failures: [], errors: [] };
 const check = (name, passed, detail) => { if (!passed) report.failures.push({ name, detail }); };
 
 try {
@@ -14,14 +14,14 @@ try {
       const rect=s=>{const r=document.querySelector(s).getBoundingClientRect();return {left:r.left,right:r.right,height:r.height}};
       const cs=s=>getComputedStyle(document.querySelector(s));
       return {clientWidth:document.documentElement.clientWidth, overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth,
-        brand:rect('.header-inner .brand'), hero:rect('.hero-copy'), story:rect('#home-story-section .site-container > *'), footer:rect('.footer-main'),
+        brand:rect('.header-inner .brand'), hero:rect('.hero-copy'), story:rect('#home-products-section .home-split-copy'), footer:rect('.footer-main'),
         sections:[...document.querySelectorAll('.home-surface > section')].map(x=>x.getBoundingClientRect().height),
         topHeader:{background:cs('.site-header').backgroundColor,color:cs('.site-header').color}, navFont:${width}>=1024?cs('.desktop-nav a').fontSize:null,
         emptyMedia:document.querySelectorAll('.media-empty').length, footerLogo:!!document.querySelector('.footer-logo img'), headerLogo:!!document.querySelector('.site-header img')};
     })()`);
     const expectedRight = layout.clientWidth-layout.brand.left;
     check(`layout ${width}`, !layout.overflow && [layout.hero.left,layout.story.left,layout.footer.left].every(x=>Math.abs(x-layout.brand.left)<1.01) && Math.abs(layout.footer.right-expectedRight)<1.01, layout);
-    check(`sections ${width}`, layout.sections.length===5 && layout.sections.every(x=>x>=height-.5), layout.sections);
+    check(`sections ${width}`, layout.sections.length===4 && layout.sections.slice(0,3).every(x=>x>=height-.5) && layout.sections[3]>=height*.5-.5, layout.sections);
     check(`media and logo ${width}`, layout.emptyMedia===0 && layout.footerLogo && !layout.headerLogo, layout);
     check(`transparent header ${width}`, layout.topHeader.background==='rgba(0, 0, 0, 0)' && layout.topHeader.color==='rgb(255, 255, 255)', layout.topHeader);
     if(width>=1024) check(`nav size ${width}`, parseFloat(layout.navFont)>=15, layout.navFont);
@@ -33,10 +33,17 @@ try {
   }
 
   await b.viewport(1440,900); await b.navigate(base); await delay(250);
-  const sample = async scroll => { await b.evaluate(`scrollTo({top:${scroll},behavior:'instant'})`); await delay(80); return b.evaluate(`(() => {const e=document.querySelector('.story-grid');const s=getComputedStyle(e);const r=e.getBoundingClientRect();return {scrollY,opacity:parseFloat(s.opacity),transform:s.transform,top:r.top,bottom:r.bottom}})()`); };
+  const sample = async scroll => { await b.evaluate(`scrollTo({top:${scroll},behavior:'instant'})`); await delay(80); return b.evaluate(`(() => {const e=document.querySelector('.home-split-copy');const s=getComputedStyle(e);const r=e.getBoundingClientRect();const image=document.querySelector('.home-split-image');const ir=image.getBoundingClientRect();return {scrollY,opacity:parseFloat(s.opacity),transform:s.transform,top:r.top,bottom:r.bottom,imageTransform:getComputedStyle(image).transform,imageDocumentTop:ir.top+scrollY}})()`); };
   const below = await sample(0), entered = await sample(1050), above = await sample(1900), reentered = await sample(1450), belowAgain = await sample(0);
   report.motion = {below,entered,above,reentered,belowAgain};
-  check('bidirectional motion', below.opacity<.1 && entered.opacity>.95 && above.opacity<.2 && reentered.opacity>above.opacity && reentered.opacity<1 && belowAgain.opacity<.1 && below.transform!==entered.transform && above.transform!==entered.transform, report.motion);
+  check('bidirectional motion', below.opacity<.1 && entered.opacity>.95 && above.opacity<.2 && reentered.opacity>above.opacity && reentered.opacity<1 && belowAgain.opacity<.1 && below.transform!==entered.transform && above.transform!==entered.transform && [below,entered,above,reentered,belowAgain].every(x=>x.imageTransform==='none') && [entered,above,reentered].every(x=>Math.abs(x.imageDocumentTop-below.imageDocumentTop)<1), report.motion);
+
+  const immersiveTop = await b.evaluate(`{const r=document.querySelector('.home-immersive-section').getBoundingClientRect();r.top+scrollY}`);
+  const immersiveSample = async scroll => { await b.evaluate(`scrollTo({top:${scroll},behavior:'instant'})`); await delay(80); return b.evaluate(`(()=>{const photo=document.querySelector('.immersive-media .photo'),media=document.querySelector('.immersive-media'),copy=document.querySelector('.home-immersive-copy');return{scrollY,scale:getComputedStyle(photo).transform,mediaPosition:getComputedStyle(media).position,mediaTop:media.getBoundingClientRect().top,copyTransform:getComputedStyle(copy).transform}})()`); };
+  const approaching = await immersiveSample(immersiveTop-900), focused = await immersiveSample(immersiveTop), leaving = await immersiveSample(immersiveTop+900), focusedAgain = await immersiveSample(immersiveTop);
+  report.immersive = {approaching,focused,leaving,focusedAgain};
+  const imageScale = value => Number(value.match(/matrix\(([^,]+)/)?.[1] ?? 1);
+  check('independent immersive zoom', approaching.mediaPosition==='absolute' && Math.abs(approaching.mediaTop-900)<1 && Math.abs(focused.mediaTop)<1 && Math.abs(leaving.mediaTop+900)<1 && imageScale(focused.scale)>imageScale(approaching.scale) && Math.abs(imageScale(approaching.scale)-imageScale(leaving.scale))<.002 && Math.abs(imageScale(focused.scale)-imageScale(focusedAgain.scale))<.002, report.immersive);
 
   await b.evaluate(`scrollTo({top:1600,behavior:'instant'})`); await b.evaluate(`document.querySelector('.desktop-nav a[href="/hakkimizda"]').click()`); await delay(900);
   report.navigation.scrollY = await b.evaluate('scrollY');
@@ -57,5 +64,5 @@ try {
   await writeFile('docs/screenshots/homepage-experience/report.json', JSON.stringify(report,null,2));
   b.close();
 }
-console.log(JSON.stringify({failures:report.failures,motion:report.motion,navigation:report.navigation,hover:report.hover,viewports:report.viewports.map(x=>({width:x.width,gutter:x.gutter,sections:x.sections,scrolled:x.scrolled})),errors:report.errors.length},null,2));
+console.log(JSON.stringify({failures:report.failures,motion:report.motion,immersive:report.immersive,navigation:report.navigation,hover:report.hover,viewports:report.viewports.map(x=>({width:x.width,gutter:x.gutter,sections:x.sections,scrolled:x.scrolled})),errors:report.errors.length},null,2));
 if(report.failures.length) process.exitCode=1;

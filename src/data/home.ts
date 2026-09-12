@@ -1,14 +1,24 @@
-import { siteConfig } from "@/config/site";
-
-export const homeContent = {
+﻿export const homeContent = {
   hero: {
-    eyebrow: "Kırmızı et üretimi ve tedariki",
-    title: "Kaynağından",
-    secondLine: "başlayan özen.",
-    description: "Çiftlikten et işlemeye uzanan birikimimizle, büyükbaş ve küçükbaş et ürünlerini bir araya getiriyoruz.",
+    eyebrow: "Et ürünleri ve kurumsal tedarik",
+    title: "Et ürünleri.",
+    secondLine: "İşletmenize tedarik.",
+    description: "Büyükbaş ve küçükbaş et ürünlerimizi, işleme faaliyetlerimizi ve kurumsal tedarik hizmetimizi tanıyın.",
   },
-  story: { eyebrow: "Kurumsal", title: "Bir mesleğin birikimi.", description: siteConfig.company.introduction },
-  products: { eyebrow: "Ürünlerimiz", title: "Ürün ailesinden\nkesim detayına.", description: "Büyükbaş ve küçükbaş kesimlerinden karkas ürünlere uzanan ürün grupları." },
-  facilities: { eyebrow: "Tesislerimiz", title: "Yetiştirmeden\nişleme faaliyetlerine.", description: siteConfig.company.farms },
-  quality: { eyebrow: "Kalite yaklaşımımız", title: "Sürecin her aşamasına\nbütüncül bakış.", description: "Yerli besi, üretimde hijyen ve soğuk tedarik zinciri, çalışma yaklaşımımızın temel başlıklarıdır." },
+  products: {
+    title: "İşletmenize uygun et ürünleri",
+    description: "Büyükbaş ve küçükbaş karkas etlerden parçalanmış etlere ve sakatat çeşitlerine kadar ürün gruplarımızı keşfedin. İşletmenizin ihtiyacına uygun ürünler için bizimle iletişime geçin.",
+  },
+  processing: {
+    title: "İşlemeden sevkiyata soğuk zincir",
+    description: "Et işleme tesisimizde parçalama, depolama ve sevkiyat süreçlerini birlikte yürütüyoruz. Ürünlerimizi soğuk zinciri koruyan frigorifik araçlarla sevk ediyoruz.",
+  },
+  production: {
+    title: "Yerli besi. Özenli üretim.",
+    description: "Hayvanlarımızın beslenmesinde kendi kontrolümüzde üretilen yerli ham maddeleri kullanıyor, et ürünlerimizi hijyen koşullarını gözeterek hazırlıyoruz.",
+  },
+  contact: {
+    title: "Et tedariki için bizimle iletişime geçin",
+    description: "Ürün çeşitlerimiz ve işletmenize yönelik tedarik talepleriniz hakkında görüşmek için bize ulaşın.",
+  },
 } as const;
