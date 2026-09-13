@@ -34,4 +34,4 @@ export const media: Record<MediaKey, MediaAsset> = {
   danaCarcass: temporaryProduct("/media/dana-bonfile.webp"), sigirCarcass: temporaryProduct("/media/dana-antrikot.webp"), duveCarcass: temporaryProduct("/media/dana-bonfile.webp"), koyunCarcass: temporaryProduct("/media/kuzu-kusleme.webp"), kuzuCarcass: temporaryProduct("/media/kuzu-kusleme.webp"),
   danaCiger: temporaryProduct("/media/dana-antrikot.webp"), iskembe: temporaryProduct("/media/dana-bonfile.webp"), bobrek: temporaryProduct("/media/kuzu-kusleme.webp"), kuzuCiger: temporaryProduct("/media/kuzu-kusleme.webp"), dil: temporaryProduct("/media/dana-antrikot.webp"),
 };
-export const brandAssets: { logo: { src: string; alt: string } | null; favicon: string | null } = { logo: null, favicon: null };
+export const brandAssets: { logo: { src: string; alt: string } | null; favicon: string | null } = { logo: { src: "/media/et-sarrafi-logo.webp", alt: "Et Sarrafı" }, favicon: null };

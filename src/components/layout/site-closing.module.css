@@ -1,0 +1,76 @@
+.closing {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+
+.contact {
+  min-height: 46svh;
+  display: flex;
+  align-items: center;
+  padding-block: 64px;
+  color: #fff;
+  background-color: #312d30;
+  background-image: linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52)), url('/media/professional_food_photography_of_fresh_premium_raw_beef_cuts_ribeye_steak_and.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.contactInner {
+  width: calc(100% - 40px);
+  max-width: 1184px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.contactCopy { max-width: 680px; }
+.eyebrow { margin-bottom: 8px; color: #eadde2; font-size: 13px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.contactCopy h2 { font-size: clamp(30px, 3vw, 36px); font-weight: 600; line-height: 1.22; letter-spacing: -.02em; }
+.contactCopy > p:last-child { max-width: 600px; margin-top: 12px; color: rgb(255 255 255 / .83); line-height: 1.65; }
+.actions { flex: 0 0 auto; display: flex; flex-wrap: wrap; gap: 16px; }
+.actions a { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; border-radius: 10px; font-size: 16px; font-weight: 600; transition: background-color 200ms ease; }
+.lightButton { color: #40343a; background: #fff; }
+.lightButton:hover { background: rgb(255 255 255 / .86); }
+.outlineButton { color: #fff; background: rgb(255 255 255 / .08); border: 1px solid rgb(255 255 255 / .3); }
+.outlineButton:hover { background: rgb(255 255 255 / .18); }
+
+.closing :global(.site-footer) {
+  min-height: calc(54svh - var(--header-height));
+  display: flex;
+  align-items: center;
+  color: #202324;
+  border-color: #dde0e1;
+  background: #fff;
+}
+
+.closing :global(.site-footer > .site-container) {
+  width: calc(100% - 40px);
+  max-width: 1184px;
+  flex: 0 0 auto;
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+.closing :global(.footer-bottom) { color: #606668; border-color: #dde0e1; }
+.closing :global(.footer-main address p),
+.closing :global(.site-footer .text-ink-muted) { color: #606668; }
+
+@media (max-width: 63.99rem) {
+  .contactInner { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 47.99rem) {
+  .contact { min-height: 0; background-attachment: scroll; }
+  .actions { width: 100%; }
+  .actions a { width: 100%; min-height: 50px; padding-inline: 18px; font-size: 14px; }
+  .closing :global(.site-footer) { min-height: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .actions a { transition: none; }
+}

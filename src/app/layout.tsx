@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import localFont from "next/font/local";
 
-import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SiteClosing } from "@/components/layout/SiteClosing";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { siteConfig } from "@/config/site";
@@ -11,8 +11,12 @@ import { serializeJsonLd } from "@/lib/json-ld";
 
 import "./globals.css";
 
-const onest = localFont({
-  src: "./fonts/Onest-Variable.ttf",
+const plusJakartaSans = localFont({
+  src: [
+    { path: "./fonts/PlusJakartaSans-Regular.ttf", weight: "400" },
+    { path: "./fonts/PlusJakartaSans-SemiBold.ttf", weight: "600" },
+    { path: "./fonts/PlusJakartaSans-Bold.ttf", weight: "700" },
+  ],
   variable: "--font-onest",
   weight: "100 900",
   display: "swap",
@@ -63,7 +67,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang={siteConfig.language}>
-      <body className={`${onest.variable} min-h-dvh bg-canvas text-ink antialiased`}>
+      <body className={`${plusJakartaSans.variable} min-h-dvh bg-canvas text-ink antialiased`}>
         <a
           className="skip-link"
           href="#ana-icerik"
@@ -76,7 +80,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <main className="flex-1" id="ana-icerik" tabIndex={-1}>
             {children}
           </main>
-          <SiteFooter />
+          <SiteClosing />
         </div>
         {siteConfig.indexable && <script
           dangerouslySetInnerHTML={{

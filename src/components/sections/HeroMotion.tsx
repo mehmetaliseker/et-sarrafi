@@ -56,12 +56,47 @@ export function HeroZoom() {
   return null;
 }
 
+export function StitchHeroMotion() {
+  useEffect(() => {
+    const hero = document.querySelector<HTMLElement>(".stitch-hero");
+    if (!hero) return;
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      if (preference.matches) {
+        hero.style.setProperty("--stitch-hero-scale", "1");
+        hero.style.setProperty("--stitch-hero-tilt", "0deg");
+        hero.style.setProperty("--stitch-hero-lift", "0%");
+        return;
+      }
+      const progress = Math.min(1, Math.max(0, window.scrollY / (window.innerHeight * .82)));
+      const startScale = window.innerWidth < 768 ? 1.1 : 1.13;
+      hero.style.setProperty("--stitch-hero-scale", (startScale - (startScale - 1.015) * progress).toFixed(4));
+      hero.style.setProperty("--stitch-hero-tilt", `${(2.1 * progress).toFixed(3)}deg`);
+      hero.style.setProperty("--stitch-hero-lift", `${(-1.4 * progress).toFixed(3)}%`);
+    };
+    const schedule = () => { if (!frame) frame = window.requestAnimationFrame(update); };
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    preference.addEventListener("change", schedule);
+    return () => {
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      preference.removeEventListener("change", schedule);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, []);
+  return null;
+}
+
 export function HeroScrollCue() {
   const { ref, active, reducedMotion } = useHeroActivity();
   return <div ref={ref} className={`hero-scroll-wrap${active ? " is-active" : ""}`}>
-    <a aria-label="İçeriğe geç" className="hero-scroll-cue" href="#home-products-section" onClick={event => {
+    <a aria-label="İçeriğe geç" className="hero-scroll-cue" href="#urunler" onClick={event => {
       event.preventDefault();
-      document.querySelector("#home-products-section")?.scrollIntoView({ behavior: reducedMotion ? "instant" : "smooth" });
+      document.querySelector("#urunler, #home-products-section")?.scrollIntoView({ behavior: reducedMotion ? "instant" : "smooth" });
     }}><span aria-hidden="true" /></a>
   </div>;
 }

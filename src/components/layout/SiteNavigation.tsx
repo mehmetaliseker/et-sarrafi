@@ -43,7 +43,8 @@ export function SiteNavigation() {
   }, [closeMenu, unlock]);
   useEffect(() => { closeMenu(); }, [pathname, closeMenu]);
   return <>
-    <nav aria-label="Ana navigasyon" className="desktop-nav"><ul>{navigationItems.map(item => <li key={item.href}><Link aria-current={active(item.href) ? "page" : undefined} href={item.href}>{item.label}</Link></li>)}</ul></nav>
+    <nav aria-label="Ana navigasyon" className="desktop-nav"><ul><li><Link aria-current={pathname === "/" ? "page" : undefined} href="/">Ana Sayfa</Link></li>{navigationItems.filter(item => item.href !== "/iletisim").map(item => <li key={item.href}><Link aria-current={active(item.href) ? "page" : undefined} href={item.href}>{item.label}</Link></li>)}</ul></nav>
+    <Link className="header-contact" href="/iletisim">İletişim</Link>
     <div className="mobile-nav">
       <button aria-controls="mobile-navigation" aria-expanded={isOpen} aria-haspopup="dialog" aria-label="Ana menüyü aç" className="menu-trigger" ref={buttonRef} type="button" onClick={openMenu}>Menü<span aria-hidden="true"><i /><i /></span></button>
       <dialog id="mobile-navigation" aria-labelledby="mobile-menu-title" className="menu-dialog" ref={dialogRef} onClose={handleClose} onCancel={event => { event.preventDefault(); closeMenu(); }} onKeyDown={handleKeys}>

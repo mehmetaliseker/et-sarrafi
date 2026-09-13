@@ -1,5 +1,13 @@
 # İçerik incelemesi — 12 Eylül 2026
 
+## Hakkımızda sayfası görselleri — 13 Eylül 2026
+
+`design-reference/about.html` ve `about-desktop.png` çalışma alanında bulunmadığından Stitch çıktısındaki üç gövde fotoğrafının kaynak URL'leri çıkarılamadı. `/hakkimizda` sayfasında `public/images/about/` altındaki mevcut yerel temsili karşılıklar kullanıldı: `processing-area.png`, `preparation-area.jpg` ve `meat-closeup.png`. Bunlar Et Sarrafı tesisinin doğrulanmış fotoğrafları değildir. Referans görseller sağlandığında merkezi `src/data/about.ts` tanımındaki yollar ve odak noktaları değiştirilebilir.
+
+## Stitch ana sayfa görselleri — 13 Eylül 2026
+
+`public/images/stitch/facility.jpg` ve `products.jpg`, Stitch çıktısındaki uzak bağlantılardan alınan üretilmiş/temsili görsellerdir. İşletmenin gerçek tesis veya ürün fotoğrafı olarak doğrulanmamıştır; onaylı marka fotoğrafları sağlandığında merkezi dosya yolları korunarak değiştirilebilir.
+
 Kaynak: [Et Sarrafı](https://www.etsarrafi.com/). Kaynak sitede görülen bilgiler, güncellik açısından işletmenin son onayının yerine geçmez. Siteden tasarım veya logo aktarılmadı. Kullanıcının 12 Eylül 2026 revizyonuyla mevcut `public/media` içindeki üç ürün fotoğrafı yeni arayüzde kullanılmaya başlandı; bunlar kurumsal/tesis fotoğrafı yerine sunulmadı.
 
 ## Kullanılan içerik

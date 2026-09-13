@@ -1,18 +1,82 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Container } from "@/components/ui/Container";
-import { Media } from "@/components/ui/Media";
-import { PageIntro } from "@/components/sections/PageIntro";
-import { ContactCta } from "@/components/sections/ContactCta";
-import { pages, editorial } from "@/data/pages";
-import { media } from "@/data/media";
-import { siteConfig } from "@/config/site";
+import type { CSSProperties } from "react";
+import { Reveal } from "@/components/ui/Reveal";
+import { aboutContent, aboutImages, type AboutImage } from "@/data/about";
 import { createPageMetadata } from "@/lib/metadata";
+import styles from "./about.module.css";
 
-const content = pages["/hakkimizda"];
-export const metadata = createPageMetadata({ title: content.metadataTitle, description: content.description, path: "/hakkimizda" });
+export const metadata = createPageMetadata({
+  title: "Hakkımızda",
+  description: aboutContent.intro.description,
+  path: "/hakkimizda",
+});
+
+function AboutPhoto({ image, className, sizes, eager = false }: {
+  image: AboutImage;
+  className: string;
+  sizes: string;
+  eager?: boolean;
+}) {
+  const style = {
+    "--about-ratio-desktop": image.desktopRatio,
+    "--about-ratio-mobile": image.mobileRatio,
+    "--about-position-desktop": image.desktopPosition,
+    "--about-position-mobile": image.mobilePosition,
+  } as CSSProperties;
+  return <div className={`${styles.photo} ${className}`} style={style}>
+    <Image src={image.src} alt={image.alt} fill sizes={sizes} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} />
+  </div>;
+}
+
 export default function AboutPage() {
-  return <><PageIntro {...content} /><Container><div className="about-visual"><Media asset={media.about} className="about-image" sizes="(min-width: 1024px) 65vw, 100vw" eager /><div className="about-caption"><Media asset={media.aboutDetail} sizes="(min-width: 768px) 22vw, 40vw" /><p>{siteConfig.corporateLine}</p></div></div>
-    <section className="about-story section-space" aria-labelledby="about-story-title"><h2 className="section-title" id="about-story-title">{editorial.about.title}</h2><div className="editorial-copy">{editorial.about.paragraphs.map(text => <p key={text}>{text}</p>)}</div></section>
-    <section className="about-operations section-space" aria-labelledby="operations-title"><p className="eyebrow">Kurumsal</p><h2 id="operations-title" className="section-title">{editorial.about.operationsTitle}</h2><div className="operation-list">{editorial.about.operations.map(operation => <div key={operation.title}><h3>{operation.title}</h3><p>{operation.text}</p><Link className="text-link" href={operation.href} aria-label={`${operation.title} hakkında bilgi`}>İnceleyin</Link></div>)}</div></section>
-  </Container><ContactCta /></>;
+  const content = aboutContent;
+  return <article className={styles.page}>
+      <div className={styles.container}>
+        <section className={styles.intro} aria-labelledby="about-title">
+          <Link className={`${styles.eyebrow} ${styles.breadcrumb}`} href="/"><span className={styles.dot} aria-hidden="true" />{content.intro.eyebrow}</Link>
+          <div className={styles.introGrid}>
+            <h1 id="about-title">{content.intro.title}</h1>
+            <p>{content.intro.description}</p>
+          </div>
+          <AboutPhoto image={aboutImages.hero} className={styles.heroPhoto} sizes="(min-width: 1224px) 1184px, calc(100vw - 40px)" eager />
+        </section>
+
+        <section className={styles.overview} aria-labelledby="about-overview-title">
+          <Reveal className={styles.overviewHeading}>
+            <p className={styles.eyebrow}>{content.overview.eyebrow}</p>
+            <h2 id="about-overview-title">{content.overview.title}</h2>
+          </Reveal>
+          <div className={styles.overviewCopy}>
+            {content.overview.paragraphs.map((paragraph, index) =>
+              <Reveal key={paragraph} className={index === 0 ? styles.leadParagraph : styles.paragraph}><p>{paragraph}</p></Reveal>
+            )}
+          </div>
+        </section>
+
+        <section className={styles.approach} aria-labelledby="about-approach-title">
+          <Reveal className={styles.approachHeading}>
+            <p className={styles.eyebrow}>{content.approach.eyebrow}</p>
+            <h2 id="about-approach-title">{content.approach.title}</h2>
+          </Reveal>
+          <div className={styles.approachRows}>
+            {content.approach.items.map(item => <Reveal className={styles.approachRow} key={item.number}>
+              <div className={styles.approachName}><span aria-hidden="true">{item.number}</span><h3>{item.title}</h3></div>
+              <p>{item.description}</p>
+            </Reveal>)}
+          </div>
+        </section>
+
+        <section className={styles.photoPair} aria-label="Üretim ve ürün görselleri">
+          <div className={styles.photoGrid}>
+            <Reveal><AboutPhoto image={aboutImages.facility} className={styles.pairPhoto} sizes="(min-width: 800px) 57vw, calc(100vw - 40px)" /></Reveal>
+            <Reveal><AboutPhoto image={aboutImages.meat} className={styles.pairPhoto} sizes="(min-width: 800px) 40vw, calc(100vw - 40px)" /></Reveal>
+          </div>
+          <Reveal className={styles.photoFoot}>
+            <p>{content.photoCaption}</p>
+            <Link href="/tesislerimiz">{content.photoLink}<span aria-hidden="true">→</span></Link>
+          </Reveal>
+        </section>
+      </div>
+    </article>;
 }

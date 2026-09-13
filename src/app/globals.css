@@ -290,6 +290,31 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   .hero-actions { gap: 8px 16px; }
   .hero-actions .link-button { font-size: 12px; padding-inline: 15px; }
 }
+
+/* Centered navigation and the deliberately overhanging brand mark. */
+:root { --header-height: 68px; }
+.header-inner { position: relative; max-width: 1280px; padding-inline: clamp(20px, 3.4vw, 48px); }
+.brand { position: relative; z-index: 2; width: 156px; height: var(--header-height); overflow: visible; }
+.brand-icon { position: absolute; top: 10px; left: 0; width: 156px; height: 114px; filter: drop-shadow(0 5px 7px rgb(19 27 46 / .12)); }
+.header-contact { display: none; min-height: 44px; align-items: center; justify-content: center; padding: 10px 25px; border: 1px solid transparent; border-radius: 9px; color: #fff; background: #881337; font-size: 13px; font-weight: 600; }
+.header-contact:hover { background: #640023; }
+.header-home.header-top .header-contact { border-color: rgb(255 255 255 / .55); background: rgb(255 255 255 / .08); }
+.header-home.header-top .header-contact:hover { background: rgb(255 255 255 / .17); }
+@media (min-width: 64rem) {
+  :root { --header-height: 72px; }
+  .header-contact { display: inline-flex; }
+  .desktop-nav { position: absolute; left: 50%; translate: -50% 0; }
+  .desktop-nav ul { flex-wrap: nowrap; }
+  .desktop-nav a { white-space: nowrap; color: #574144; font-size: 13px; }
+  .desktop-nav li:last-child a { margin-left: 0; padding-inline: 12px; border: 0; }
+  .header-home.header-top .desktop-nav li:last-child a { border: 0; color: inherit; }
+  .header-home.header-top .desktop-nav a:hover { color: #fff; }
+}
+@media (max-width: 63.99rem) {
+  .brand { width: 124px; }
+  .brand-icon { width: 124px; height: 92px; top: 8px; }
+  .mobile-nav { display: block; margin-left: auto; }
+}
 @media (max-height: 540px) and (min-width: 48rem) {
   .hero-content { padding-top: calc(var(--header-height) + 6px); padding-bottom: 24px; }
   .hero-copy { display: grid; grid-template-columns: 1.05fr 1fr; gap: 8px 28px; max-width: none; }

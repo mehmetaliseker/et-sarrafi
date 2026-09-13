@@ -1,0 +1,207 @@
+[
+  {
+    "width": 1440,
+    "scrollWidth": 1425,
+    "headerBottom": 73,
+    "contentTop": 168.5,
+    "active": [
+      "/hakkimizda"
+    ],
+    "headingCount": 1,
+    "images": [
+      {
+        "alt": "Et işleme alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 1184,
+        "height": 661
+      },
+      {
+        "alt": "Et hazırlama ve depolama alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 507,
+        "height": 283
+      },
+      {
+        "alt": "Kesilmiş çiğ et ürünlerinin yakın görünümü",
+        "loaded": true,
+        "width": 576,
+        "height": 430
+      }
+    ],
+    "heroHeight": 507.421875,
+    "pairHeights": [
+      390,
+      390
+    ],
+    "ctaPresent": true,
+    "footerPresent": true,
+    "link": [
+      "/",
+      "/tesislerimiz"
+    ],
+    "breadcrumbSize": "11px",
+    "closingTitleCount": 1,
+    "reveal": {
+      "enteringOpacity": 1,
+      "reverseOpacity": 0
+    }
+  },
+  {
+    "width": 768,
+    "scrollWidth": 753,
+    "headerBottom": 69,
+    "contentTop": 168.5,
+    "active": [
+      "/hakkimizda"
+    ],
+    "headingCount": 1,
+    "images": [
+      {
+        "alt": "Et işleme alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 728,
+        "height": 406
+      },
+      {
+        "alt": "Et hazırlama ve depolama alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 496,
+        "height": 277
+      },
+      {
+        "alt": "Kesilmiş çiğ et ürünlerinin yakın görünümü",
+        "loaded": true,
+        "width": 728,
+        "height": 543
+      }
+    ],
+    "heroHeight": 305.5625,
+    "pairHeights": [
+      340,
+      340
+    ],
+    "ctaPresent": true,
+    "footerPresent": true,
+    "link": [
+      "/",
+      "/tesislerimiz"
+    ],
+    "breadcrumbSize": "11px",
+    "closingTitleCount": 1,
+    "reveal": {
+      "enteringOpacity": 1,
+      "reverseOpacity": 0
+    }
+  },
+  {
+    "width": 390,
+    "scrollWidth": 390,
+    "headerBottom": 69,
+    "contentTop": 219.296875,
+    "active": [
+      "/hakkimizda"
+    ],
+    "headingCount": 1,
+    "images": [
+      {
+        "alt": "Et işleme alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 350,
+        "height": 195
+      },
+      {
+        "alt": "Et hazırlama ve depolama alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 350,
+        "height": 195
+      },
+      {
+        "alt": "Kesilmiş çiğ et ürünlerinin yakın görünümü",
+        "loaded": true,
+        "width": 350,
+        "height": 261
+      }
+    ],
+    "heroHeight": 262.5,
+    "pairHeights": [
+      262.5,
+      262.5
+    ],
+    "ctaPresent": true,
+    "footerPresent": true,
+    "link": [
+      "/",
+      "/tesislerimiz"
+    ],
+    "breadcrumbSize": "11px",
+    "closingTitleCount": 1,
+    "reveal": {
+      "enteringOpacity": 1,
+      "reverseOpacity": 0
+    }
+  },
+  {
+    "width": 320,
+    "scrollWidth": 320,
+    "headerBottom": 69,
+    "contentTop": 219.296875,
+    "active": [
+      "/hakkimizda"
+    ],
+    "headingCount": 1,
+    "images": [
+      {
+        "alt": "Et işleme alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 280,
+        "height": 156
+      },
+      {
+        "alt": "Et hazırlama ve depolama alanını gösteren temsili görsel",
+        "loaded": true,
+        "width": 280,
+        "height": 156
+      },
+      {
+        "alt": "Kesilmiş çiğ et ürünlerinin yakın görünümü",
+        "loaded": true,
+        "width": 280,
+        "height": 209
+      }
+    ],
+    "heroHeight": 210,
+    "pairHeights": [
+      210,
+      210
+    ],
+    "ctaPresent": true,
+    "footerPresent": true,
+    "link": [
+      "/",
+      "/tesislerimiz"
+    ],
+    "breadcrumbSize": "11px",
+    "closingTitleCount": 1,
+    "reveal": {
+      "enteringOpacity": 1,
+      "reverseOpacity": 0
+    }
+  },
+  {
+    "menuOpen": {
+      "open": true,
+      "locked": true,
+      "fits": true
+    },
+    "menuClosed": {
+      "open": false,
+      "locked": false
+    }
+  },
+  {
+    "reducedMotionOpacity": "1"
+  },
+  {
+    "homepageFooterColor": "rgb(255, 255, 255)"
+  }
+]

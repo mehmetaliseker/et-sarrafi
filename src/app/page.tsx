@@ -1,39 +1,64 @@
-﻿import { Container } from "@/components/ui/Container";
-import { LinkButton } from "@/components/ui/LinkButton";
-import { Media } from "@/components/ui/Media";
+import Image from "next/image";
+import Link from "next/link";
+import { HeroScrollCue, StitchHeroMotion } from "@/components/sections/HeroMotion";
+import { RotatingHeroLabel } from "@/components/sections/RotatingHeroLabel";
+import { StitchPhotoZoom } from "@/components/sections/StitchPhotoZoom";
 import { Reveal } from "@/components/ui/Reveal";
-import { Arrow } from "@/components/ui/Arrow";
-import { ContactCta } from "@/components/sections/ContactCta";
-import { FocusZoomMedia } from "@/components/sections/FocusZoomMedia";
-import { Hero } from "@/components/sections/Hero";
 import { siteConfig } from "@/config/site";
-import { homeContent as content } from "@/data/home";
-import { media } from "@/data/media";
+import { homeContent } from "@/data/home";
 import { createPageMetadata } from "@/lib/metadata";
+import "./stitch-home.css";
 
 export const metadata = createPageMetadata({ title: "Kurumsal", description: siteConfig.description, path: "/" });
 
+const photo = { hero: "/media/dana-bonfile.webp", facility: "/media/cc996b29b9e27b0778943f7f2cc17267edb88964.jpg", products: "/images/stitch/products.jpg", quality: "/media/high_quality_corporate_photography_of_a_modern_pristine_hygienic_meat.png" } as const;
+const featureItems = [
+  { title: "Büyükbaş ve küçükbaş ürünler", description: "Karkas, parça et ve sakatat çeşitlerimizi inceleyin." },
+  { title: "İşleme ve depolama", description: "Et işleme tesisimizde yürüttüğümüz faaliyetleri tanıyın." },
+  { title: "Soğuk zincirle sevkiyat", description: "Ürünlerimizi frigorifik araçlarla sevk ediyoruz." },
+] as const;
+const qualityItems = [
+  { title: "Yerli besi", description: "Hayvanlarımızın beslenmesinde kendi kontrolümüzde üretilen yerli ham maddeleri kullanıyoruz." },
+  { title: "Hijyen yaklaşımı", description: "Et ürünlerimizi hijyen koşullarını gözeterek hazırlıyoruz." },
+] as const;
+const categories = [
+  { title: "Büyükbaş ürünleri", description: "Dana bonfile, antrikot, nuar ve döş gibi büyükbaş et kesimleri.", href: "/urunler#buyukbas", image: photo.products },
+  { title: "Küçükbaş ürünleri", description: "Kuzu küşleme ve kuzu kafes gibi küçükbaş et kesimleri.", href: "/urunler#kucukbas", image: photo.products },
+  { title: "Karkas et ürünleri", description: "Dana, sığır, düve, koyun ve kuzu karkas ürünleri.", href: "/urunler#karkas-et", image: photo.facility },
+  { title: "Sakatat", description: "Büyükbaş ve küçükbaş sakatat çeşitleri.", href: "/urunler#sakatat", image: photo.facility },
+] as const;
+
 export default function HomePage() {
-  return <>
-    <Hero />
-    <div className="home-surface">
-      <section aria-labelledby="home-products" className="home-split-section" id="home-products-section">
-        <Container className="home-split-grid">
-          <Reveal className="home-split-copy"><p className="eyebrow">Ürünlerimiz</p><h2 className="section-title" id="home-products">{content.products.title}</h2><p>{content.products.description}</p><LinkButton href="/urunler">Ürünleri İncele<Arrow /></LinkButton></Reveal>
-          <Media asset={media.beef} className="home-split-image" sizes="(min-width: 768px) 52vw, 100vw" />
-        </Container>
-      </section>
-      <section aria-labelledby="home-processing" className="home-split-section">
-        <Container className="home-split-grid home-split-grid-reverse">
-          <Media asset={media.processing} className="home-split-image" sizes="(min-width: 768px) 52vw, 100vw" />
-          <Reveal className="home-split-copy"><p className="eyebrow">İşleme ve sevkiyat</p><h2 className="section-title" id="home-processing">{content.processing.title}</h2><p>{content.processing.description}</p></Reveal>
-        </Container>
-      </section>
-      <section aria-labelledby="home-production" className="home-immersive-section">
-        <FocusZoomMedia />
-        <Container className="home-immersive-content"><Reveal className="home-immersive-copy"><p className="eyebrow">Üretim yaklaşımımız</p><h2 className="section-title" id="home-production">{content.production.title}</h2><p>{content.production.description}</p></Reveal></Container>
-      </section>
-      <ContactCta animated className="home-closing" title={content.contact.title} description={content.contact.description} />
-    </div>
-  </>;
+  return <div className="stitch-home">
+    <section className="stitch-hero home-hero" aria-labelledby="hero-title">
+      <StitchHeroMotion />
+      <div className="stitch-hero-photo" aria-hidden="true"><Image src={photo.hero} alt="" fill sizes="100vw" loading="eager" fetchPriority="high" /></div>
+      <div className="stitch-hero-shade" aria-hidden="true" />
+      <div className="stitch-container stitch-hero-inner"><div className="stitch-hero-copy">
+        <RotatingHeroLabel />
+        <h1 id="hero-title">Et Ürünleri ve Kurumsal Tedarik</h1><p>{homeContent.hero.description}</p>
+        <div className="stitch-hero-actions"><Link className="stitch-button stitch-button-primary" href="/urunler">Ürünlerimizi İnceleyin <span className="stitch-button-arrow" aria-hidden="true">→</span></Link><Link className="stitch-button stitch-button-glass" href="/tesislerimiz">Tesis ve Altyapı</Link></div>
+      </div></div><HeroScrollCue />
+    </section>
+
+    <section className="stitch-section stitch-products" id="urunler" aria-labelledby="stitch-products-title"><div className="stitch-container stitch-split">
+      <Reveal className="stitch-copy"><p className="stitch-eyebrow">Ürün Yaklaşımımız</p><h2 id="stitch-products-title">{homeContent.products.title}</h2><p className="stitch-description">{homeContent.products.description}</p>
+        <div className="stitch-feature-list">{featureItems.map(item => <div className="stitch-feature" key={item.title}><span className="stitch-feature-mark" aria-hidden="true" /><div><h3>{item.title}</h3><p>{item.description}</p></div></div>)}</div>
+        <Link className="stitch-text-link" href="/urunler">Tüm Ürün Gruplarını Gör <span aria-hidden="true">→</span></Link>
+      </Reveal><Reveal className="stitch-image-frame"><Image src={photo.products} alt="Et kesimleri, temsili görsel" fill sizes="(min-width: 1024px) 48vw, 100vw" /></Reveal>
+    </div></section>
+
+    <section className="stitch-section stitch-quality" aria-labelledby="stitch-quality-title"><div className="stitch-container stitch-split stitch-split-reverse">
+      <Reveal className="stitch-image-frame"><Image src={photo.quality} alt="Et işleme alanı, temsili görsel" fill sizes="(min-width: 1024px) 48vw, 100vw" /></Reveal>
+      <Reveal className="stitch-copy"><p className="stitch-eyebrow">Üretim &amp; Kalite</p><h2 id="stitch-quality-title">{homeContent.processing.title}</h2><p className="stitch-description">{homeContent.processing.description}</p><div className="stitch-quality-cards">{qualityItems.map(item => <div className="stitch-quality-card" key={item.title}><span className="stitch-quality-mark" aria-hidden="true" /><h3>{item.title}</h3><p>{item.description}</p></div>)}</div></Reveal>
+    </div></section>
+
+    <section className="stitch-wide-photo" id="tesis" aria-labelledby="stitch-facility-title"><StitchPhotoZoom src={photo.facility} /><div className="stitch-container stitch-wide-inner"><Reveal className="stitch-wide-card"><p className="stitch-eyebrow">Üretim Altyapımız</p><h2 id="stitch-facility-title">Tesislerimizi ve Çalışma Yaklaşımımızı Keşfedin</h2><p>{siteConfig.company.operations}</p><Link className="stitch-text-link" href="/tesislerimiz">Tesislerimizi İnceleyin <span aria-hidden="true">→</span></Link></Reveal></div></section>
+
+    <section className="stitch-section stitch-categories" id="kategoriler" aria-labelledby="stitch-categories-title"><div className="stitch-container">
+      <Reveal className="stitch-category-heading"><div><p className="stitch-eyebrow">Kurumsal Portföy</p><h2 id="stitch-categories-title">Kurumsal Ürün Kategorilerimiz</h2></div><p>Ürün gruplarımızı keşfedin; işletmenizin ihtiyacına uygun seçenekler için bizimle iletişime geçin.</p></Reveal>
+      <Reveal className="stitch-category-grid">{categories.map(item => <article className="stitch-category-card" key={item.title}><Link href={item.href} aria-label={`${item.title} kategorisini inceleyin`}><div className="stitch-category-image"><Image src={item.image} alt="" fill sizes="(min-width: 1024px) 23vw, (min-width: 600px) 46vw, 100vw" /></div><div className="stitch-category-content"><h3>{item.title}</h3><p>{item.description}</p><span className="stitch-category-link">Ürünleri inceleyin <span aria-hidden="true">→</span></span></div></Link></article>)}</Reveal><p className="stitch-image-note">Bu bölümdeki görseller temsilidir.</p>
+    </div></section>
+
+  </div>;
 }
