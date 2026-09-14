@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { Reveal } from "@/components/ui/Reveal";
+import { QualityPrinciples } from "@/components/sections/QualityPrinciples";
 import { qualityContent } from "@/data/policy";
 import { createPageMetadata } from "@/lib/metadata";
 import styles from "./quality.module.css";
@@ -29,10 +29,7 @@ export default function QualityPage() {
 
       <section className={styles.principles} aria-label="Kalite yaklaşımımızın temel başlıkları">
         <h2 className={styles.visuallyHidden}>Kalite ilkelerimiz</h2>
-        {qualityContent.principles.map(principle => <Reveal className={styles.principle} bottomViewportFraction={0.4} waitForScroll key={principle.number}>
-          <div className={styles.principleHeading}><span>{principle.number}</span><h3>{principle.title}</h3></div>
-          <p>{principle.description}</p>
-        </Reveal>)}
+        <QualityPrinciples />
         <Link className={styles.policyLink} href="/politikalarimiz">Tüm Politikaları Görüntüle <span aria-hidden="true">→</span></Link>
       </section>
     </div>

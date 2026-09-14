@@ -54,7 +54,7 @@ export const policyContent = {
       "Bizimle telefon ya da e-posta yoluyla iletişim kurmayı seçerseniz paylaştığınız bilgiler iletişimin niteliğine göre değerlendirilebilir. Bu sayfa, veri işleme amaçları, hukuki sebepleri, alıcıları ve saklama süreleri kesinleştirilmiş bir KVKK aydınlatma metni değildir.",
     ] },
     { title: "Üçüncü taraf bağlantıları", paragraphs: [
-      "Sitedeki harita araması ve diğer dış bağlantılar ayrı web sitelerine yönlendirebilir. Bu sitelerin içerikleri ve gizlilik uygulamaları kendi kurallarına tabidir; bağlantıyı açmadan önce ilgili sitenin açıklamalarını inceleyebilirsiniz.",
+      "İletişim sayfasındaki Google Maps haritası sayfa içinde yüklenir; yol tarifi ve diğer dış bağlantılar ayrı web sitelerine yönlendirebilir. Bu hizmetlerin içerikleri ve gizlilik uygulamaları kendi kurallarına tabidir.",
     ] },
     { title: "E-posta güvenliği", paragraphs: [
       "E-posta iletinizin içeriğini göndermeden önce gözden geçirin; şifre veya ödeme kartı bilgisi gibi hassas bilgileri e-postaya yazmayın. E-posta iletiminin mutlak gizliliği garanti edilemez.",
@@ -64,7 +64,7 @@ export const policyContent = {
     ] },
   ] as const,
   cookies: [
-    "Bu kurumsal sitede üyelik, sepet, reklam veya analitik amaçlı bir çerez altyapısı kurulmamıştır. Harita bağlantısı gibi dış siteler açıldığında, ilgili hizmetlerin kendi çerez ve gizlilik kuralları geçerli olabilir.",
+    "Bu kurumsal sitede üyelik, sepet, reklam veya analitik amaçlı bir çerez altyapısı kurulmamıştır. İletişim sayfasındaki Google Maps haritası yüklendiğinde veya dış bağlantılar açıldığında, ilgili hizmetlerin kendi çerez ve gizlilik kuralları geçerli olabilir.",
     "Tarayıcı ayarlarınızdan çerezleri görüntüleyebilir veya yönetebilirsiniz. Web erişimine ilişkin teknik kayıtlar ve bunların işlenme koşulları, yalnızca bu sitede bir çerez arayüzü bulunmamasından çıkarılamaz.",
   ] as const,
 } as const;

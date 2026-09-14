@@ -5,6 +5,7 @@ const streetAddress = "7401 Sokak No:78/A";
 const district = "Karşıyaka";
 const city = "İzmir";
 const addressDisplay = `${streetAddress}, ${district}/${city}`;
+const encodedAddress = encodeURIComponent(addressDisplay);
 
 const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 const siteUrl = new URL(configuredSiteUrl || defaultSiteUrl);
@@ -50,6 +51,8 @@ export const siteConfig = {
       mapUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
         addressDisplay,
       )}`,
+      directionsUrl: `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`,
+      embedUrl: `https://maps.google.com/maps?hl=tr&q=${encodedAddress}&z=16&output=embed`,
     },
   },
 } as const;

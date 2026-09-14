@@ -61,22 +61,29 @@ try {
   await client.viewport(1440, 900);
   await inspect('/kalite');
   const initialReveal = await client.evaluate(`(() => {
-    const rows = [...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div')];
+    const rows = [...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div > div')];
     return { firstTop: rows[0].getBoundingClientRect().top, opacities: rows.map(row => getComputedStyle(row).opacity), lineLeft: getComputedStyle(document.querySelector('.desktop-nav a[href="/kalite"]'), '::after').left };
   })()`);
   assert.deepEqual(initialReveal.opacities, ['0', '0', '0'], 'quality rows appeared before scroll');
   assert.equal(initialReveal.lineLeft, '4px', 'quality navbar underline was not widened');
-  await client.evaluate(`window.scrollTo({ top: ${Math.round(initialReveal.firstTop - 900 * .6 + 20)}, behavior: 'instant' })`);
+  await client.evaluate(`window.scrollTo({ top: ${Math.round(initialReveal.firstTop - 900 * .6 + 80)}, behavior: 'instant' })`);
   await delay(650);
-  const partialReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div')].map(row => getComputedStyle(row).opacity))`);
+  const partialReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div > div')].map(row => getComputedStyle(row).opacity))`);
   assert.equal(partialReveal[0], '1', 'first quality row did not reveal');
   assert.equal(partialReveal[1], '0', 'second quality row revealed too early');
+  await delay(650);
+  const secondReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div > div')].map(row => getComputedStyle(row).opacity))`);
+  assert.equal(secondReveal[1], '1', 'second quality row did not reveal after 750ms');
+  assert.equal(secondReveal[2], '0', 'third quality row revealed too early');
+  await delay(750);
+  const thirdReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div > div')].map(row => getComputedStyle(row).opacity))`);
+  assert.equal(thirdReveal[2], '1', 'third quality row did not reveal after next 750ms');
   await client.evaluate(`window.scrollTo({ top: 0, behavior: 'instant' })`);
   await delay(650);
-  const reversedReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div')].map(row => getComputedStyle(row).opacity))`);
+  const reversedReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div > div')].map(row => getComputedStyle(row).opacity))`);
   assert.deepEqual(reversedReveal, ['0', '0', '0'], 'quality rows did not hide on reverse scroll');
   await client.send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });
-  const reducedReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div')].map(row => getComputedStyle(row).opacity))`);
+  const reducedReveal = await client.evaluate(`([...document.querySelectorAll('main section[aria-label="Kalite yaklaşımımızın temel başlıkları"] > div > div')].map(row => getComputedStyle(row).opacity))`);
   assert.deepEqual(reducedReveal, ['1', '1', '1'], 'quality rows hidden with reduced motion');
   await client.send('Emulation.setEmulatedMedia', { features: [] });
 
@@ -144,7 +151,7 @@ try {
   assert.equal(qualityLink.hash, '');
   assert.ok(qualityLink.scrollY < 20, 'quality link did not open policy page at top');
 
-  console.log(JSON.stringify({ checked: report.map(item => `${item.path}:${item.width}`), qualityReveal: { initialReveal, partialReveal, reversedReveal }, sticky, boundary, hashTarget: target, directHash: direct, backNavigation: true, qualityLink }, null, 2));
+  console.log(JSON.stringify({ checked: report.map(item => `${item.path}:${item.width}`), qualityReveal: { initialReveal, partialReveal, secondReveal, thirdReveal, reversedReveal }, sticky, boundary, hashTarget: target, directHash: direct, backNavigation: true, qualityLink }, null, 2));
 } finally {
   client.close();
 }

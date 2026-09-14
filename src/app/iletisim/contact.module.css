@@ -1,0 +1,31 @@
+.page { --ink: #131b2e; --copy: #515f74; --wine: #881337; background: #fff; color: var(--ink); font-family: var(--font-body); padding-block: calc(var(--header-height) + 48px) 40px; }
+.container { box-sizing: border-box; width: 100%; max-width: 1184px; margin-inline: auto; padding-inline: 24px; }
+.intro h1 { margin-top: 12px; font-size: 48px; font-weight: 700; line-height: 56px; letter-spacing: -.025em; }
+.intro > p { margin-top: 12px; color: var(--copy); font-size: 18px; line-height: 28px; }
+.layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px; align-items: start; margin-top: 32px; }
+.details { min-width: 0; }
+.details h2 { font-size: 24px; font-weight: 700; line-height: 32px; }
+.legalName { margin-top: 6px; color: var(--copy); font-size: 14px; line-height: 22px; }
+.channels { margin-top: 28px; }
+.channel { padding-block: 20px; border-top: 1px solid #eaedff; }
+.channel:last-child { border-bottom: 1px solid #eaedff; }
+.channelTitle { display: flex; align-items: center; gap: 10px; }
+.channelTitle svg { width: 17px; height: 17px; flex: 0 0 auto; fill: none; stroke: var(--wine); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.channelTitle h3 { color: var(--wine); font-size: 13px; font-weight: 600; line-height: 20px; }
+.channel > a, .channel address { display: block; width: fit-content; max-width: 100%; margin-top: 7px; color: var(--ink); font-size: 16px; font-style: normal; font-weight: 600; line-height: 26px; overflow-wrap: anywhere; }
+.channel > a:hover { color: var(--wine); }
+.channel > a:focus-visible, .directions:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }
+.directions { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; margin-top: 18px; color: var(--wine); font-size: 15px; font-weight: 600; text-decoration: none; }
+.directions:hover { color: #640023; }
+.directions span { transition: transform 200ms ease; }
+.directions:hover span { transform: translateX(4px); }
+.map { width: 100%; min-width: 0; height: 380px; overflow: hidden; border: 1px solid #e4e7ec; border-radius: 8px; background: #f2f3ff; }
+.map iframe { display: block; width: 100%; height: 100%; border: 0; }
+@media (max-width: 767px) {
+  .container { padding-inline: 20px; }
+  .intro h1 { font-size: 32px; line-height: 40px; }
+  .intro > p { font-size: 16px; line-height: 26px; }
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .map { height: 300px; }
+}
+@media (prefers-reduced-motion: reduce) { .directions span { transition: none; } .directions:hover span { transform: none; } }

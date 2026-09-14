@@ -1,5 +1,9 @@
 # İçerik incelemesi — 12 Eylül 2026
 
+## İletişim haritası — 14 Eylül 2026
+
+`/iletisim` sayfasındaki Google Maps iframe ve yol tarifi, [resmî iletişim sayfasında](https://www.etsarrafi.com/sayfa/iletisim) görülen ve `src/config/site.ts` içinde tutulan aynı 7401 Sokak No:78/A, Karşıyaka/İzmir adresini kullanır. Harita Google'ın adres aramasından oluşturulan gerçek embed görünümüdür; Et Sarrafı adına ayrı bir Google Place ID veya işletme profili pini doğrulanmadı. İşletme profili doğrulanırsa embed ve yol tarifi hedefi merkezi config'den birlikte güncellenmelidir. Harita harici Google hizmeti yüklediğinden gizlilik/çerez açıklaması buna göre güncellendi.
+
 ## Kalite ve politikalar sayfaları — 14 Eylül 2026
 
 `/politikalarimiz` içindeki 12 kalite ve helal politikası maddesi, [resmî politika sayfasındaki](https://www.etsarrafi.com/sayfa/politikalarimiz) sıra ve taahhütler korunarak dil açısından düzenlendi. ISO 22000:2018 ve OIC/SMIIC 1:2019 ifadeleri politika hedefi/taahhüdü olarak kullanıldı; geçerli sertifika veya bağımsız denetim kanıtı sayılmadı. Kullanılan ürün görseli temsili olup tesis fotoğrafı olarak sunulmaz.
