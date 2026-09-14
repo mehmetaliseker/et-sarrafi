@@ -52,7 +52,7 @@ export const siteConfig = {
         addressDisplay,
       )}`,
       directionsUrl: `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`,
-      embedUrl: `https://maps.google.com/maps?hl=tr&q=${encodedAddress}&z=16&output=embed`,
+      embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1313.1916020687754!2d27.113363617732023!3d38.48040527023036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd72cc71050d3%3A0xbf6315110603d7a1!2sEt%20Sarraf%C4%B1!5e0!3m2!1str!2str!4v1789375176351!5m2!1str!2str",
     },
   },
 } as const;

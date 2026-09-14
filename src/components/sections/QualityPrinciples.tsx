@@ -24,8 +24,8 @@ export function QualityPrinciples() {
       if (entry.isIntersecting && !active) {
         active = true;
         setVisibleCount(1);
-        secondTimer = window.setTimeout(() => setVisibleCount(2), 750);
-        thirdTimer = window.setTimeout(() => setVisibleCount(3), 1500);
+        secondTimer = window.setTimeout(() => setVisibleCount(2), 300);
+        thirdTimer = window.setTimeout(() => setVisibleCount(3), 600);
       } else if (!entry.isIntersecting && active) {
         active = false;
         clearSequence();

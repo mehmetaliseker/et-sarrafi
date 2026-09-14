@@ -478,6 +478,60 @@ body:has(.home-closing) .site-footer > .site-container { flex: 0 0 auto; }
   .desktop-nav a:hover { background: transparent; }
   .desktop-nav a:hover::after, .desktop-nav a[aria-current="page"]::after { transform: scaleX(1); }
   .desktop-nav a[aria-current="page"] { text-decoration: none; }
-  .desktop-nav li:last-child a::after { left: 20px; right: 20px; }
-  .desktop-nav li:last-child a[href="/kalite"]::after { left: 4px; right: 4px; }
+}
+
+/* Use the same text-width reveal on the footer navigation. The link itself is
+   intrinsic width, so the line follows its label instead of the grid column. */
+.site-footer nav a {
+  position: relative;
+  text-decoration: none;
+}
+.site-footer nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 260ms ease;
+}
+.site-footer nav a:hover,
+.site-footer nav a:focus-visible {
+  text-decoration: none;
+}
+.site-footer nav a:hover::after,
+.site-footer nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+.site-footer address a {
+  position: relative;
+  text-decoration: none;
+}
+.site-footer address a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 260ms ease;
+}
+.site-footer address a:hover,
+.site-footer address a:focus-visible {
+  text-decoration: none;
+}
+.site-footer address a:hover::after,
+.site-footer address a:focus-visible::after {
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .desktop-nav a::after,
+  .site-footer nav a::after,
+  .site-footer address a::after { transition-duration: 0ms; }
 }

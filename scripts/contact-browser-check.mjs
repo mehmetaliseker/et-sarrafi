@@ -22,8 +22,8 @@ async function inspect() {
       phone: main.querySelector('a[href^="tel:"]')?.getAttribute('href'),
       email: main.querySelector('a[href^="mailto:"]')?.getAttribute('href'),
       address, directionsTarget: directions.target, directionsRel: directions.rel,
-      mapHost: embedUrl.host, mapOutput: embedUrl.searchParams.get('output'),
-      mapQuery: embedUrl.searchParams.get('q'), destination: directionsUrl.searchParams.get('destination'),
+      mapHost: embedUrl.host, mapPath: embedUrl.pathname, hasMapPb: Boolean(embedUrl.searchParams.get('pb')),
+      destination: directionsUrl.searchParams.get('destination'),
       mapHeight: mapRect.height, mapWidth: mapRect.width, iframeTitle: map.title,
       footerCount: document.querySelectorAll('.site-footer').length,
       closingCount: document.querySelectorAll('section[aria-label="Ürün ve iletişim bilgileri"]').length,
@@ -50,9 +50,9 @@ try {
     assert.equal(state.email, 'mailto:siparis@etsarrafi.com');
     assert.equal(state.directionsTarget, '_blank');
     assert.ok(state.directionsRel.includes('noopener'));
-    assert.equal(state.mapHost, 'maps.google.com');
-    assert.equal(state.mapOutput, 'embed');
-    assert.equal(state.mapQuery, state.address);
+    assert.equal(state.mapHost, 'www.google.com');
+    assert.equal(state.mapPath, '/maps/embed');
+    assert.equal(state.hasMapPb, true);
     assert.equal(state.destination, state.address);
     assert.ok(state.iframeTitle.includes(state.address));
     assert.ok(Math.abs(state.mapHeight - (width < 768 ? 300 : 380)) <= 3);
