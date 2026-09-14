@@ -24,26 +24,6 @@
   text-transform: uppercase;
 }
 
-.dot {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  margin: 0 11px 2px 0;
-  border-radius: 50%;
-  background: #881337;
-}
-
-.breadcrumb {
-  width: fit-content;
-  display: inline-flex;
-  min-height: 44px;
-  align-items: center;
-  margin-block: -12px;
-  font-size: 11px;
-}
-
-.breadcrumb:hover { text-decoration: underline; text-underline-offset: 4px; }
-
 .introGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

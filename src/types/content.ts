@@ -5,6 +5,7 @@ export type SitePath =
   | "/tesislerimiz"
   | "/urunler"
   | "/kalite"
+  | "/politikalarimiz"
   | "/iletisim"
   | `/urunler/${string}`;
 

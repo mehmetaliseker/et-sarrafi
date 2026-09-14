@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { Reveal } from "@/components/ui/Reveal";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { aboutContent, aboutImages, type AboutImage } from "@/data/about";
 import { createPageMetadata } from "@/lib/metadata";
 import styles from "./about.module.css";
@@ -34,7 +35,7 @@ export default function AboutPage() {
   return <article className={styles.page}>
       <div className={styles.container}>
         <section className={styles.intro} aria-labelledby="about-title">
-          <Link className={`${styles.eyebrow} ${styles.breadcrumb}`} href="/"><span className={styles.dot} aria-hidden="true" />{content.intro.eyebrow}</Link>
+          <Breadcrumb items={[{ label: "Ana Sayfa", href: "/" }, { label: "Hakkımızda" }]} />
           <div className={styles.introGrid}>
             <h1 id="about-title">{content.intro.title}</h1>
             <p>{content.intro.description}</p>

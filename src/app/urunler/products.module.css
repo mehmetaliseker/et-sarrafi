@@ -1,0 +1,73 @@
+.page { --catalog-ink: #131b2e; --catalog-copy: #515f74; --catalog-wine: #881337; background: #fff; color: var(--catalog-ink); font-family: var(--font-body); padding-top: calc(var(--header-height) + 48px); }
+.container { width: 100%; max-width: 1184px; margin-inline: auto; padding-inline: 24px; box-sizing: border-box; }
+.intro { padding-bottom: 32px; }
+.intro h1 { margin-top: 12px; font-size: 48px; font-weight: 700; line-height: 56px; letter-spacing: -.025em; }
+.introDescription { max-width: 672px; margin-top: 12px; color: var(--catalog-copy); font-size: 18px; line-height: 28px; }
+.filterRegion { border-top: 1px solid #e4e7ec; padding-top: 24px; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 32px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filters button { min-height: 44px; padding-inline: 18px; border: 1px solid #d9dee7; border-radius: 4px; color: var(--catalog-ink); background: #fff; font-size: 14px; font-weight: 600; }
+.filters button[aria-pressed="true"] { color: #fff; border-color: var(--catalog-wine); background: var(--catalog-wine); }
+.search { width: 288px; min-height: 44px; display: flex; align-items: center; gap: 10px; padding-inline: 14px; border: 1px solid #d9dee7; border-radius: 4px; background: #fff; }
+.search:focus-within { outline: 2px solid var(--catalog-wine); outline-offset: 2px; }
+.search svg { width: 18px; height: 18px; flex: 0 0 auto; fill: none; stroke: #667085; stroke-width: 1.7; stroke-linecap: round; }
+.search input { width: 100%; min-width: 0; outline: 0; color: var(--catalog-ink); font-size: 14px; }
+.search input::placeholder { color: #7c8799; opacity: 1; }
+.catalogSurface { background: #faf8ff; padding-block: 40px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.cardSlot { min-width: 0; height: 100%; }
+.card { height: 100%; overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eaedff; border-radius: 4px; background: #fff; }
+.cardImage { position: relative; display: block; width: 100%; overflow: hidden; aspect-ratio: 4 / 3; border: 0; background: #f5f2f1; cursor: pointer; }
+.cardImage img { object-fit: cover; transition: transform 300ms ease; }
+.cardBody { flex: 1; display: flex; flex-direction: column; padding: 24px; }
+.category { color: var(--catalog-wine); font-size: 11px; font-weight: 600; line-height: 16px; letter-spacing: .08em; text-transform: uppercase; }
+.card h2 { margin-top: 4px; font-size: 24px; font-weight: 700; line-height: 32px; transition: color 200ms ease; }
+.summary { margin-top: 8px; color: var(--catalog-copy); font-size: 13px; line-height: 20px; }
+.cardBody button { width: 100%; min-height: 44px; display: flex; align-items: flex-end; gap: 8px; margin-top: auto; padding-top: 16px; border-top: 1px solid #eaedff; color: var(--catalog-wine); font-size: 13px; font-weight: 700; text-align: left; }
+.cardBody button span { transition: transform 200ms ease; }
+.card:hover .cardImage img { transform: scale(1.02); }
+.card:hover h2 { color: var(--catalog-wine); }
+.card:hover .cardBody button span { transform: translateX(4px); }
+.empty { min-height: 300px; display: grid; place-content: center; justify-items: center; padding: 40px 20px; text-align: center; }
+.empty h2 { font-size: 24px; line-height: 32px; }
+.empty p { margin-top: 8px; color: var(--catalog-copy); line-height: 1.7; }
+.empty button { min-height: 44px; margin-top: 20px; padding-inline: 20px; border-radius: 4px; color: #fff; background: var(--catalog-wine); font-weight: 600; }
+.dialog { width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: 0; border: 0; background: transparent; }
+.dialog[open] { display: grid; place-items: center; }
+.dialog::backdrop { background: rgb(0 0 0 / .50); backdrop-filter: blur(12px); }
+.modalPanel { position: relative; width: min(1040px, calc(100% - 40px)); max-height: 88svh; overflow-y: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; padding: 32px; border: 1px solid rgb(255 255 255 / .9); border-radius: 12px; color: var(--catalog-ink); background: rgb(255 255 255 / .94); box-shadow: 0 24px 80px rgb(0 0 0 / .28); backdrop-filter: blur(18px); animation: modal-in 200ms ease both; }
+.close { position: absolute; z-index: 2; top: 16px; right: 16px; width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 8px; color: var(--catalog-ink); background: transparent; transition: color 240ms ease, filter 240ms ease; }
+.close:hover, .close:focus-visible { color: var(--catalog-wine); filter: drop-shadow(0 0 5px rgb(136 19 55 / .45)); }
+.close svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.modalImage { position: relative; min-height: min(58svh, 540px); border-radius: 8px; }
+.modalImage img { object-fit: contain; }
+.modalCopy { align-self: center; padding: 52px 24px 28px 0; }
+.modalCopy h2 { margin-block: 6px 20px; padding-right: 36px; font-size: 32px; font-weight: 700; line-height: 40px; }
+.modalCopy > p:not(.category) { color: var(--catalog-copy); font-size: 16px; line-height: 26px; }
+.modalCopy > p + p { margin-top: 14px; }
+@keyframes modal-in { from { opacity: 0; transform: scale(.98); } to { opacity: 1; transform: scale(1); } }
+
+@media (max-width: 899px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .modalPanel { grid-template-columns: 1fr; }
+  .modalImage { min-height: 320px; }
+  .modalCopy { padding: 0 4px 8px; }
+}
+
+@media (max-width: 599px) {
+  .page { padding-top: calc(var(--header-height) + 48px); }
+  .container { padding-inline: 20px; }
+  .intro h1 { font-size: 32px; line-height: 40px; }
+  .introDescription { font-size: 16px; line-height: 26px; }
+  .toolbar { align-items: stretch; flex-direction: column; gap: 16px; }
+  .search { width: 100%; }
+  .grid { grid-template-columns: 1fr; }
+  .modalPanel { width: calc(100% - 40px); gap: 20px; padding: 20px; }
+  .modalImage { min-height: 240px; margin-top: 36px; }
+  .modalCopy h2 { font-size: 28px; line-height: 36px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardImage img, .card h2, .cardBody button span, .close { transition: none; }
+  .modalPanel { animation: none; }
+}

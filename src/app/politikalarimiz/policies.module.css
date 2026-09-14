@@ -1,0 +1,38 @@
+.page { --ink: #131b2e; --copy: #515f74; --wine: #881337; background: #fff; color: var(--ink); font-family: var(--font-body); padding-block: calc(var(--header-height) + 48px) 40px; }
+.container { box-sizing: border-box; width: 100%; max-width: 1184px; margin-inline: auto; padding-inline: 24px; }
+.intro h1 { margin-top: 12px; font-size: 48px; font-weight: 700; line-height: 56px; letter-spacing: -.025em; }
+.intro > p { max-width: 800px; margin-top: 12px; color: var(--copy); font-size: 18px; line-height: 28px; }
+.policyRegion { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: start; gap: 48px; margin-top: 48px; }
+.menuColumn { position: sticky; top: calc(var(--header-height) + 55px); align-self: start; }
+.menu ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.menu a { display: flex; min-height: 52px; align-items: center; padding: 8px 0 8px 12px; border-left: 2px solid transparent; color: var(--ink); font-size: 15px; font-weight: 600; line-height: 22px; text-decoration: none; }
+.menu a:hover, .menu a[aria-current="location"] { color: var(--wine); }
+.menu a[aria-current="location"] { border-left-color: var(--wine); }
+.menu a:focus-visible, .privacyCopy a:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }
+.policyBody { min-width: 0; }
+.section + .section { margin-top: 48px; padding-top: 48px; border-top: 1px solid #eaedff; }
+.sectionNumber { display: flex; align-items: center; gap: 16px; color: var(--wine); font-size: 11px; font-weight: 700; line-height: 16px; letter-spacing: .09em; }
+.sectionNumber i { height: 1px; flex: 1; background: #dec7d0; }
+.sectionHeading h2 { margin-top: 12px; font-size: 28px; font-weight: 700; line-height: 36px; letter-spacing: -.02em; }
+.qualityList { display: grid; gap: 0; margin-top: 24px; padding: 0; list-style: none; }
+.qualityList li { display: grid; grid-template-columns: 36px minmax(0, 1fr); align-items: start; gap: 16px; padding-block: 16px; border-top: 1px solid #eaedff; }
+.qualityList li:last-child { border-bottom: 1px solid #eaedff; }
+.itemNumber { color: var(--wine); font-size: 16px; font-weight: 700; line-height: 28px; }
+.qualityList p, .privacyCopy p, .cookieCopy p { color: var(--copy); font-size: 16px; line-height: 28px; overflow-wrap: anywhere; }
+.privacyCopy { display: grid; gap: 24px; margin-top: 24px; }
+.privacyCopy h3 { margin-bottom: 8px; font-size: 20px; font-weight: 700; line-height: 28px; }
+.privacyCopy p + p, .cookieCopy p + p { margin-top: 12px; }
+.privacyCopy a { color: var(--wine); text-decoration: underline; text-underline-offset: 3px; }
+.cookieCopy { margin-top: 24px; }
+@media (max-width: 767px) {
+  .container { padding-inline: 20px; }
+  .intro h1 { font-size: 32px; line-height: 40px; }
+  .intro > p { font-size: 16px; line-height: 26px; }
+  .policyRegion { grid-template-columns: minmax(0, 1fr); gap: 32px; margin-top: 36px; }
+  .menuColumn { position: static; }
+  .menu ul { display: flex; flex-wrap: wrap; gap: 8px; }
+  .menu a { min-height: 44px; padding: 8px 12px; border: 1px solid #eaedff; border-left-width: 2px; border-radius: 4px; font-size: 13px; line-height: 20px; }
+  .menu a[aria-current="location"] { border-color: #e2c3cd; border-left-color: var(--wine); }
+  .sectionHeading h2 { font-size: 28px; line-height: 36px; }
+  .qualityList li { gap: 12px; }
+}

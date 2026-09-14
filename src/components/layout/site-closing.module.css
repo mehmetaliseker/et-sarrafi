@@ -8,7 +8,7 @@
   min-height: 46svh;
   display: flex;
   align-items: center;
-  padding-block: 64px;
+  padding-block: 84px;
   color: #fff;
   background-color: #312d30;
   background-image: linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52)), url('/media/professional_food_photography_of_fresh_premium_raw_beef_cuts_ribeye_steak_and.png');
@@ -18,26 +18,21 @@
   background-attachment: fixed;
 }
 
-.contactInner {
+.contactLayout {
   width: calc(100% - 40px);
   max-width: 1184px;
   margin-inline: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 48px;
 }
 
-.contactCopy { max-width: 680px; }
-.eyebrow { margin-bottom: 8px; color: #eadde2; font-size: 13px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
-.contactCopy h2 { font-size: clamp(30px, 3vw, 36px); font-weight: 600; line-height: 1.22; letter-spacing: -.02em; }
-.contactCopy > p:last-child { max-width: 600px; margin-top: 12px; color: rgb(255 255 255 / .83); line-height: 1.65; }
-.actions { flex: 0 0 auto; display: flex; flex-wrap: wrap; gap: 16px; }
-.actions a { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; border-radius: 10px; font-size: 16px; font-weight: 600; transition: background-color 200ms ease; }
-.lightButton { color: #40343a; background: #fff; }
-.lightButton:hover { background: rgb(255 255 255 / .86); }
-.outlineButton { color: #fff; background: rgb(255 255 255 / .08); border: 1px solid rgb(255 255 255 / .3); }
-.outlineButton:hover { background: rgb(255 255 255 / .18); }
+.highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch; }
+.highlight { position: relative; min-width: 0; padding: 26px 28px; }
+.highlight:first-child { padding-left: 0; }
+.highlight:last-child { padding-right: 0; }
+.highlight:not(:first-child)::before { content: ""; position: absolute; left: 0; top: 15%; height: 70%; border-left: 1px solid rgb(255 255 255 / .62); }
+.highlightIcon { width: 28px; height: 28px; display: grid; place-items: center; margin-bottom: 15px; color: #fff; }
+.highlightIcon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.highlight h2 { color: #fff; font-size: 16px; font-weight: 700; line-height: 24px; }
+.highlight p { margin-top: 7px; color: rgb(255 255 255 / .9); font-size: 13px; line-height: 21px; }
 
 .closing :global(.site-footer) {
   min-height: calc(54svh - var(--header-height));
@@ -61,16 +56,17 @@
 .closing :global(.site-footer .text-ink-muted) { color: #606668; }
 
 @media (max-width: 63.99rem) {
-  .contactInner { align-items: flex-start; flex-direction: column; }
+  .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .highlight:nth-child(3)::before { display: none; }
+  .highlight:nth-child(n+3) { border-top: 1px solid rgb(255 255 255 / .3); }
 }
 
 @media (max-width: 47.99rem) {
   .contact { min-height: 0; background-attachment: scroll; }
-  .actions { width: 100%; }
-  .actions a { width: 100%; min-height: 50px; padding-inline: 18px; font-size: 14px; }
+  .highlight { min-height: 166px; padding: 20px 14px; }
+  .highlight:nth-child(odd) { padding-left: 0; }
+  .highlight:nth-child(even) { padding-right: 0; }
+  .highlight h2 { font-size: 14px; line-height: 20px; }
+  .highlight p { font-size: 12px; line-height: 18px; }
   .closing :global(.site-footer) { min-height: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .actions a { transition: none; }
 }

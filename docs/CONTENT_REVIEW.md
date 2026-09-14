@@ -1,5 +1,13 @@
 # İçerik incelemesi — 12 Eylül 2026
 
+## Kalite ve politikalar sayfaları — 14 Eylül 2026
+
+`/politikalarimiz` içindeki 12 kalite ve helal politikası maddesi, [resmî politika sayfasındaki](https://www.etsarrafi.com/sayfa/politikalarimiz) sıra ve taahhütler korunarak dil açısından düzenlendi. ISO 22000:2018 ve OIC/SMIIC 1:2019 ifadeleri politika hedefi/taahhüdü olarak kullanıldı; geçerli sertifika veya bağımsız denetim kanıtı sayılmadı. Kullanılan ürün görseli temsili olup tesis fotoğrafı olarak sunulmaz.
+
+Gizlilik ve Güvenlik bölümü, [eski Et Sarrafı metnindeki](https://www.etsarrafi.com/sayfa/gizlilik-ve-guvenlik) genel gizlilik, dış bağlantı, e-posta güvenliği ve yasal talepler konularının kurumsal vitrin sitesine uyarlanmış özetidir. Eski metnin üyelik, sipariş, ödeme, kart ve kampanya hükümleri bu siteye aktarılmadı. Bu bölüm tamamlanmış bir KVKK aydınlatma metni değildir. Veri sorumlusunun güncel hukuki unvanı, veri işleme amaçları ve hukuki sebepleri, alıcı grupları, saklama süreleri ile barındırma/erişim kayıtlarının kapsamı işletme tarafından doğrulanıp ayrıca incelenmelidir. İletişim bilgileri yalnızca merkezi `src/config/site.ts` dosyasından okunur.
+
+`public/images/facilities/representative-beef-cut.png`, kullanıcının `screen.png` olarak sağladığı et kesimi görselidir; sonraki tesis tasarımı için düzenli klasöre taşındı, gerçek tesis fotoğrafı olarak tanımlanmadı.
+
 ## Hakkımızda sayfası görselleri — 13 Eylül 2026
 
 `design-reference/about.html` ve `about-desktop.png` çalışma alanında bulunmadığından Stitch çıktısındaki üç gövde fotoğrafının kaynak URL'leri çıkarılamadı. `/hakkimizda` sayfasında `public/images/about/` altındaki mevcut yerel temsili karşılıklar kullanıldı: `processing-area.png`, `preparation-area.jpg` ve `meat-closeup.png`. Bunlar Et Sarrafı tesisinin doğrulanmış fotoğrafları değildir. Referans görseller sağlandığında merkezi `src/data/about.ts` tanımındaki yollar ve odak noktaları değiştirilebilir.

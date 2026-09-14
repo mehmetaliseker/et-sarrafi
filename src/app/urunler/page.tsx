@@ -1,12 +1,18 @@
-import { Container } from "@/components/ui/Container";
-import { PageIntro } from "@/components/sections/PageIntro";
-import { ProductCatalog } from "@/components/sections/ProductCatalog";
-import { ProductCard } from "@/components/sections/ProductCard";
-import { pages } from "@/data/pages";
-import { productDetails } from "@/data/products";
+import { ProductsCatalog } from "@/components/sections/ProductsCatalog";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { createPageMetadata } from "@/lib/metadata";
-const content = pages["/urunler"];
-export const metadata = createPageMetadata({ title: content.metadataTitle, description: content.description, path: "/urunler" });
+import styles from "./products.module.css";
+
+const description = "Kırmızı et ürünlerimizi inceleyin; ürün bilgisi ve tedarik talepleriniz için bizimle iletişime geçin.";
+export const metadata = createPageMetadata({ title: "Ürünlerimiz", description, path: "/urunler" });
+
 export default function ProductsPage() {
-  return <><PageIntro {...content} className="catalog-intro" /><Container><ProductCatalog cards={productDetails.map(product => <ProductCard key={product.slug} product={product} />)} /></Container></>;
+  return <article className={styles.page}>
+    <header className={`${styles.container} ${styles.intro}`}>
+      <Breadcrumb items={[{ label: "Ana Sayfa", href: "/" }, { label: "Ürünlerimiz" }]} />
+      <h1>Ürünlerimiz</h1>
+      <p className={styles.introDescription}>{description}</p>
+    </header>
+    <ProductsCatalog />
+  </article>;
 }

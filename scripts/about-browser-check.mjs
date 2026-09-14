@@ -19,7 +19,7 @@ try {
       const main = document.querySelector('main article');
       const hero = document.querySelector('main article img');
       const pair = [...document.querySelectorAll('main article section')].at(-1)?.querySelectorAll('img');
-      const cta = document.querySelector('#site-closing-title')?.closest('section');
+      const cta = document.querySelector('section[aria-label="Ürün ve iletişim bilgileri"]');
       const footer = document.querySelector('.site-footer');
       return {
         width: innerWidth,
@@ -35,7 +35,8 @@ try {
         footerPresent: !!footer,
         link: [...document.querySelectorAll('main article a')].map(a => a.getAttribute('href')),
         breadcrumbSize: getComputedStyle(document.querySelector('main article a')).fontSize,
-        closingTitleCount: document.querySelectorAll('#site-closing-title').length,
+        closingCardCount: document.querySelectorAll('[aria-label="İletişim ve katalog bilgileri"] > div').length,
+        breadcrumb: [...document.querySelectorAll('main nav[aria-label="Sayfa yolu"] li')].map(item => item.textContent.trim()),
       };
     })()`);
     assert.ok(summary.scrollWidth <= summary.width, `${width}px: horizontal overflow`);
@@ -44,7 +45,8 @@ try {
     assert.ok(summary.images.every(image => image.loaded), `${width}px: image failed to load`);
     assert.deepEqual(summary.link, ['/', '/tesislerimiz']);
     assert.equal(summary.breadcrumbSize, '11px');
-    assert.equal(summary.closingTitleCount, 1);
+    assert.equal(summary.closingCardCount, 4);
+    assert.deepEqual(summary.breadcrumb, ['Ana Sayfa/', 'Hakkımızda']);
     assert.ok(summary.contentTop > summary.headerBottom, `${width}px: intro is covered by navbar`);
     if (width === 1440) assert.deepEqual(summary.active, ['/hakkimizda']);
     for (const [name, selector] of [
@@ -59,14 +61,29 @@ try {
     }
     const approach = '#about-approach-title';
     await browserClient.evaluate(`scrollTo(0, document.querySelector('${approach}').getBoundingClientRect().top + scrollY - innerHeight * .40)`);
-    await delay(100);
+    await delay(650);
     const enteringOpacity = await browserClient.evaluate(`Number(getComputedStyle(document.querySelector('${approach}').parentElement).opacity)`);
-    await browserClient.evaluate(`scrollTo(0, document.querySelector('${approach}').getBoundingClientRect().top + scrollY - innerHeight * .82)`);
-    await delay(100);
+    await browserClient.evaluate(`scrollTo(0, document.querySelector('${approach}').getBoundingClientRect().bottom + scrollY + 50)`);
+    await delay(650);
     const reverseOpacity = await browserClient.evaluate(`Number(getComputedStyle(document.querySelector('${approach}').parentElement).opacity)`);
     assert.ok(enteringOpacity >= .9, `${width}px: reveal did not become visible`);
     assert.ok(reverseOpacity <= .1, `${width}px: reveal did not hide on reverse scroll`);
     summary.reveal = { enteringOpacity, reverseOpacity };
+    if (width === 1440 || width === 390) {
+      const thresholdState = [];
+      for (const fraction of [.10, .20, .10]) {
+        await browserClient.evaluate(`(() => {
+          const element = document.querySelector('${approach}').parentElement;
+          const rect = element.getBoundingClientRect();
+          const translateY = new DOMMatrixReadOnly(getComputedStyle(element).transform).m42;
+          scrollTo({top: rect.top - translateY + scrollY - innerHeight + rect.height * ${fraction}, behavior: 'instant'});
+        })()`);
+        await delay(650);
+        thresholdState.push(await browserClient.evaluate(`Number(getComputedStyle(document.querySelector('${approach}').parentElement).opacity)`));
+      }
+      assert.deepEqual(thresholdState, [0, 1, 0], `${width}px: reveal threshold should switch at about 15% visibility`);
+      summary.reveal.thresholdState = thresholdState;
+    }
     report.push(summary);
   }
   await browserClient.viewport(390, 500);

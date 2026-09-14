@@ -36,7 +36,6 @@ export const aboutImages = {
 
 export const aboutContent = {
   intro: {
-    eyebrow: "Kurumsal / Hakkımızda",
     title: "Et Sarrafı’nı Tanıyın",
     description: "Et Sarrafı, Celep ailesinin hayvancılık ve kasaplık deneyimini kırmızı et işleme ve tedarikiyle buluşturur. Çiftlikten tüketiciye uzanan faaliyetlerimizi kalite ve gıda güvenliği odağında yürütüyoruz.",
   },

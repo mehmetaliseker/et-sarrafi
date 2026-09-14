@@ -1,0 +1,153 @@
+[
+  {
+    "width": 1440,
+    "scrollWidth": 1425,
+    "heading": "Tesislerimiz",
+    "headingCount": 1,
+    "links": [
+      "#bergama",
+      "#foca",
+      "#yenikoy",
+      "#ornekkoy"
+    ],
+    "sectionCount": 4,
+    "imageCount": 0,
+    "sourceCount": 0,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Tesislerimiz"
+    ],
+    "footerCount": 1,
+    "closingCount": 1,
+    "menuPosition": "sticky",
+    "activeAtYenikoy": "#yenikoy",
+    "activeReverse": "#foca",
+    "boundary": {
+      "menuBottom": 206.375,
+      "timelineTop": 270.375
+    }
+  },
+  {
+    "width": 768,
+    "scrollWidth": 753,
+    "heading": "Tesislerimiz",
+    "headingCount": 1,
+    "links": [
+      "#bergama",
+      "#foca",
+      "#yenikoy",
+      "#ornekkoy"
+    ],
+    "sectionCount": 4,
+    "imageCount": 0,
+    "sourceCount": 0,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Tesislerimiz"
+    ],
+    "footerCount": 1,
+    "closingCount": 1,
+    "menuPosition": "sticky",
+    "activeAtYenikoy": "#yenikoy",
+    "activeReverse": "#foca",
+    "boundary": {
+      "menuBottom": 205.625,
+      "timelineTop": 269.625
+    }
+  },
+  {
+    "width": 390,
+    "scrollWidth": 390,
+    "heading": "Tesislerimiz",
+    "headingCount": 1,
+    "links": [
+      "#bergama",
+      "#foca",
+      "#yenikoy",
+      "#ornekkoy"
+    ],
+    "sectionCount": 4,
+    "imageCount": 0,
+    "sourceCount": 0,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Tesislerimiz"
+    ],
+    "footerCount": 1,
+    "closingCount": 1,
+    "menuPosition": "static",
+    "activeAtYenikoy": "#yenikoy",
+    "activeReverse": "#foca",
+    "boundary": {
+      "menuBottom": -2769,
+      "timelineTop": 252.6875
+    }
+  },
+  {
+    "width": 320,
+    "scrollWidth": 320,
+    "heading": "Tesislerimiz",
+    "headingCount": 1,
+    "links": [
+      "#bergama",
+      "#foca",
+      "#yenikoy",
+      "#ornekkoy"
+    ],
+    "sectionCount": 4,
+    "imageCount": 0,
+    "sourceCount": 0,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Tesislerimiz"
+    ],
+    "footerCount": 1,
+    "closingCount": 1,
+    "menuPosition": "static",
+    "activeAtYenikoy": "#yenikoy",
+    "activeReverse": "#foca",
+    "boundary": {
+      "menuBottom": -3134,
+      "timelineTop": 252.75
+    }
+  },
+  {
+    "directHash": {
+      "hash": "#ornekkoy",
+      "active": "#ornekkoy",
+      "top": 208.25,
+      "headerBottom": 73
+    }
+  },
+  {
+    "clicked": "bergama",
+    "hash": "#bergama",
+    "active": "#bergama",
+    "top": 208,
+    "headerBottom": 73
+  },
+  {
+    "clicked": "foca",
+    "hash": "#foca",
+    "active": "#foca",
+    "top": 207.75,
+    "headerBottom": 73
+  },
+  {
+    "clicked": "yenikoy",
+    "hash": "#yenikoy",
+    "active": "#yenikoy",
+    "top": 207.5,
+    "headerBottom": 73
+  },
+  {
+    "clicked": "ornekkoy",
+    "hash": "#ornekkoy",
+    "active": "#ornekkoy",
+    "top": 208.25,
+    "headerBottom": 73
+  },
+  {
+    "reducedMotionOpacity": "1"
+  }
+]

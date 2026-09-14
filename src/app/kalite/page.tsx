@@ -1,16 +1,40 @@
-import { Container } from "@/components/ui/Container";
-import { Media } from "@/components/ui/Media";
-import { PageIntro } from "@/components/sections/PageIntro";
-import { pages, editorial } from "@/data/pages";
-import { trustPillars } from "@/data/trust";
-import { media } from "@/data/media";
+import Image from "next/image";
+import Link from "next/link";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Reveal } from "@/components/ui/Reveal";
+import { qualityContent } from "@/data/policy";
 import { createPageMetadata } from "@/lib/metadata";
+import styles from "./quality.module.css";
 
-const content = pages["/kalite"];
-export const metadata = createPageMetadata({ title: content.metadataTitle, description: content.description, path: "/kalite" });
+export const metadata = createPageMetadata({ title: qualityContent.title, description: qualityContent.introduction, path: "/kalite" });
+
 export default function QualityPage() {
-  return <><PageIntro {...content} /><Container>
-    <section className="quality-principles" aria-label="Üretim yaklaşımının temel başlıkları">{trustPillars.map(pillar => <div key={pillar.id}><h2>{pillar.title}</h2><p>{pillar.description}</p></div>)}</section>
-    <section className="section-space policy-layout" aria-labelledby="policy-title"><div><p className="eyebrow">Kalite politikamız</p><h2 id="policy-title" className="section-title">{editorial.policy.title}</h2><p className="body-copy mt-6">{editorial.policy.introduction}</p><Media asset={media.quality} className="policy-image" sizes="(min-width: 768px) 45vw, 100vw" /></div><div className="policy-list">{editorial.policy.items.map(item => <div key={item.title}><h3>{item.title}</h3><p>{item.text}</p></div>)}</div></section>
-  </Container></>;
+  return <article className={styles.page}>
+    <div className={styles.container}>
+      <header className={styles.intro}>
+        <Breadcrumb items={[{ label: "Ana Sayfa", href: "/" }, { label: qualityContent.title }]} />
+        <h1>{qualityContent.title}</h1>
+        <p>{qualityContent.introduction}</p>
+      </header>
+
+      <section className={styles.approach} aria-labelledby="quality-approach-title">
+        <div className={styles.imageFrame}>
+          <Image src={qualityContent.image.src} alt={qualityContent.image.alt} fill sizes="(min-width: 768px) 40vw, calc(100vw - 40px)" style={{ objectPosition: qualityContent.image.position }} priority />
+        </div>
+        <div className={styles.approachCopy}>
+          <h2 id="quality-approach-title">{qualityContent.approach.title}</h2>
+          {qualityContent.approach.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+        </div>
+      </section>
+
+      <section className={styles.principles} aria-label="Kalite yaklaşımımızın temel başlıkları">
+        <h2 className={styles.visuallyHidden}>Kalite ilkelerimiz</h2>
+        {qualityContent.principles.map(principle => <Reveal className={styles.principle} bottomViewportFraction={0.4} waitForScroll key={principle.number}>
+          <div className={styles.principleHeading}><span>{principle.number}</span><h3>{principle.title}</h3></div>
+          <p>{principle.description}</p>
+        </Reveal>)}
+        <Link className={styles.policyLink} href="/politikalarimiz">Tüm Politikaları Görüntüle <span aria-hidden="true">→</span></Link>
+      </section>
+    </div>
+  </article>;
 }

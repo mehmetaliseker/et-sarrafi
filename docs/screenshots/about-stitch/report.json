@@ -3,7 +3,7 @@
     "width": 1440,
     "scrollWidth": 1425,
     "headerBottom": 73,
-    "contentTop": 168.5,
+    "contentTop": 187,
     "active": [
       "/hakkimizda"
     ],
@@ -40,17 +40,26 @@
       "/tesislerimiz"
     ],
     "breadcrumbSize": "11px",
-    "closingTitleCount": 1,
+    "closingCardCount": 4,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Hakkımızda"
+    ],
     "reveal": {
       "enteringOpacity": 1,
-      "reverseOpacity": 0
+      "reverseOpacity": 0,
+      "thresholdState": [
+        0,
+        1,
+        0
+      ]
     }
   },
   {
     "width": 768,
     "scrollWidth": 753,
     "headerBottom": 69,
-    "contentTop": 168.5,
+    "contentTop": 187,
     "active": [
       "/hakkimizda"
     ],
@@ -87,7 +96,11 @@
       "/tesislerimiz"
     ],
     "breadcrumbSize": "11px",
-    "closingTitleCount": 1,
+    "closingCardCount": 4,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Hakkımızda"
+    ],
     "reveal": {
       "enteringOpacity": 1,
       "reverseOpacity": 0
@@ -97,7 +110,7 @@
     "width": 390,
     "scrollWidth": 390,
     "headerBottom": 69,
-    "contentTop": 219.296875,
+    "contentTop": 237.796875,
     "active": [
       "/hakkimizda"
     ],
@@ -134,17 +147,26 @@
       "/tesislerimiz"
     ],
     "breadcrumbSize": "11px",
-    "closingTitleCount": 1,
+    "closingCardCount": 4,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Hakkımızda"
+    ],
     "reveal": {
       "enteringOpacity": 1,
-      "reverseOpacity": 0
+      "reverseOpacity": 0,
+      "thresholdState": [
+        0,
+        1,
+        0
+      ]
     }
   },
   {
     "width": 320,
     "scrollWidth": 320,
     "headerBottom": 69,
-    "contentTop": 219.296875,
+    "contentTop": 237.796875,
     "active": [
       "/hakkimizda"
     ],
@@ -181,7 +203,11 @@
       "/tesislerimiz"
     ],
     "breadcrumbSize": "11px",
-    "closingTitleCount": 1,
+    "closingCardCount": 4,
+    "breadcrumb": [
+      "Ana Sayfa/",
+      "Hakkımızda"
+    ],
     "reveal": {
       "enteringOpacity": 1,
       "reverseOpacity": 0

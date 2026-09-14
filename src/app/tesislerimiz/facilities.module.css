@@ -1,0 +1,76 @@
+.page { --ink: #131b2e; --copy: #574144; --wine: #881337; --line: #e4e6eb; background: #fff; color: var(--ink); font-family: var(--font-body); padding-block: calc(var(--header-height) + 40px) 112px; }
+.container { width: 100%; max-width: 1184px; margin-inline: auto; padding-inline: 24px; }
+.intro { padding-bottom: 40px; border-bottom: 1px solid var(--line); }
+.eyebrow, .sequence, .menuLabel { color: var(--wine); font-size: 11px; font-weight: 600; line-height: 16px; letter-spacing: .09em; text-transform: uppercase; }
+.intro h1 { margin-top: 12px; font-size: 48px; font-weight: 700; line-height: 56px; letter-spacing: -.025em; }
+.description { max-width: 750px; margin-top: 12px; color: var(--copy); font-size: 18px; line-height: 28px; }
+.facilityRegion { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: start; gap: 48px; margin-top: 40px; }
+.menuColumn { position: sticky; top: calc(var(--header-height) + 45px); align-self: start; }
+.menuLabel { margin-bottom: 20px; }
+.menu ul { display: grid; gap: 12px; }
+.menuLink { min-height: 54px; display: block; padding: 7px 0 7px 12px; border-left: 2px solid transparent; color: var(--ink); }
+.menuLink span { display: block; font-size: 16px; font-weight: 600; line-height: 23px; }
+.menuLink small { display: block; margin-top: 3px; color: var(--copy); font-size: 13px; line-height: 19px; }
+.menuLink[aria-current="location"] { border-left-color: var(--wine); }
+.menuLink[aria-current="location"] span, .menuLink:hover span { color: var(--wine); }
+.facilityList { min-width: 0; }
+.facility { scroll-margin-top: calc(var(--header-height) + 40px); }
+.facility + .facility { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--line); }
+.facilityHeading h2 { margin-top: 10px; font-size: 36px; font-weight: 700; line-height: 44px; letter-spacing: -.025em; }
+.badge { display: inline-block; margin-top: 13px; padding: 6px 11px; border-radius: 4px; color: var(--wine); background: #f9edf1; font-size: 12px; font-weight: 600; line-height: 18px; }
+.metrics { display: flex; flex-wrap: wrap; gap: 0; margin-top: 27px; padding-block: 20px; border-block: 1px solid var(--line); }
+.metric { min-width: 0; flex: 1 1 0; padding-inline: 32px; }
+.metric:first-child { padding-left: 0; }
+.metric + .metric { border-left: 1px solid var(--line); }
+.metric strong { display: block; color: var(--ink); font-size: 24px; font-weight: 700; line-height: 30px; white-space: nowrap; }
+.metric span { display: block; margin-top: 5px; color: var(--copy); font-size: 11px; line-height: 16px; }
+.facilityCopy, .processingSections { display: grid; gap: 16px; margin-top: 24px; }
+.facilityCopy p, .processingSection p { color: var(--copy); font-size: 16px; line-height: 1.7; }
+.processing { padding: 40px; border: 1px solid #e1e5fa; border-radius: 5px; background: #f2f3ff; }
+.facility + .processing { padding-top: 40px; }
+.processing .metrics, .processing .metric + .metric { border-color: #d9def2; }
+.processingSection h3 { margin-bottom: 7px; color: var(--ink); font-size: 18px; font-weight: 700; line-height: 26px; }
+.development { margin-top: 64px; padding-top: 64px; border-top: 1px solid var(--line); }
+.developmentHeading h2 { margin-top: 10px; font-size: 36px; font-weight: 700; line-height: 44px; letter-spacing: -.025em; }
+.timeline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 42px; }
+.yearLine { display: flex; align-items: center; gap: 20px; color: var(--wine); }
+.yearLine span { font-size: 48px; font-weight: 700; line-height: 56px; }
+.yearLine i { height: 1px; flex: 1; background: #d8b3be; }
+.timelineItem h3 { margin-top: 18px; color: var(--wine); font-size: 12px; font-weight: 700; line-height: 18px; letter-spacing: .075em; text-transform: uppercase; }
+.timelineItem p { max-width: 31ch; margin-top: 8px; color: var(--copy); font-size: 15px; line-height: 1.7; }
+
+@media (max-width: 899px) {
+  .facilityRegion { grid-template-columns: 190px minmax(0, 1fr); gap: 32px; }
+  .metric { padding-inline: 18px; }
+  .metric strong { font-size: 20px; }
+}
+
+@media (max-width: 699px) {
+  .container { padding-inline: 20px; }
+  .intro h1 { font-size: 32px; line-height: 40px; }
+  .description { font-size: 16px; line-height: 26px; }
+  .facilityRegion { display: block; }
+  .menuColumn { position: static; margin-bottom: 44px; }
+  .menuLabel { margin-bottom: 14px; }
+  .menu ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .menuLink { min-height: 76px; padding: 9px 11px; border: 1px solid #e7e8ee; border-left-width: 2px; border-radius: 4px; }
+  .menuLink span { font-size: 14px; line-height: 20px; }
+  .menuLink small { font-size: 11px; line-height: 16px; }
+  .facilityHeading h2, .developmentHeading h2 { font-size: 30px; line-height: 38px; }
+  .metrics { row-gap: 20px; }
+  .metric { flex-basis: 50%; padding-inline: 16px; }
+  .metric:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .metric:nth-child(n+3) { padding-top: 18px; border-top: 1px solid var(--line); }
+  .processing { padding: 24px; }
+  .facility + .processing { padding-top: 24px; }
+  .timeline { grid-template-columns: 1fr; gap: 38px; }
+  .timelineItem p { max-width: 55ch; }
+}
+
+@media (max-width: 380px) {
+  .menu ul { grid-template-columns: 1fr; }
+  .menuLink { min-height: 58px; }
+  .metric strong { font-size: 18px; }
+  .processing .metric { flex-basis: 100%; padding: 0; border-left: 0; }
+  .processing .metric + .metric { padding-top: 14px; border-top: 1px solid var(--line); }
+}

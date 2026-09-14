@@ -17,8 +17,4 @@
     title: "Yerli besi. Özenli üretim.",
     description: "Hayvanlarımızın beslenmesinde kendi kontrolümüzde üretilen yerli ham maddeleri kullanıyor, et ürünlerimizi hijyen koşullarını gözeterek hazırlıyoruz.",
   },
-  contact: {
-    title: "Et tedariki için bizimle iletişime geçin",
-    description: "Ürün çeşitlerimiz ve işletmenize yönelik tedarik talepleriniz hakkında görüşmek için bize ulaşın.",
-  },
 } as const;

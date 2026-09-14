@@ -1,0 +1,28 @@
+.enabled {
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.initial {
+  transition: none;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+}
+
+.hidden:focus-within {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enabled {
+    transition: none;
+  }
+
+  .hidden {
+    opacity: 1;
+    transform: none;
+  }
+}

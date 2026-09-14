@@ -479,4 +479,5 @@ body:has(.home-closing) .site-footer > .site-container { flex: 0 0 auto; }
   .desktop-nav a:hover::after, .desktop-nav a[aria-current="page"]::after { transform: scaleX(1); }
   .desktop-nav a[aria-current="page"] { text-decoration: none; }
   .desktop-nav li:last-child a::after { left: 20px; right: 20px; }
+  .desktop-nav li:last-child a[href="/kalite"]::after { left: 4px; right: 4px; }
 }
