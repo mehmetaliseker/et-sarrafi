@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { siteConfig } from "@/config/site";
 import { createPageMetadata } from "@/lib/metadata";
 import styles from "./contact.module.css";
@@ -7,15 +8,24 @@ const description = "Ürün bilgisi ve kurumsal tedarik talepleriniz için bize 
 export const metadata = createPageMetadata({ title: "İletişim", description, path: "/iletisim" });
 
 function ContactIcon({ kind }: { kind: "phone" | "email" | "address" }) {
-  if (kind === "phone") return <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.2 4.2-1.8 1.6a15 15 0 0 0 5.8 5.8l1.6-1.8 4.2 1.2v3A2.5 2.5 0 0 1 18 20C9.7 20 4 14.3 4 6a2.5 2.5 0 0 1 2.5-2.5Z" /></svg>;
-  if (kind === "email") return <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>;
-  return <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>;
+  switch (kind) {
+    case "phone":
+      return <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.2 4.2-1.8 1.6a15 15 0 0 0 5.8 5.8l1.6-1.8 4.2 1.2v3A2.5 2.5 0 0 1 18 20C9.7 20 4 14.3 4 6a2.5 2.5 0 0 1 2.5-2.5Z" /></svg>;
+    case "email":
+      return <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>;
+    case "address":
+      return <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>;
+    default: {
+      const _exhaustive: never = kind;
+      return _exhaustive;
+    }
+  }
 }
 
 export default function ContactPage() {
   const { contact } = siteConfig;
 
-  return <article className={styles.page}>
+  return <article className={`contactPage ${styles.page}`}>
     <div className={styles.container}>
       <header className={styles.intro}>
         <Breadcrumb items={[{ label: "Ana Sayfa", href: "/" }, { label: "İletişim" }]} />
@@ -44,6 +54,7 @@ export default function ContactPage() {
           </div>
 
           <a className={styles.directions} href={contact.address.directionsUrl} target="_blank" rel="noopener noreferrer">Yol Tarifi Al <span aria-hidden="true">→</span></a>
+          <div className={styles.social}><SocialLinks variant="stack" /></div>
         </section>
 
         <section className={styles.map} aria-label="Konum haritası">

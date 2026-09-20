@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { policyContent } from "@/data/policy";
-import styles from "@/app/politikalarimiz/policies.module.css";
+import styles from "@/app/(site)/politikalarimiz/policies.module.css";
 
 type PolicyId = (typeof policyContent.sections)[number]["id"];
 

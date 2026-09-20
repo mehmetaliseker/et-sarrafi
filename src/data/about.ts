@@ -1,5 +1,5 @@
 export interface AboutImage {
-  src: `/images/about/${string}`;
+  src: `/images/${string}`;
   alt: string;
   desktopRatio: string;
   mobileRatio: string;
@@ -8,17 +8,9 @@ export interface AboutImage {
 }
 
 export const aboutImages = {
-  hero: {
-    src: "/images/about/processing-area.png",
-    alt: "Et işleme alanını gösteren temsili görsel",
-    desktopRatio: "21 / 9",
-    mobileRatio: "4 / 3",
-    desktopPosition: "50% 46%",
-    mobilePosition: "51% 50%",
-  },
   facility: {
-    src: "/images/about/preparation-area.jpg",
-    alt: "Et hazırlama ve depolama alanını gösteren temsili görsel",
+    src: "/images/isletme.webp",
+    alt: "Askılardaki karkas etlerin bulunduğu depolama alanı",
     desktopRatio: "7 / 4",
     mobileRatio: "4 / 3",
     desktopPosition: "50% 48%",
@@ -57,6 +49,6 @@ export const aboutContent = {
       { number: "03", title: "İş Birliği", description: "Kurumsal iş ortaklarımızın et ve et ürünü ihtiyaçlarına yönelik tedarik hizmeti sunuyoruz. Hizmet anlayışımızı ihtiyaçlara uygun ürün temini ve güvenilir iş ilişkileri üzerine kuruyoruz." },
     ],
   },
-  photoCaption: "Üretim ve ürün yaklaşımımızdan temsili görünümler.",
+  photoCaption: "Et depolama alanı ve ürün görünümü.",
   photoLink: "Tesislerimizi İnceleyin",
 } as const;

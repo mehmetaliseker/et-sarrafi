@@ -1,7 +1,7 @@
-.nav { width: fit-content; color: #881337; font-family: var(--font-body); font-size: 11px; font-weight: 600; line-height: 16px; letter-spacing: .045em; }
+.nav { width: fit-content; color: var(--accent); font-family: var(--font-body); font-size: 11px; font-weight: 600; line-height: 16px; letter-spacing: .045em; }
 .list { display: flex; flex-wrap: wrap; align-items: center; column-gap: 10px; row-gap: 0; }
 .item { display: inline-flex; align-items: center; gap: 10px; }
 .link { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; text-underline-offset: 4px; }
 .link:hover { text-decoration: underline; }
 .separator { color: #9e6676; font-size: 15px; font-weight: 400; }
-.current { color: #881337; }
+.current { color: var(--accent); }

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { facilities, type FacilityId } from "@/data/facilities";
-import styles from "@/app/tesislerimiz/facilities.module.css";
+import styles from "@/app/(site)/tesislerimiz/facilities.module.css";
 
 export function FacilityMenu() {
   const [active, setActive] = useState<FacilityId>("bergama");

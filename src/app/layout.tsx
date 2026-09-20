@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import localFont from "next/font/local";
 
-import { SiteClosing } from "@/components/layout/SiteClosing";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { siteConfig } from "@/config/site";
@@ -77,10 +76,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <div className="flex min-h-dvh flex-col">
           <ScrollToTop />
           <SiteHeader />
-          <main className="flex-1" id="ana-icerik" tabIndex={-1}>
-            {children}
-          </main>
-          <SiteClosing />
+          {children}
         </div>
         {siteConfig.indexable && <script
           dangerouslySetInnerHTML={{

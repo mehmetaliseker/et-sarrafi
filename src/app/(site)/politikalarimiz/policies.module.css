@@ -1,4 +1,4 @@
-.page { --ink: #131b2e; --copy: #515f74; --wine: #881337; background: #fff; color: var(--ink); font-family: var(--font-body); padding-block: calc(var(--header-height) + 48px) 40px; }
+.page { --ink: #131b2e; --copy: #515f74; --wine: var(--accent); background: #fff; color: var(--ink); font-family: var(--font-body); padding-block: calc(var(--header-height) + 48px) 40px; }
 .container { box-sizing: border-box; width: 100%; max-width: 1184px; margin-inline: auto; padding-inline: 24px; }
 .intro h1 { margin-top: 12px; font-size: 48px; font-weight: 700; line-height: 56px; letter-spacing: -.025em; }
 .intro > p { max-width: 800px; margin-top: 12px; color: var(--copy); font-size: 18px; line-height: 28px; }
@@ -25,14 +25,17 @@
 .privacyCopy a { color: var(--wine); text-decoration: underline; text-underline-offset: 3px; }
 .cookieCopy { margin-top: 24px; }
 @media (max-width: 767px) {
+  .page { padding-block: calc(var(--header-height) + 28px) 56px; }
   .container { padding-inline: 20px; }
   .intro h1 { font-size: 32px; line-height: 40px; }
   .intro > p { font-size: 16px; line-height: 26px; }
-  .policyRegion { grid-template-columns: minmax(0, 1fr); gap: 32px; margin-top: 36px; }
+  .policyRegion { grid-template-columns: minmax(0, 1fr); gap: 28px; margin-top: 28px; }
   .menuColumn { position: static; }
   .menu ul { display: flex; flex-wrap: wrap; gap: 8px; }
   .menu a { min-height: 44px; padding: 8px 12px; border: 1px solid #eaedff; border-left-width: 2px; border-radius: 4px; font-size: 13px; line-height: 20px; }
   .menu a[aria-current="location"] { border-color: #e2c3cd; border-left-color: var(--wine); }
   .sectionHeading h2 { font-size: 28px; line-height: 36px; }
-  .qualityList li { gap: 12px; }
+  .qualityList li { grid-template-columns: 24px minmax(0, 1fr); gap: 12px; }
+  .qualityList p, .privacyCopy p, .cookieCopy p { line-height: 1.7; }
+  .section + .section { margin-top: 36px; padding-top: 36px; }
 }

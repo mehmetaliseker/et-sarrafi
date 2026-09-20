@@ -11,11 +11,32 @@
   padding-block: 84px;
   color: #fff;
   background-color: #312d30;
-  background-image: linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52)), url('/media/professional_food_photography_of_fresh_premium_raw_beef_cuts_ribeye_steak_and.png');
+  background-image: linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52)), var(--closing-photo, url('/media/professional_food_photography_of_fresh_premium_raw_beef_cuts_ribeye_steak_and.png'));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+:global(body:has(.contactPage)) .contact {
+  --contact-closing-height: clamp(200px, 32svh, 260px);
+  min-height: var(--contact-closing-height);
+  padding-block: clamp(28px, 4svh, 44px);
+}
+
+.contactVehicle {
+  background-image:
+    linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52)),
+    var(--closing-photo);
+  background-position: center, center var(--vehicle-y, 0px);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-color: #312d30;
+}
+
+:global(body:has(.contactPage)) .closing :global(.site-footer) {
+  min-height: calc(54svh - var(--header-height));
 }
 
 .contactLayout {
@@ -62,7 +83,14 @@
 }
 
 @media (max-width: 47.99rem) {
-  .contact { min-height: 0; background-attachment: scroll; }
+  .contact { min-height: 0; padding-block: 44px; background-attachment: scroll; }
+  .contactVehicle {
+    background-attachment: scroll, scroll;
+  }
+  :global(body:has(.contactPage)) .contact {
+    min-height: 0;
+    padding-block: 36px;
+  }
   .highlight { min-height: 166px; padding: 20px 14px; }
   .highlight:nth-child(odd) { padding-left: 0; }
   .highlight:nth-child(even) { padding-right: 0; }

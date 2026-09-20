@@ -8,7 +8,7 @@ export interface Service {
   action: string;
   href: "/urunler" | "/iletisim";
   image: {
-    src: `/images/services/${string}.png`;
+    src: `/images/${string}`;
     alt: string;
     position: string;
   };
@@ -55,8 +55,8 @@ export const services = [
     action: "Satış Ekibimizle Görüşün",
     href: "/iletisim",
     image: {
-      src: "/images/services/direct-sales-cuts.png",
-      alt: "Çiğ antrikot ve bonfile kesimlerinin yakın görünümü",
+      src: "/images/arac.webp",
+      alt: "Et Sarrafı logolu frigorifik sevkiyat aracı",
       position: "50% 52%",
     },
   },

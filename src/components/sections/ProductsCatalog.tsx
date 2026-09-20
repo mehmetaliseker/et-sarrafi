@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { catalogProducts, type CatalogProduct, type ProductCategory } from "@/data/product-catalog";
-import styles from "@/app/urunler/products.module.css";
+import styles from "@/app/(site)/urunler/products.module.css";
 
 type CategoryFilter = "Tümü" | ProductCategory;
 const categories: readonly CategoryFilter[] = ["Tümü", "Dana", "Kuzu"];

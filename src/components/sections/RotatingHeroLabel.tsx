@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
+import { BrandMarkIcon } from "@/components/ui/BrandMarkIcon";
 
 const labels = [
   "Endüstriyel Gıda Çözümleri",
@@ -33,7 +34,7 @@ export function RotatingHeroLabel() {
 
   const style = { "--rotator-width": `${labelWidth}px` } as CSSProperties;
   return <div className="stitch-rotator" style={style} aria-live="polite">
-    <span className="stitch-rotator-dot" aria-hidden="true" />
+    <span className="stitch-rotator-mark" aria-hidden="true"><BrandMarkIcon name="steak" /></span>
     <span className="stitch-rotator-window"><span className="stitch-rotator-text" key={labels[index]}>{labels[index]}</span></span>
     <span className="stitch-rotator-measures" aria-hidden="true">{labels.map((label, itemIndex) => <span key={label} ref={element => { measureRefs.current[itemIndex] = element; }}>{label}</span>)}</span>
   </div>;

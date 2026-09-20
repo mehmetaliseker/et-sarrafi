@@ -1,7 +1,7 @@
 .page {
   --ink: #131b2e;
   --copy: #515f74;
-  --wine: #881337;
+  --wine: var(--accent);
   min-height: 100svh;
   box-sizing: border-box;
   padding-block: calc(var(--header-height) + 48px) 48px;
@@ -68,19 +68,25 @@
 .description { margin-top: 16px; color: var(--copy); font-size: 18px; line-height: 28px; }
 .action { display: inline-flex; min-height: 44px; align-items: center; gap: 10px; margin-top: 24px; color: var(--wine); font-size: 15px; font-weight: 600; line-height: 22px; text-decoration: none; }
 .action span { flex: 0 0 auto; transition: transform 180ms ease; }
-.action:hover { color: #640023; }
+.action:hover { color: var(--accent-hover); }
 .action:hover span { transform: translateX(4px); }
 
 
 @media (max-width: 767px) {
+  .page { padding-block: calc(var(--header-height) + 28px) 56px; min-height: 0; }
   .container { padding-inline: 20px; }
   .intro h1 { font-size: 32px; line-height: 40px; }
   .introDescription { margin-bottom: 24px; font-size: 16px; line-height: 26px; white-space: normal; }
-  .tab { min-height: 84px; flex-direction: column; gap: 2px; padding: 8px 5px 16px; }
+  .tab { min-height: 80px; flex-direction: column; gap: 4px; padding: 8px 4px 12px; font-size: 14px; line-height: 20px; }
   .tab > span:last-child { max-width: 100%; }
   .slide { grid-template-columns: minmax(0, 1fr); align-items: start; gap: 24px; }
   .copy h2 { font-size: 28px; line-height: 36px; }
   .description { font-size: 16px; line-height: 26px; }
+  .sliderShell { margin-top: 28px; }
+  .imageFrame { aspect-ratio: 3 / 2; }
+  .copy h2 { margin-top: 8px; }
+  .description { margin-top: 12px; }
+  .action { margin-top: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

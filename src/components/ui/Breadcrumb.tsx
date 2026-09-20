@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import type { SitePath } from "@/types/content";
 import styles from "./breadcrumb.module.css";
+import { siteConfig } from "@/config/site";
+import { serializeJsonLd } from "@/lib/json-ld";
 
 interface BreadcrumbItem {
   label: string;
@@ -15,6 +17,14 @@ interface BreadcrumbProps {
 export function Breadcrumb({ items }: BreadcrumbProps) {
   return (
     <nav aria-label="Sayfa yolu" className={styles.nav}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: items.map((item, index) => ({
+          "@type": "ListItem", position: index + 1, name: item.label,
+          ...(item.href ? { item: new URL(item.href, siteConfig.url).toString() } : {}),
+        })),
+      }) }} />
       <ol className={styles.list}>
         {items.map((item, index) => {
           const isLast = index === items.length - 1;

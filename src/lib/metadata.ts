@@ -10,7 +10,7 @@ export function createPageMetadata({ title, description, path }: PageMetadataInp
     description,
     robots: { index: siteConfig.indexable, follow: siteConfig.indexable },
     alternates: { canonical: canonicalUrl },
-    openGraph: { title: `${title} | ${siteConfig.name}`, description, type: "website", locale: siteConfig.locale, siteName: siteConfig.name, url: canonicalUrl },
-    twitter: { card: "summary", title, description },
+    openGraph: { title: `${title} | ${siteConfig.name}`, description, type: "website", locale: siteConfig.locale, siteName: siteConfig.name, url: canonicalUrl, images: [{ url: new URL("/media/et-sarrafi-logo.webp", siteConfig.url).toString(), alt: siteConfig.name }] },
+    twitter: { card: "summary", title, description, images: [new URL("/media/et-sarrafi-logo.webp", siteConfig.url).toString()] },
   };
 }

@@ -1,4 +1,4 @@
-.page { --ink: #131b2e; --copy: #574144; --wine: #881337; --line: #e4e6eb; background: #fff; color: var(--ink); font-family: var(--font-body); padding-block: calc(var(--header-height) + 40px) 112px; }
+.page { --ink: #131b2e; --copy: #574144; --wine: var(--accent); --line: #e4e6eb; background: #fff; color: var(--ink); font-family: var(--font-body); padding-block: calc(var(--header-height) + 40px) 112px; }
 .container { width: 100%; max-width: 1184px; margin-inline: auto; padding-inline: 24px; }
 .intro { padding-bottom: 40px; border-bottom: 1px solid var(--line); }
 .eyebrow, .sequence, .menuLabel { color: var(--wine); font-size: 11px; font-weight: 600; line-height: 16px; letter-spacing: .09em; text-transform: uppercase; }
@@ -45,12 +45,14 @@
   .metric strong { font-size: 20px; }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 767px) {
+  .page { padding-block: calc(var(--header-height) + 28px) 64px; }
   .container { padding-inline: 20px; }
   .intro h1 { font-size: 32px; line-height: 40px; }
   .description { font-size: 16px; line-height: 26px; }
-  .facilityRegion { display: block; }
-  .menuColumn { position: static; margin-bottom: 44px; }
+  .intro { padding-bottom: 28px; }
+  .facilityRegion { display: block; margin-top: 28px; }
+  .menuColumn { position: static; margin-bottom: 32px; }
   .menuLabel { margin-bottom: 14px; }
   .menu ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .menuLink { min-height: 76px; padding: 9px 11px; border: 1px solid #e7e8ee; border-left-width: 2px; border-radius: 4px; }
@@ -65,6 +67,12 @@
   .facility + .processing { padding-top: 24px; }
   .timeline { grid-template-columns: 1fr; gap: 38px; }
   .timelineItem p { max-width: 55ch; }
+  .facilityHeading h2, .developmentHeading h2 { font-size: 28px; line-height: 36px; }
+  .facility + .facility { margin-top: 36px; padding-top: 32px; }
+  .facility + .processing { padding-top: 24px; }
+  .development { margin-top: 48px; padding-top: 36px; }
+  .timeline { margin-top: 28px; gap: 28px; }
+  .yearLine span { font-size: 40px; line-height: 48px; }
 }
 
 @media (max-width: 380px) {

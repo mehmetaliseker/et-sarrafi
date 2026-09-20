@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent } from "react";
 import { services } from "@/data/services";
-import styles from "@/app/hizmet-alanlarimiz/services.module.css";
+import styles from "@/app/(site)/hizmet-alanlarimiz/services.module.css";
 
 const lastIndex = services.length - 1;
 const wrapIndex = (index: number) => (index + services.length) % services.length;
@@ -202,7 +202,7 @@ export function ServiceTabs() {
             >
               <div className={styles.figure}>
                 <div className={styles.imageFrame}>
-                  <Image src={service.image.src} alt={service.image.alt} fill sizes="(min-width: 1200px) 490px, (min-width: 768px) 45vw, calc(100vw - 40px)" style={{ objectPosition: service.image.position }} loading="eager" draggable={false} />
+                  <Image src={service.image.src} alt={service.image.alt} fill sizes="(min-width: 1200px) 490px, (min-width: 768px) 45vw, calc(100vw - 40px)" style={{ objectPosition: service.image.position }} loading={!clone && index === activeIndex ? "eager" : "lazy"} fetchPriority={!clone && index === activeIndex ? "high" : undefined} draggable={false} />
                 </div>
               </div>
               <div className={styles.copy}>

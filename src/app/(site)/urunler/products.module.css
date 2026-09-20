@@ -1,4 +1,4 @@
-.page { --catalog-ink: #131b2e; --catalog-copy: #515f74; --catalog-wine: #881337; background: #fff; color: var(--catalog-ink); font-family: var(--font-body); padding-top: calc(var(--header-height) + 48px); }
+.page { --catalog-ink: #131b2e; --catalog-copy: #515f74; --catalog-wine: var(--accent); background: #fff; color: var(--catalog-ink); font-family: var(--font-body); padding-top: calc(var(--header-height) + 48px); }
 .container { width: 100%; max-width: 1184px; margin-inline: auto; padding-inline: 24px; box-sizing: border-box; }
 .intro { padding-bottom: 32px; }
 .intro h1 { margin-top: 12px; font-size: 48px; font-weight: 700; line-height: 56px; letter-spacing: -.025em; }
@@ -37,7 +37,7 @@
 .dialog::backdrop { background: rgb(0 0 0 / .50); backdrop-filter: blur(12px); }
 .modalPanel { position: relative; width: min(1040px, calc(100% - 40px)); max-height: 88svh; overflow-y: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; padding: 32px; border: 1px solid rgb(255 255 255 / .9); border-radius: 12px; color: var(--catalog-ink); background: rgb(255 255 255 / .94); box-shadow: 0 24px 80px rgb(0 0 0 / .28); backdrop-filter: blur(18px); animation: modal-in 200ms ease both; }
 .close { position: absolute; z-index: 2; top: 16px; right: 16px; width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 8px; color: var(--catalog-ink); background: transparent; transition: color 240ms ease, filter 240ms ease; }
-.close:hover, .close:focus-visible { color: var(--catalog-wine); filter: drop-shadow(0 0 5px rgb(136 19 55 / .45)); }
+.close:hover, .close:focus-visible { color: var(--catalog-wine); filter: drop-shadow(0 0 5px rgb(var(--accent-rgb) / .45)); }
 .close svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
 .modalImage { position: relative; min-height: min(58svh, 540px); border-radius: 8px; }
 .modalImage img { object-fit: contain; }
@@ -48,14 +48,37 @@
 @keyframes modal-in { from { opacity: 0; transform: scale(.98); } to { opacity: 1; transform: scale(1); } }
 
 @media (max-width: 899px) {
+  .toolbar { flex-direction: column; align-items: stretch; gap: 16px; }
+  .search { width: 100%; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .modalPanel { grid-template-columns: 1fr; }
   .modalImage { min-height: 320px; }
   .modalCopy { padding: 0 4px 8px; }
 }
 
+@media (max-width: 767px) {
+  .page { padding-top: calc(var(--header-height) + 28px); }
+  .container { padding-inline: 20px; }
+  .intro { padding-bottom: 24px; }
+  .intro h1 { margin-top: 8px; font-size: 32px; line-height: 40px; }
+  .introDescription { margin-top: 8px; font-size: 16px; line-height: 26px; }
+  .filterRegion { padding-top: 20px; }
+  .toolbar { padding-bottom: 24px; }
+  .filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filters button { padding: 10px 8px; font-size: 13px; line-height: 1.4; }
+  .search input { font-size: 16px; }
+  .catalogSurface { padding-block: 28px 48px; }
+  .grid { gap: 24px; }
+  .cardImage { aspect-ratio: 3 / 2; }
+  .cardBody { padding: 20px; }
+  .card h2 { font-size: 22px; line-height: 30px; }
+  .summary { font-size: 14px; line-height: 22px; }
+  .modalPanel { max-height: calc(100dvh - 32px); }
+  .modalCopy h2 { padding-right: 0; }
+}
+
 @media (max-width: 599px) {
-  .page { padding-top: calc(var(--header-height) + 48px); }
+  .page { padding-top: calc(var(--header-height) + 28px); }
   .container { padding-inline: 20px; }
   .intro h1 { font-size: 32px; line-height: 40px; }
   .introDescription { font-size: 16px; line-height: 26px; }

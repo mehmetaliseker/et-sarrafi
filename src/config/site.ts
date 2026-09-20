@@ -7,14 +7,20 @@ const city = "İzmir";
 const addressDisplay = `${streetAddress}, ${district}/${city}`;
 const encodedAddress = encodeURIComponent(addressDisplay);
 
+export type SocialPlatform = "instagram" | "facebook" | "x";
+export interface SocialAccount {
+  platform: SocialPlatform;
+  label: string;
+  href: string;
+}
+
 const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 const siteUrl = new URL(configuredSiteUrl || defaultSiteUrl);
-if (!['https:', 'http:'].includes(siteUrl.protocol) || siteUrl.username || siteUrl.password || siteUrl.pathname !== '/' || siteUrl.search || siteUrl.hash) {
-  throw new Error('NEXT_PUBLIC_SITE_URL yalnızca geçerli bir HTTP(S) alan adı içermelidir.');
+if (siteUrl.protocol !== 'https:' || siteUrl.username || siteUrl.password || siteUrl.pathname !== '/' || siteUrl.search || siteUrl.hash) {
+  throw new Error('NEXT_PUBLIC_SITE_URL yalnızca geçerli bir HTTPS alan adı içermelidir.');
 }
-// Release requires approved identity, photographs, content and domain.
-const releaseApproved = false;
-const indexable = releaseApproved && process.env.SITE_INDEXABLE === "true" && process.env.NODE_ENV === "production" && Boolean(configuredSiteUrl);
+// Preview builds opt out; production uses the established HTTPS domain.
+const indexable = process.env.NODE_ENV === "production" && process.env.SITE_INDEXABLE !== "false" && (!process.env.VERCEL_ENV || process.env.VERCEL_ENV === "production");
 
 export const siteConfig = {
   name: "Et Sarrafı",
@@ -55,4 +61,17 @@ export const siteConfig = {
       embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1313.1916020687754!2d27.113363617732023!3d38.48040527023036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd72cc71050d3%3A0xbf6315110603d7a1!2sEt%20Sarraf%C4%B1!5e0!3m2!1str!2str!4v1789375176351!5m2!1str!2str",
     },
   },
+  /** Verified brand accounts only. X/Twitter handle was not found. */
+  social: [
+    {
+      platform: "instagram",
+      label: "Instagram",
+      href: "https://www.instagram.com/etsarrafi/",
+    },
+    {
+      platform: "facebook",
+      label: "Facebook",
+      href: "https://www.facebook.com/etsarrafi",
+    },
+  ] as const satisfies ReadonlyArray<SocialAccount>,
 } as const;

@@ -40,7 +40,6 @@ export default function AboutPage() {
             <h1 id="about-title">{content.intro.title}</h1>
             <p>{content.intro.description}</p>
           </div>
-          <AboutPhoto image={aboutImages.hero} className={styles.heroPhoto} sizes="(min-width: 1224px) 1184px, calc(100vw - 40px)" eager />
         </section>
 
         <section className={styles.overview} aria-labelledby="about-overview-title">
