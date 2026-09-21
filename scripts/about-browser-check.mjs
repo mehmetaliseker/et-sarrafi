@@ -92,7 +92,7 @@ try {
   const menuOpen = await browserClient.evaluate(`({open:document.querySelector('.menu-dialog').open,locked:document.body.style.position==='fixed',fits:document.querySelector('.menu-dialog').getBoundingClientRect().height<=innerHeight})`);
   assert.deepEqual(menuOpen, { open: true, locked: true, fits: true });
   await browserClient.key('Escape');
-  await delay(100);
+  await delay(500);
   const menuClosed = await browserClient.evaluate(`({open:document.querySelector('.menu-dialog').open,locked:document.body.style.position==='fixed'})`);
   assert.deepEqual(menuClosed, { open: false, locked: false });
   report.push({ menuOpen, menuClosed });

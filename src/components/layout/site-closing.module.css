@@ -18,12 +18,6 @@
   background-attachment: fixed;
 }
 
-:global(body:has(.contactPage)) .contact {
-  --contact-closing-height: clamp(200px, 32svh, 260px);
-  min-height: var(--contact-closing-height);
-  padding-block: clamp(28px, 4svh, 44px);
-}
-
 .contactVehicle {
   background-image:
     linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52)),
@@ -86,10 +80,8 @@
   .contact { min-height: 0; padding-block: 44px; background-attachment: scroll; }
   .contactVehicle {
     background-attachment: scroll, scroll;
-  }
-  :global(body:has(.contactPage)) .contact {
-    min-height: 0;
-    padding-block: 36px;
+    background-position: center, center;
+    background-size: cover, cover;
   }
   .highlight { min-height: 166px; padding: 20px 14px; }
   .highlight:nth-child(odd) { padding-left: 0; }

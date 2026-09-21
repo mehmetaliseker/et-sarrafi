@@ -55,7 +55,7 @@ export const services = [
     action: "Satış Ekibimizle Görüşün",
     href: "/iletisim",
     image: {
-      src: "/images/arac.webp",
+      src: "/images/corporate/arac.webp",
       alt: "Et Sarrafı logolu frigorifik sevkiyat aracı",
       position: "50% 52%",
     },

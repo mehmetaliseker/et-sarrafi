@@ -65,7 +65,7 @@ interface RootLayoutProps {
 }
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang={siteConfig.language}>
+    <html lang={siteConfig.language} data-scroll-behavior="smooth">
       <body className={`${plusJakartaSans.variable} min-h-dvh bg-canvas text-ink antialiased`}>
         <a
           className="skip-link"

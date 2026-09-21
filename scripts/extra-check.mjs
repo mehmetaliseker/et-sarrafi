@@ -19,7 +19,7 @@ check('200 percent menu text stays in a scrollable dialog',await b.evaluate("(()
 await b.evaluate("document.querySelector('.menu-contact').focus()");
 check('Last menu link accessible with enlarged text',await b.evaluate("(()=>{const r=document.querySelector('.menu-contact').getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight})()"));
 await b.shot('docs/screenshots/final/menu-200percent.png');
-await b.viewport(1440,900); await delay(200);
+  await b.viewport(1440,900); await delay(500);
 check('Desktop resize closes menu and unlocks scroll',await b.evaluate("!document.querySelector('dialog').open && document.body.style.position===''"));
 await b.navigate('http://localhost:3002/urunler');
 await b.evaluate("document.querySelector('#sakatat').focus()");

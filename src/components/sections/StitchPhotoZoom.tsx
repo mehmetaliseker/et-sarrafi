@@ -13,7 +13,7 @@ export function StitchPhotoZoom({ src }: { src: string }) {
     const update = () => {
       frame = 0;
       const section = element.parentElement?.getBoundingClientRect();
-      if (!section || preference.matches) { element.style.setProperty("--stitch-zoom", "1"); return; }
+      if (!section || preference.matches || window.innerWidth < 768) { element.style.setProperty("--stitch-zoom", "1"); return; }
       const distance = Math.abs(section.top + section.height / 2 - window.innerHeight / 2);
       const travel = (section.height + window.innerHeight) / 2;
       const focus = Math.min(1, Math.max(0, 1 - distance / travel));

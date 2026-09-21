@@ -4,9 +4,9 @@ import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from
 import { BrandMarkIcon } from "@/components/ui/BrandMarkIcon";
 
 const labels = [
-  "Endüstriyel Gıda Çözümleri",
-  "Kurumsal Tedarik Çözümleri",
-  "Profesyonel Mutfak Çözümleri",
+  "Çiftlikten Sofraya",
+  "Kaliteye Özen",
+  "Ustalıkla Hazırlanır",
 ] as const;
 
 export function RotatingHeroLabel() {

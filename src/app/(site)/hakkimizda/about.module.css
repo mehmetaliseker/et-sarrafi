@@ -65,9 +65,7 @@
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 24px;
-  margin-top: 64px;
-  padding-top: 64px;
-  border-top: 1px solid var(--about-line);
+  margin-top: 112px;
 }
 
 .overviewHeading {
@@ -154,7 +152,9 @@
 }
 
 .photoPair {
-  margin-top: 112px;
+  margin-top: 64px;
+  padding-top: 64px;
+  border-top: 1px solid var(--about-line);
 }
 
 .photoGrid {
@@ -224,7 +224,7 @@
   .introGrid > p { line-height: 1.7; }
   
   .photo img { object-position: var(--about-position-mobile, center); }
-  .overview { display: block; margin-top: 64px; padding-top: 50px; }
+  .overview { display: block; margin-top: 56px; }
   .overviewHeading { margin-bottom: 28px; }
   .overviewHeading h2, .approachHeading h2 { font-size: 31px; }
   .overviewCopy { gap: 20px; }
@@ -234,7 +234,7 @@
   .approachRow { grid-template-columns: 1fr; gap: 13px; padding-block: 28px; }
   .approachName, .approachRow > p { grid-column: 1; }
   .approachRow > p { padding-left: 41px; }
-  .photoPair { margin-top: 56px; }
+  .photoPair { margin-top: 40px; padding-top: 32px; }
   .photoGrid { grid-template-columns: 1fr; gap: 16px; }
   .pairPhoto { height: auto; aspect-ratio: var(--about-ratio-mobile, 4 / 3); }
   .photoFoot { align-items: flex-start; flex-direction: column; gap: 12px; margin-top: 22px; }
@@ -249,7 +249,7 @@
   .page { padding-block: calc(var(--header-height) + 28px) 64px; }
   .introGrid { grid-template-columns: 1fr; gap: 16px; margin-top: 12px; }
   .introGrid h1 { font-size: clamp(30px, 8vw, 36px); line-height: 1.18; }
-  .overview { display: block; margin-top: 40px; padding-top: 32px; }
+  .overview { display: block; margin-top: 48px; }
   .overviewHeading { margin-bottom: 24px; }
   .overviewHeading h2, .approachHeading h2 { font-size: 28px; line-height: 1.25; }
   .overviewCopy { gap: 20px; }
@@ -262,7 +262,7 @@
   .approachName { gap: 16px; }
   .approachName h3 { font-size: 22px; }
   .approachRow > p { padding-left: 0; font-size: 16px; line-height: 1.7; }
-  .photoPair { margin-top: 48px; }
+  .photoPair { margin-top: 40px; padding-top: 32px; }
   .photoGrid { grid-template-columns: 1fr; gap: 16px; }
   .pairPhoto { height: auto; aspect-ratio: 4 / 3; }
   .photoFoot { flex-direction: column; align-items: flex-start; gap: 12px; }

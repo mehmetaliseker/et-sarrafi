@@ -5,12 +5,13 @@ import styles from "./reveal.module.css";
 
 const visibleThreshold = 0.15;
 
-export function Reveal({ children, className = "", bottomViewportFraction = 0, waitForScroll = false }: { children: ReactNode; className?: string; bottomViewportFraction?: number; waitForScroll?: boolean }) {
+export function Reveal({ children, className = "", bottomViewportFraction = 0, waitForScroll = false, staticOnMobile = false }: { children: ReactNode; className?: string; bottomViewportFraction?: number; waitForScroll?: boolean; staticOnMobile?: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const element = ref.current;
     if (!element) return;
+    if (staticOnMobile && window.matchMedia("(max-width: 47.99rem)").matches) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let frame = 0;
@@ -41,7 +42,7 @@ export function Reveal({ children, className = "", bottomViewportFraction = 0, w
       if (initialFrame) window.cancelAnimationFrame(initialFrame);
       element.classList.remove(styles.enabled, styles.initial, styles.hidden);
     };
-  }, [bottomViewportFraction, waitForScroll]);
+  }, [bottomViewportFraction, staticOnMobile, waitForScroll]);
 
   return <div ref={ref} className={className}>{children}</div>;
 }

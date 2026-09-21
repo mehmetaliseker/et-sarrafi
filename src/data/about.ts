@@ -9,7 +9,7 @@ export interface AboutImage {
 
 export const aboutImages = {
   facility: {
-    src: "/images/isletme.webp",
+    src: "/images/corporate/isletme.webp",
     alt: "Askılardaki karkas etlerin bulunduğu depolama alanı",
     desktopRatio: "7 / 4",
     mobileRatio: "4 / 3",

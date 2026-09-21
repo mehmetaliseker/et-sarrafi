@@ -1,6 +1,15 @@
 import type { NextConfig } from "next";
 
+const legacyImages = [
+  ["/images/arac.webp", "/images/corporate/arac.webp"],
+  ["/images/isletme.webp", "/images/corporate/isletme.webp"],
+  ["/images/ciftlik.webp", "/images/corporate/ciftlik.webp"],
+] as const;
+
 const nextConfig: NextConfig = {
+  async rewrites() {
+    return { beforeFiles: legacyImages.map(([source, destination]) => ({ source, destination })) };
+  },
   redirects() {
     return [
       ["/sayfa/hakkimizda", "/hakkimizda"],

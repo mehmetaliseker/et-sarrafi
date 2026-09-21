@@ -13,7 +13,7 @@ export function SiteFooter() {
   return <footer className="site-footer"><Container>
     <div className="footer-main">
       <div>
-        <Link aria-label={`${siteConfig.name} ana sayfa`} className="footer-logo" href="/"><Image src="/media/et-sarrafi-logo.webp" alt={siteConfig.name} width={180} height={132} /></Link>
+        <Link aria-label={`${siteConfig.name} ana sayfa`} className="footer-logo" href="/"><Image src="/media/et-sarrafi-logo.webp" alt={siteConfig.name} width={360} height={261} sizes="150px" /></Link>
         <p className="mt-3 text-sm text-ink-muted">{siteConfig.corporateLine}</p>
         <div className="footer-brand-links">
           <SocialLinks className="footer-social" variant="icons" />

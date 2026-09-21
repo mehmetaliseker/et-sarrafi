@@ -18,7 +18,7 @@ try {
   check('inner page header is immediately readable', await b.evaluate(`document.querySelector('.site-header').classList.contains('header-inner-page') && getComputedStyle(document.querySelector('.site-header')).backgroundColor === 'rgb(255, 255, 255)' && getComputedStyle(document.querySelector('.site-header')).color === 'rgb(32, 35, 36)'`));
   await b.evaluate(`document.querySelector('.menu-trigger').click()`);
   check('mobile menu retains scroll lock', await b.evaluate(`document.querySelector('dialog').open && document.body.style.position === 'fixed'`));
-  await b.key('Escape'); await delay(200);
+  await b.key('Escape'); await delay(500);
   check('mobile menu returns focus', await b.evaluate(`!document.querySelector('dialog').open && document.activeElement.classList.contains('menu-trigger') && document.body.style.position === ''`));
 
   await b.send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });

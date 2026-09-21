@@ -40,6 +40,10 @@ export function SiteClosing({ backgroundImage = defaultBackgroundImage }: SiteCl
     if (!isVehicle) return;
     const band = bandRef.current;
     if (!band) return;
+    if (window.matchMedia("(max-width: 47.99rem)").matches) {
+      band.style.setProperty("--vehicle-y", "50%");
+      return;
+    }
 
     const update = () => {
       const startInset = 175;

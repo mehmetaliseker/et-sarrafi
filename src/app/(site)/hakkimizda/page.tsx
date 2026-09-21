@@ -42,6 +42,17 @@ export default function AboutPage() {
           </div>
         </section>
 
+        <section className={styles.photoPair} aria-label="Üretim ve ürün görselleri">
+          <div className={styles.photoGrid}>
+            <Reveal staticOnMobile><AboutPhoto image={aboutImages.facility} className={styles.pairPhoto} sizes="(min-width: 800px) 57vw, calc(100vw - 40px)" eager /></Reveal>
+            <Reveal staticOnMobile><AboutPhoto image={aboutImages.meat} className={styles.pairPhoto} sizes="(min-width: 800px) 40vw, calc(100vw - 40px)" eager /></Reveal>
+          </div>
+          <Reveal className={styles.photoFoot} staticOnMobile>
+            <p>{content.photoCaption}</p>
+            <Link href="/tesislerimiz">{content.photoLink}<span aria-hidden="true">→</span></Link>
+          </Reveal>
+        </section>
+
         <section className={styles.overview} aria-labelledby="about-overview-title">
           <Reveal className={styles.overviewHeading}>
             <p className={styles.eyebrow}>{content.overview.eyebrow}</p>
@@ -67,16 +78,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className={styles.photoPair} aria-label="Üretim ve ürün görselleri">
-          <div className={styles.photoGrid}>
-            <Reveal><AboutPhoto image={aboutImages.facility} className={styles.pairPhoto} sizes="(min-width: 800px) 57vw, calc(100vw - 40px)" /></Reveal>
-            <Reveal><AboutPhoto image={aboutImages.meat} className={styles.pairPhoto} sizes="(min-width: 800px) 40vw, calc(100vw - 40px)" /></Reveal>
-          </div>
-          <Reveal className={styles.photoFoot}>
-            <p>{content.photoCaption}</p>
-            <Link href="/tesislerimiz">{content.photoLink}<span aria-hidden="true">→</span></Link>
-          </Reveal>
-        </section>
       </div>
     </article>;
 }

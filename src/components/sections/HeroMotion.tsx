@@ -70,8 +70,14 @@ export function StitchHeroMotion() {
         hero.style.setProperty("--stitch-hero-lift", "0%");
         return;
       }
+      if (window.innerWidth < 768) {
+        hero.style.setProperty("--stitch-hero-scale", "1");
+        hero.style.setProperty("--stitch-hero-tilt", "0deg");
+        hero.style.setProperty("--stitch-hero-lift", "0%");
+        return;
+      }
       const progress = Math.min(1, Math.max(0, window.scrollY / (window.innerHeight * .82)));
-      const startScale = window.innerWidth < 768 ? 1.1 : 1.13;
+      const startScale = 1.13;
       hero.style.setProperty("--stitch-hero-scale", (startScale - (startScale - 1.015) * progress).toFixed(4));
       hero.style.setProperty("--stitch-hero-tilt", `${(2.1 * progress).toFixed(3)}deg`);
       hero.style.setProperty("--stitch-hero-lift", `${(-1.4 * progress).toFixed(3)}%`);

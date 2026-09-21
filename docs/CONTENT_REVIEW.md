@@ -2,7 +2,7 @@
 
 Bu dosya, etkin `AGENTS.md` talimatının gerektirdiği doğrulanmamış içerik kaydıdır.
 
-- `public/images/ciftlik.png`: Hangi çiftlik olduğu ve görseldeki 2.500/1.500 dönüm ifadeleri teyit edilmedi; arayüzde kullanılmıyor.
+- `public/images/corporate/ciftlik.webp`: Hangi çiftlik olduğu ve görseldeki 2.500/1.500 dönüm ifadeleri teyit edilmedi; arayüzde kullanılmıyor.
 - WhatsApp işletme hattı doğrulanmadı; telefon numarasından WhatsApp bağlantısı türetilmedi.
 - Instagram (`instagram.com/etsarrafi`) ve Facebook (`facebook.com/etsarrafi`) doğrulandı; X/Twitter hesabı bulunamadı, bağlantı eklenmedi.
 - Güncel sertifika kapsamı, kapasite çelişkileri (30/60 ton), ürün teknik bilgileri ve teslimat taahhütleri için belge gerekir; yeni iddia eklenmemelidir.

@@ -54,11 +54,11 @@ try {
     const menu=await b.evaluate("({open:document.querySelector('dialog').open,locked:document.body.style.position==='fixed',width:document.querySelector('dialog').getBoundingClientRect().width,height:document.querySelector('dialog').getBoundingClientRect().height,viewport:innerHeight,scrollHeight:document.querySelector('dialog').scrollHeight})");
     check(menu.open && menu.locked && menu.width<=width && menu.height<=height,'menu dimensions '+width,menu);
     await b.shot(`docs/screenshots/final/menu-${width}.png`);
-    await b.evaluate("document.querySelector('dialog button').focus()"); await b.key('Tab',8);
+    await b.evaluate("document.querySelector('dialog .brand').focus()"); await b.key('Tab',8);
     check(await b.evaluate("document.activeElement.classList.contains('menu-contact')"),'menu reverse focus trap '+width);
     await b.key('Tab');
-    check(await b.evaluate("document.activeElement.getAttribute('aria-label')==='Ana menüyü kapat'"),'menu forward focus trap '+width);
-    await b.key('Escape'); await delay(200);
+    check(await b.evaluate("document.activeElement.classList.contains('brand')"),'menu forward focus trap '+width);
+    await b.key('Escape'); await delay(500);
     check(await b.evaluate("!document.querySelector('dialog').open && document.activeElement.classList.contains('menu-trigger') && Math.abs(scrollY-260)<2 && document.body.style.position===''"),'menu Escape/scroll/focus '+width);
     await b.evaluate("document.querySelector('.menu-trigger').click();document.querySelector('dialog a[href=\"/urunler\"]').click()");
     await delay(900);

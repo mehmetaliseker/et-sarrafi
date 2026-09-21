@@ -21,7 +21,7 @@ const handwriting = localFont({
 
 export const metadata = createPageMetadata({ title: "Kurumsal", description: siteConfig.description, path: "/" });
 
-const photo = { hero: "/media/dana-bonfile.webp", facility: "/media/cc996b29b9e27b0778943f7f2cc17267edb88964.jpg", products: "/images/stitch/products.jpg", quality: "/images/isletme.webp" } as const;
+const photo = { hero: "/media/dana-bonfile.webp", facility: "/media/cc996b29b9e27b0778943f7f2cc17267edb88964.jpg", products: "/images/stitch/products.jpg", quality: "/images/corporate/isletme.webp" } as const;
 const featureItems = [
   { title: "Büyükbaş ve küçükbaş ürünler", description: "Karkas, parça et ve sakatat çeşitlerimizi inceleyin.", icon: "steak" },
   { title: "İşleme ve depolama", description: "Et işleme tesisimizde yürüttüğümüz faaliyetleri tanıyın.", icon: "cutting" },
@@ -32,10 +32,10 @@ const qualityItems = [
   { title: "Hijyen yaklaşımı", description: "Et ürünlerimizi hijyen koşullarını gözeterek hazırlıyoruz.", icon: "hygiene" },
 ] as const;
 const categories = [
-  { title: "Büyükbaş ürünleri", description: "Dana bonfile, antrikot, nuar ve döş gibi büyükbaş et kesimleri.", href: "/urunler#buyukbas", image: photo.products },
-  { title: "Küçükbaş ürünleri", description: "Kuzu küşleme ve kuzu kafes gibi küçükbaş et kesimleri.", href: "/urunler#kucukbas", image: photo.products },
-  { title: "Karkas et ürünleri", description: "Dana, sığır, düve, koyun ve kuzu karkas ürünleri.", href: "/urunler#karkas-et", image: photo.facility },
-  { title: "Sakatat", description: "Büyükbaş ve küçükbaş sakatat çeşitleri.", href: "/urunler#sakatat", image: photo.facility },
+  { title: "Büyükbaş ürünleri", description: "Dana bonfile, antrikot, nuar ve döş gibi büyükbaş et kesimleri.", href: "/urunler#buyukbas", image: "/images/products/categories/buyukbas.webp" },
+  { title: "Küçükbaş ürünleri", description: "Kuzu küşleme ve kuzu kafes gibi küçükbaş et kesimleri.", href: "/urunler#kucukbas", image: "/images/products/categories/kucukbas.webp" },
+  { title: "Karkas et ürünleri", description: "Dana, sığır, düve, koyun ve kuzu karkas ürünleri.", href: "/urunler#karkas-et", image: "/images/products/categories/karkas.webp" },
+  { title: "Sakatat", description: "Büyükbaş ve küçükbaş sakatat çeşitleri.", href: "/urunler#sakatat", image: "/images/products/categories/sakatat.webp" },
 ] as const;
 
 export default function HomePage() {
@@ -68,7 +68,7 @@ export default function HomePage() {
 
     <section className="stitch-section stitch-categories" id="kategoriler" aria-labelledby="stitch-categories-title"><div className="stitch-container">
       <div className="stitch-category-heading"><Reveal><p className="stitch-eyebrow">Kurumsal Portföy</p><h2 id="stitch-categories-title">Kurumsal Ürün Kategorilerimiz</h2></Reveal><Reveal><p>Ürün gruplarımızı keşfedin; işletmenizin ihtiyacına uygun seçenekler için bizimle iletişime geçin.</p></Reveal></div>
-      <div className="stitch-category-grid">{categories.map(item => <Reveal className="stitch-category-reveal" key={item.title}><article className="stitch-category-card"><Link href={item.href} aria-label={`${item.title} kategorisini inceleyin`}><div className="stitch-category-image"><Image src={item.image} alt="" fill sizes="(min-width: 1024px) 23vw, (min-width: 600px) 46vw, 100vw" /></div><div className="stitch-category-content"><h3>{item.title}</h3><p>{item.description}</p><span className="stitch-category-link">Ürünleri inceleyin <span aria-hidden="true">→</span></span></div></Link></article></Reveal>)}</div><p className="stitch-image-note">Bu bölümdeki görseller temsilidir.</p>
+      <div className="stitch-category-grid">{categories.map(item => <Reveal className="stitch-category-reveal" key={item.title}><article className="stitch-category-card"><Link href={item.href} aria-label={`${item.title} kategorisini inceleyin`}><div className="stitch-category-image"><Image src={item.image} alt="" fill sizes="(min-width: 1024px) 23vw, (min-width: 600px) 46vw, 100vw" /></div><div className="stitch-category-content"><h3>{item.title}</h3><p>{item.description}</p><span className="stitch-category-link">Ürünleri inceleyin <span aria-hidden="true">→</span></span></div></Link></article></Reveal>)}</div>
     </div></section>
 
   </div>;
