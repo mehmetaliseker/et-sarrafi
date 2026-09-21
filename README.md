@@ -30,16 +30,9 @@ npm run dev
 
 Site varsayılan olarak `http://localhost:3000` adresinde açılır.
 
-## Ortam değişkenleri
+## Yayın adresi ve indeksleme
 
-Projenin çalışması için ortam dosyası veya ortam değişkeni gerekmez. Varsayılan canlı alan adı ve indeksleme davranışı `src/config/site.ts` içinde tanımlıdır. Aşağıdaki değerler yalnızca farklı bir yayın ortamı gerektiğinde hosting panelinden veya yerel `.env.local` dosyasından isteğe bağlı olarak verilebilir:
-
-| Değişken | Açıklama | Varsayılan |
-| --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Canonical bağlantılar, Open Graph URL’leri, yapılandırılmış veri, robots ve sitemap için kullanılan HTTPS kök adresi. Yol, sorgu veya kimlik bilgisi içeremez. | `https://www.etsarrafi.com` |
-| `SITE_INDEXABLE` | Production yapısının arama motorlarınca indekslenmesini kontrol eder. `false` değeri indekslemeyi kapatır. | Production ortamında açık |
-
-Yerel geliştirme ve Vercel önizleme ortamları otomatik olarak `noindex` çalışır. Ortam değişkenlerinden biri kullanılırsa değişiklikten sonra yeniden build alın.
+Projenin çalışması için ortam dosyası veya environment variable gerekmez. Canonical kök adresi `https://www.etsarrafi.com` olarak `src/config/site.ts` içinde tanımlıdır. Production build’i indekslenebilir; yerel geliştirme çıktısı otomatik olarak `noindex` çalışır.
 
 ## Komutlar
 
@@ -139,7 +132,7 @@ Next.js metadata route yapısı kullanılır:
 
 Canlı production yapısında `robots.txt` tüm genel rotaların taranmasına izin verir ve sitemap adresini bildirir. Sitemap; sekiz ana rotayı ve 16 ürün detay sayfasını mutlak URL olarak içerir. Ana sayfa, katalog, ürün detayları, kurumsal sayfalar, iletişim ve politika sayfası için uygun `changefreq` ve `priority` değerleri tanımlanmıştır. Gerçek bir içerik güncelleme tarihi tutulmadığı için yanıltıcı `lastmod` değeri üretilmez.
 
-Geliştirme, önizleme veya `SITE_INDEXABLE=false` durumunda:
+Geliştirme ortamında:
 
 - sayfa metadata’sı `noindex, nofollow` olur,
 - `/robots.txt` tüm taramayı engeller,
@@ -198,7 +191,5 @@ node scripts/validate-site.mjs http://localhost:3000
 1. `npm ci` ve `npm run check` çalıştırın.
 2. Production build’i yayınlayın.
 3. Ana rotaları, ürün detaylarını, 404 yanıtını, görselleri, `/robots.txt` ve `/sitemap.xml` uçlarını kontrol edin.
-
-Varsayılan `https://www.etsarrafi.com` adresinden farklı bir alana yayın yapılacaksa yalnızca o zaman hosting ortamında `NEXT_PUBLIC_SITE_URL` tanımlayın.
 
 Deploy, hosting, commit ve push işlemleri proje dışında yürütülür.

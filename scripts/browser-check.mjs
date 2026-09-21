@@ -139,12 +139,12 @@ try {
     await key('Enter');
     await waitFor('document.querySelector("#mobile-navigation").dataset.state === "open" && document.body.style.overflow === "hidden"');
     await delay(450);
-    const opened = await evaluate(`(() => { const menu = document.querySelector('#mobile-navigation'); const header = document.querySelector('.site-header'); const rect = menu.getBoundingClientRect(); return { expanded: document.querySelector('.menu-trigger').getAttribute('aria-expanded'), focusInside: !!document.activeElement.closest('#mobile-navigation'), locked: document.body.style.overflow === 'hidden', fits: rect.bottom <= innerHeight, belowHeader: Math.abs(rect.top - header.getBoundingClientRect().bottom) < 1 }; })()`);
-    await evaluate('document.querySelector("#mobile-navigation a").focus()');
+    const opened = await evaluate(`(() => { const menu = document.querySelector('#mobile-navigation'); const rect = menu.getBoundingClientRect(); return { expanded: document.querySelector('.menu-trigger').getAttribute('aria-expanded'), focusInside: !!document.activeElement.closest('#mobile-navigation'), locked: document.body.style.overflow === 'hidden', fits: rect.bottom <= innerHeight, coversViewport: Math.abs(rect.top) < 1 && Math.abs(rect.bottom - innerHeight) < 1, hasLogo: !!menu.querySelector('.brand'), hasClose: !!menu.querySelector('.menu-close') }; })()`);
+    await evaluate('document.querySelector("#mobile-navigation a, #mobile-navigation button").focus()');
     await key('Tab', 8);
-    const backwards = await evaluate('document.activeElement === [...document.querySelectorAll("#mobile-navigation a")].at(-1)');
+    const backwards = await evaluate('document.activeElement === [...document.querySelectorAll("#mobile-navigation button, #mobile-navigation a")].at(-1)');
     await key('Tab');
-    const forwards = await evaluate('document.activeElement === document.querySelector("#mobile-navigation a")');
+    const forwards = await evaluate('document.activeElement === document.querySelector("#mobile-navigation a, #mobile-navigation button")');
     await key('Escape');
     await waitFor('document.querySelector("#mobile-navigation").dataset.state === "closed" && document.body.style.overflow !== "hidden"');
     const restored = await evaluate('document.activeElement === document.querySelector(".menu-trigger")');
@@ -155,7 +155,7 @@ try {
     await key('Enter');
     await waitFor('location.pathname === "/iletisim" && document.querySelector("#mobile-navigation").dataset.state === "closed" && document.body.style.overflow !== "hidden"');
     report.menu.push({ height, opened, backwards, forwards, restored, lastReachable, navigationCloses: true });
-    assert(opened.expanded === 'true' && opened.focusInside && opened.locked && opened.fits && opened.belowHeader && backwards && forwards && restored && lastReachable, 'Mobile keyboard/menu at height ' + height);
+    assert(opened.expanded === 'true' && opened.focusInside && opened.locked && opened.fits && opened.coversViewport && opened.hasLogo && opened.hasClose && backwards && forwards && restored && lastReachable, 'Mobile keyboard/menu at height ' + height);
   }
   await send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });
   await navigate('/');

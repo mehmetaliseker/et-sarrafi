@@ -19,14 +19,36 @@
 }
 
 .contactVehicle {
-  background-image:
-    linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52)),
-    var(--closing-photo);
-  background-position: center, center var(--vehicle-y, 0px);
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-image: none;
+  background-attachment: scroll;
   background-color: #312d30;
+}
+
+.contactVehicle::before,
+.contactVehicle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.contactVehicle::before {
+  z-index: 0;
+  background-image: var(--closing-photo);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translate3d(0, var(--vehicle-y, 0px), 0) scale(1.08);
+  transform-origin: center;
+  will-change: transform;
+}
+
+.contactVehicle::after {
+  z-index: 0;
+  background: linear-gradient(90deg, rgb(30 27 29 / .9), rgb(48 39 43 / .68) 56%, rgb(30 27 29 / .52));
 }
 
 :global(body:has(.contactPage)) .closing :global(.site-footer) {
@@ -34,6 +56,8 @@
 }
 
 .contactLayout {
+  position: relative;
+  z-index: 1;
   width: calc(100% - 40px);
   max-width: 1184px;
   margin-inline: auto;
@@ -78,11 +102,6 @@
 
 @media (max-width: 47.99rem) {
   .contact { min-height: 0; padding-block: 44px; background-attachment: scroll; }
-  .contactVehicle {
-    background-attachment: scroll, scroll;
-    background-position: center, center;
-    background-size: cover, cover;
-  }
   .highlight { min-height: 166px; padding: 20px 14px; }
   .highlight:nth-child(odd) { padding-left: 0; }
   .highlight:nth-child(even) { padding-right: 0; }

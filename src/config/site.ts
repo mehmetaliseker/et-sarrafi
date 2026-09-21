@@ -1,4 +1,4 @@
-const defaultSiteUrl = "https://www.etsarrafi.com";
+const siteUrl = new URL("https://www.etsarrafi.com");
 const phoneDisplay = "+90 539 517 96 86";
 const emailAddress = "siparis@etsarrafi.com";
 const streetAddress = "7401 Sokak No:78/A";
@@ -14,13 +14,7 @@ export interface SocialAccount {
   href: string;
 }
 
-const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-const siteUrl = new URL(configuredSiteUrl || defaultSiteUrl);
-if (siteUrl.protocol !== 'https:' || siteUrl.username || siteUrl.password || siteUrl.pathname !== '/' || siteUrl.search || siteUrl.hash) {
-  throw new Error('NEXT_PUBLIC_SITE_URL yalnızca geçerli bir HTTPS alan adı içermelidir.');
-}
-// Preview builds opt out; production uses the established HTTPS domain.
-const indexable = process.env.NODE_ENV === "production" && process.env.SITE_INDEXABLE !== "false" && (!process.env.VERCEL_ENV || process.env.VERCEL_ENV === "production");
+const indexable = process.env.NODE_ENV === "production";
 
 export const siteConfig = {
   name: "Et Sarrafı",

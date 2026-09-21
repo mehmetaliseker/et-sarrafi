@@ -40,33 +40,34 @@ export function SiteClosing({ backgroundImage = defaultBackgroundImage }: SiteCl
     if (!isVehicle) return;
     const band = bandRef.current;
     if (!band) return;
-    if (window.matchMedia("(max-width: 47.99rem)").matches) {
-      band.style.setProperty("--vehicle-y", "50%");
-      return;
-    }
 
+    let frame = 0;
     const update = () => {
-      const startInset = 175;
+      frame = 0;
       const rect = band.getBoundingClientRect();
       const viewHeight = window.innerHeight;
 
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        band.style.setProperty("--vehicle-y", `${rect.top - startInset}px`);
+        band.style.setProperty("--vehicle-y", "0px");
         return;
       }
 
-      const travel = Math.max(viewHeight - rect.height - startInset, 1);
-      const progress = 1 - Math.min(1, Math.max(0, rect.top / Math.max(viewHeight - rect.height, 1)));
-      const offsetY = rect.top - startInset - progress * travel;
+      const progress = Math.min(1, Math.max(0, (viewHeight - rect.top) / (viewHeight + rect.height)));
+      const offsetY = (progress - 0.5) * 28;
       band.style.setProperty("--vehicle-y", `${offsetY}px`);
     };
 
+    const scheduleUpdate = () => {
+      if (!frame) frame = window.requestAnimationFrame(update);
+    };
+
     update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
     return () => {
-      window.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
+      window.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+      if (frame) window.cancelAnimationFrame(frame);
     };
   }, [isVehicle]);
 

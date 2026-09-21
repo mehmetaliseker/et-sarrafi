@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, type KeyboardEvent } from "react";
 import { navigationItems } from "@/config/navigation";
 import { siteConfig } from "@/config/site";
+import { Brand } from "@/components/ui/Brand";
 
 type MenuPhase = "closed" | "opening" | "open" | "closing";
 
@@ -126,9 +127,15 @@ export function SiteNavigation() {
     <div className="mobile-nav">
       <button aria-controls="mobile-navigation" aria-expanded={expanded} aria-haspopup="dialog" aria-label={expanded ? "Ana menüyü kapat" : "Ana menüyü aç"} className="menu-trigger" ref={buttonRef} type="button" onClick={() => expanded ? closeMenu(true) : openMenu()}>Menü<span aria-hidden="true"><i /><i /></span></button>
       <div id="mobile-navigation" role="dialog" aria-modal="true" aria-hidden={phase === "closed"} aria-labelledby="mobile-menu-title" className="menu-dialog" data-state={phase} inert={phase === "closed"} ref={dialogRef} onKeyDown={handleKeys}>
-        <p className="menu-title" id="mobile-menu-title">{siteConfig.name} / Menü</p>
-        <nav aria-label="Mobil navigasyon"><ul>{[{ label: "Ana sayfa", href: "/" }, ...navigationItems].map(item => <li key={item.href}><Link aria-current={(item.href === "/" ? pathname === "/" : active(item.href)) ? "page" : undefined} href={item.href} onClick={() => { if (item.href === pathname) closeMenu(true); }}>{item.label}</Link></li>)}</ul></nav>
-        <a className="menu-contact" href={siteConfig.contact.phone.href}>{siteConfig.contact.phone.display}</a>
+        <div className="menu-bar">
+          <Brand onClick={() => closeMenu(true)} />
+          <button aria-label="Ana menüyü kapat" className="menu-close" type="button" onClick={() => closeMenu(true)}><span aria-hidden="true"><i /><i /></span></button>
+        </div>
+        <div className="menu-content">
+          <p className="menu-title" id="mobile-menu-title">{siteConfig.name} / Menü</p>
+          <nav aria-label="Mobil navigasyon"><ul>{[{ label: "Ana sayfa", href: "/" }, ...navigationItems].map(item => <li key={item.href}><Link aria-current={(item.href === "/" ? pathname === "/" : active(item.href)) ? "page" : undefined} href={item.href} onClick={() => { if (item.href === pathname) closeMenu(true); }}>{item.label}</Link></li>)}</ul></nav>
+          <a className="menu-contact" href={siteConfig.contact.phone.href}>{siteConfig.contact.phone.display}</a>
+        </div>
       </div>
     </div>
   </>;
